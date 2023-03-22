@@ -59,6 +59,29 @@ const products = [
     companyId: 3,
     categoryId: null,
   },
+  {
+    title: "Ensalada Gourmet con Pollo Crispy",
+    price: 4,
+    stock: 16,
+    description:
+      "Tomates, queso en cubos y hojas frescas. Todo eso acompañado de un delicioso Pollo Crispy.",
+    featured: false,
+    image:
+      "https://images.deliveryhero.io/image/pedidosya/products/60779_046ed87b-4a7d-4351-92f5-5d17dbada8e9.jpg?quality=90&height=96&width=96",
+    companyId: 3,
+    categoryId: null,
+  },
+  {
+    title: "Coca-Cola sin Azucar Grande",
+    price: 3.8,
+    stock: 50,
+    description: "Una Coca-Cola Zero en Vaso Grande de 700ml.",
+    featured: false,
+    image:
+      "https://images.deliveryhero.io/image/pedidosya/products/60779_aec37d5e-25c6-4f95-9d78-9c40baca56ea.jpg?quality=90&height=96&width=96",
+    companyId: 3,
+    categoryId: null,
+  },
 ];
 module.exports = async () => {
   await Product.bulkCreate(products);
