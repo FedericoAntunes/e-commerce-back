@@ -1,3 +1,5 @@
+const { Company } = require("../models");
+
 const companies = [
   {
     name: "La Pasiva",
@@ -18,3 +20,8 @@ const companies = [
       "https://images.deliveryhero.io/image/pedidosya/profile-headers/mc-donalds-uruguay-header-custom-2020.jpg?quality=70&width=1440&webp=1",
   },
 ];
+
+module.exports = async () => {
+  await Company.bulkCreate(companies);
+  console.log("[Database] Se corrió el seeder de Companies.");
+};
