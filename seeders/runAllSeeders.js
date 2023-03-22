@@ -24,6 +24,10 @@ async function runAllSeeders() {
    * PD: El método `dropDatabase` de Mongoose elimina toda la base de datos.
    */
 
+  const db = require("../models");
+  await db.sequelize.sync({ force: true });
+  console.log("[Database] ¡La tablas fueron regeneradas!");
+
   // Seeders:
 
   await require("./companySeeder")();
