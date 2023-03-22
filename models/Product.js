@@ -1,14 +1,8 @@
 const { Model, DataTypes } = require("sequelize");
-const bcrypt = require("bcryptjs");
 
-//const Role = require("./Role");
-
-class User extends Model {
-  async isValidPassword(password) {
-    return await bcrypt.compare(password, this.password);
-  }
+class Product extends Model {
   static initModel(sequelize) {
-    User.init(
+    Product.init(
       {
         id: {
           type: DataTypes.BIGINT.UNSIGNED,
@@ -16,37 +10,37 @@ class User extends Model {
           autoIncrement: true,
           allowNull: false,
         },
-        firstname: {
+        title: {
           type: DataTypes.STRING,
           allowNull: false,
         },
-        lastname: {
+        price: {
+          type: DataTypes.FLOAT,
+          allowNull: false,
+        },
+        stock: {
+          type: DataTypes.INTEGER,
+          defaultValue: 0,
+        },
+        description: {
           type: DataTypes.STRING,
           allowNull: false,
         },
-        email: {
-          type: DataTypes.STRING,
-          allowNull: false,
+        featured: {
+          type: DataTypes.BOOLEAN,
+          defaultValue: false,
         },
-        password: {
-          type: DataTypes.STRING,
-          allowNull: false,
-        },
-        address: {
-          type: DataTypes.JSON,
-          allowNull: true,
-        },
-        avatar: {
+        image: {
           type: DataTypes.STRING,
         },
       },
       {
         sequelize,
-        modelName: "user",
+        modelName: "product",
       },
     );
-    return User;
+    return Product;
   }
 }
 
-module.exports = User;
+module.exports = Product;

@@ -1,21 +1,21 @@
-/**
- * Este archivo se creó para tener un lugar centralizando donde esté la
- * conexión a la base de datos. Este es el único lugar donde se debería
- * llamar a `mongoose.connect`.
- *
- * De forma arbitraria se lo nombró `db.js`.
- *
- * Los modelos deberán requerir a este archivo haciendo:
- * const { mongoose, Schema } = require("../db");
- *
- */
+const { Sequelize } = require("sequelize");
+const db = require("./models");
 
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+const sequelize = new Sequelize(
+  process.env.DB_DATABASE, // Ej: hack_academy_db
+  process.env.DB_USERNAME, // Ej: root
+  process.env.DB_PASSWORD, // Ej: root
+  {
+    host: process.env.DB_HOST, // Ej: 127.0.0.1
+    dialect: process.env.DB_CONNECTION, // Ej: mysql
+    logging: false, // Para que no aparezcan mensajes en consola.
+  },
+);
 
-mongoose.connect(process.env.DB_CONNECTION_STRING, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+const dbSync = async () => {
+  await db.sequelize.sync({ alter: true });
+  console.log("[Database] ¡La estructura de tablas fue actualizada!");
+};
+dbSync();
 
-module.exports = { mongoose, Schema };
+module.exports = sequelize;

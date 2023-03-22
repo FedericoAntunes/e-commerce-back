@@ -1,14 +1,12 @@
 const { Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcryptjs");
 
-//const Role = require("./Role");
-
-class User extends Model {
+class Admin extends Model {
   async isValidPassword(password) {
     return await bcrypt.compare(password, this.password);
   }
   static initModel(sequelize) {
-    User.init(
+    Admin.init(
       {
         id: {
           type: DataTypes.BIGINT.UNSIGNED,
@@ -32,21 +30,17 @@ class User extends Model {
           type: DataTypes.STRING,
           allowNull: false,
         },
-        address: {
-          type: DataTypes.JSON,
-          allowNull: true,
-        },
         avatar: {
           type: DataTypes.STRING,
         },
       },
       {
         sequelize,
-        modelName: "user",
+        modelName: "admin",
       },
     );
-    return User;
+    return Admin;
   }
 }
 
-module.exports = User;
+module.exports = Admin;
