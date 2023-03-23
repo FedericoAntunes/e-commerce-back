@@ -140,6 +140,61 @@ const products = [
     companyId: 2,
     categoryId: null,
   },
+  {
+    title: "Classic Hot Sandwich",
+    price: 8.625,
+    stock: 15,
+    description: "Chesse and ham, the classic hot Sandwich.",
+    featured: false,
+    image:
+      "https://images.deliveryhero.io/image/pedidosya/products/470b0b30-6cf5-4782-ab84-38044410b1ce.jpg?quality=90&amp;width=248",
+    companyId: 1,
+    categoryId: null,
+  },
+  {
+    title: "Pineapple Sandwich",
+    price: 13.625,
+    stock: 10,
+    description: "With pineapple, muzzarella and cherrys.",
+    featured: false,
+    image:
+      "https://images.deliveryhero.io/image/pedidosya/products/cdf13045-06e3-4f30-ba53-2b4d41ab4574.jpg?quality=90&amp;width=248",
+    companyId: 1,
+    categoryId: null,
+  },
+  {
+    title: "Hot Dog",
+    price: 3.7,
+    stock: 30,
+    description: "Classic hot dog, with mayonaisse, ketchup and mustard.",
+    featured: false,
+    image:
+      "https://images.deliveryhero.io/image/pedidosya/products/ea552ac2-ec29-4648-af48-e23ee176e187.jpg?quality=90&amp;height=96&amp;width=96",
+    companyId: 1,
+    categoryId: null,
+  },
+  {
+    title: "Slice of Pizza with Roquefort",
+    price: 6.2,
+    stock: 20,
+    description: "Tomato sauce and roquefort cheese.",
+    featured: false,
+    image:
+      "https://images.deliveryhero.io/image/pedidosya/products/ea552ac2-ec29-4648-af48-e23ee176e187.jpg?quality=90&amp;height=96&amp;width=96",
+    companyId: 1,
+    categoryId: null,
+  },
+  {
+    title: "Figazza with Muzzarella",
+    price: 7.1,
+    stock: 10,
+    description: "Delicious dough covered with onions, bell pepper and muzarella.",
+    featured: false,
+    image:
+      "https://images.deliveryhero.io/image/pedidosya/products/ea552ac2-ec29-4648-af48-e23ee176e187.jpg?quality=90&amp;height=96&amp;width=96",
+    companyId: 1,
+    categoryId: null,
+  },
 ];
 module.exports = async () => {
   await Product.bulkCreate(products);
