@@ -3,7 +3,6 @@ const { Op } = require("sequelize");
 
 async function index(req, res) {
   const { companyId, featured } = req.query;
-  console.log(companyId);
   if (req.query) {
     const products = await Product.findAll({
       where: {
