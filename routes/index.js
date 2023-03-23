@@ -21,6 +21,7 @@ const publicRoutes = require("./publicRoutes");
 const companyRoutes = require("./companyRoutes");
 const productRoutes = require("./productRoutes");
 const categoryRoutes = require("./categoryRoutes");
+const authenticationRoutes = require("./authenticationRoutes");
 
 // const privateRoutes = require("./privateRoutes");
 
@@ -35,6 +36,7 @@ module.exports = (app) => {
   app.use("/companies", companyRoutes);
   app.use("/products", productRoutes);
   app.use("/categories", categoryRoutes);
+  app.use("/tokens", authenticationRoutes);
 
   app.use("/", publicRoutes);
 };
