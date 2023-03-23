@@ -6,7 +6,7 @@ const products = [
     price: 10, // esto es en dolares
     stock: 20,
     description:
-      "2 hamburguesas de carne 100% vacuna, 3 fetas de queso cheddar, tomate, lechuga, cebolla, y salsa Tasty, en pan brioche.",
+      "2 100% beef burgers ,3 slices of cheddar cheese, tomato, lettuce, onion, and Tasty sauce, on brioche bun.",
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_4c2032ce-2b11-4d6c-aa24-0ce446a0f0da.jpg?quality=90&height=96&width=96&webp=1&dpi=1.5",
@@ -14,10 +14,10 @@ const products = [
     categoryId: null,
   },
   {
-    title: "Chicken McNuggets 20 unidades",
+    title: "Chicken McNuggets 20 units",
     price: 11,
     stock: 50,
-    description: "20 McNuggets de pollo. Para compartir con los amigos, o esconderlos de ellos.",
+    description: "20 McNuggets of chicken. To share with friends, or hide from them.",
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_a5faadbf-53ab-4424-9201-1ae5f09ea527.jpg?quality=90&height=96&width=96",
@@ -25,10 +25,10 @@ const products = [
     categoryId: null,
   },
   {
-    title: "McShake dulce de leche",
+    title: "McShake with caramel sauce",
     price: 5,
     stock: 12,
-    description: "Delicioso batido a base de leche y helado con dulce de leche Lapataia.",
+    description: "Delicious milk shake and ice cream with caramel sauce Lapataia.",
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_ac613f21-6f76-4702-8023-7766aa25de3f.jpg?quality=90&height=96&width=96",
@@ -36,11 +36,11 @@ const products = [
     categoryId: null,
   },
   {
-    title: "McCombo Grande American BBQ 3 Carnes",
+    title: "McCombo Grande American BBQ 3 Meats",
     price: 12,
     stock: 4,
     description:
-      "Hamburguesa 3 carnes en pan brioche,panceta,salsa barbacoa,salsa cheddar,queso y cebolla caramelizada. Acompañamiento y bebida grande a elección.",
+      "Burger 3 meats in brioche bun, bacon, barbecue sauce, cheddar sauce, cheese and caramelized onion. Side dish and large drink of your choice.",
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_b17037c9-f596-4d8f-af23-3796a8902884.jpg?quality=90&height=96&width=96",
@@ -48,11 +48,11 @@ const products = [
     categoryId: null,
   },
   {
-    title: "McCombo Grande Doble Cuarto de Libra con Queso",
+    title: "Great McCombo Double Quarter Pounder with Cheese",
     price: 13,
     stock: 1,
     description:
-      "Hamburguesa con 2 carnes 100% vacuna y dos quesos cheddar, kétchup, mostaza y la cebolla fresca. Acompañado de papas y bebida grande.",
+      "Burger with 2 100% beef and two cheddar cheeses, ketchup, mustard and fresh onion. Accompanied by potatoes and a large drink.",
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_3b55b126-e88e-4fe6-8cff-b955ff4e35ca.jpg?quality=90&height=96&width=96",
@@ -60,11 +60,11 @@ const products = [
     categoryId: null,
   },
   {
-    title: "Ensalada Gourmet con Pollo Crispy",
+    title: "Gourmet Salad with Crispy Chicken",
     price: 4,
     stock: 16,
     description:
-      "Tomates, queso en cubos y hojas frescas. Todo eso acompañado de un delicioso Pollo Crispy.",
+      "Tomatoes, cubed cheese and fresh leaves. All this accompanied by a delicious Crispy Chicken.",
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_046ed87b-4a7d-4351-92f5-5d17dbada8e9.jpg?quality=90&height=96&width=96",
@@ -72,10 +72,10 @@ const products = [
     categoryId: null,
   },
   {
-    title: "Coca-Cola sin Azucar Grande",
+    title: "Large Sugar Free Coca-Cola",
     price: 3.8,
     stock: 50,
-    description: "Una Coca-Cola Zero en Vaso Grande de 700ml.",
+    description: "A Coca-Cola Zero in a 700ml Large Glass.",
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_aec37d5e-25c6-4f95-9d78-9c40baca56ea.jpg?quality=90&height=96&width=96",
@@ -140,7 +140,6 @@ const products = [
     companyId: 2,
     categoryId: null,
   },
- 
 ];
 module.exports = async () => {
   await Product.bulkCreate(products);
