@@ -21,6 +21,7 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_4c2032ce-2b11-4d6c-aa24-0ce446a0f0da.jpg?quality=90&height=96&width=96&webp=1&dpi=1.5",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/60779_4c2032ce-2b11-4d6c-aa24-0ce446a0f0da.jpg?quality=90&width=768&webp=1",
     companyId: 3,
     categoryId: 3,
   },
@@ -33,6 +34,7 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_a5faadbf-53ab-4424-9201-1ae5f09ea527.jpg?quality=90&height=96&width=96",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/60779_a5faadbf-53ab-4424-9201-1ae5f09ea527.jpg?quality=90&width=768&webp=1",
     companyId: 3,
     categoryId: 1,
   },
@@ -45,6 +47,8 @@ const products = [
     featured: true,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_ac613f21-6f76-4702-8023-7766aa25de3f.jpg?quality=90&height=96&width=96",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/60779_ac613f21-6f76-4702-8023-7766aa25de3f.jpg?quality=90&width=768&webp=1",
+
     companyId: 3,
     categoryId: 2,
   },
@@ -58,6 +62,8 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_b17037c9-f596-4d8f-af23-3796a8902884.jpg?quality=90&height=96&width=96",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/60779_b17037c9-f596-4d8f-af23-3796a8902884.jpg?quality=90&width=768&webp=1",
+
     companyId: 3,
     categoryId: 3,
   },
@@ -71,6 +77,8 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_3b55b126-e88e-4fe6-8cff-b955ff4e35ca.jpg?quality=90&height=96&width=96",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/60779_3b55b126-e88e-4fe6-8cff-b955ff4e35ca.jpg?quality=90&width=768&webp=1",
+
     companyId: 3,
     categoryId: 3,
   },
@@ -84,6 +92,7 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_046ed87b-4a7d-4351-92f5-5d17dbada8e9.jpg?quality=90&height=96&width=96",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/60779_046ed87b-4a7d-4351-92f5-5d17dbada8e9.jpg?quality=90&width=768&webp=1",
     companyId: 3,
     categoryId: 1,
   },
@@ -96,6 +105,7 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_aec37d5e-25c6-4f95-9d78-9c40baca56ea.jpg?quality=90&height=96&width=96",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/60779_aec37d5e-25c6-4f95-9d78-9c40baca56ea.jpg?quality=90&width=768&webp=1",
     companyId: 3,
     categoryId: 1,
   },
@@ -109,6 +119,7 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/409862-49714a11-abfe-4b33-9efa-f05f4737ee82.jpg?quality=90&height=96&width=96&webp=1",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/409862-49714a11-abfe-4b33-9efa-f05f4737ee82.jpg?quality=90&width=768&webp=1",
     companyId: 2,
     categoryId: 2,
   },
@@ -121,6 +132,7 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/4b0009ca-859f-4f6c-88d6-dc58470b253b.jpg?quality=90&height=96&width=96&webp=1",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/4b0009ca-859f-4f6c-88d6-dc58470b253b.jpg?quality=90&width=768&webp=1",
     companyId: 2,
     categoryId: 2,
   },
@@ -133,6 +145,7 @@ const products = [
     featured: true,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/409867-62bf0778-ed9c-4932-bf09-1149b4adf6d8.jpg?quality=90&height=96&width=96&webp=1",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/409867-62bf0778-ed9c-4932-bf09-1149b4adf6d8.jpg?quality=90&width=768&webp=1",
     companyId: 2,
     categoryId: 2,
   },
@@ -146,6 +159,7 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/182ba453-ad71-4193-a54c-2b884d346618.jpg?quality=90&height=96&width=96&webp=1",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/182ba453-ad71-4193-a54c-2b884d346618.jpg?quality=90&width=768&webp=1",
     companyId: 2,
     categoryId: 2,
   },
@@ -159,6 +173,7 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/28f05d13-23b1-4bb6-96d0-7ff9ec61be18.jpg?quality=90&height=96&width=96&webp=1",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/28f05d13-23b1-4bb6-96d0-7ff9ec61be18.jpg?quality=90&width=768&webp=1",
     companyId: 2,
     categoryId: 2,
   },
@@ -171,6 +186,7 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/470b0b30-6cf5-4782-ab84-38044410b1ce.jpg?quality=90&amp;width=248",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/470b0b30-6cf5-4782-ab84-38044410b1ce.jpg?quality=90&width=768&webp=1",
     companyId: 1,
     categoryId: 1,
   },
@@ -183,6 +199,7 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/cdf13045-06e3-4f30-ba53-2b4d41ab4574.jpg?quality=90&amp;width=248",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/cdf13045-06e3-4f30-ba53-2b4d41ab4574.jpg?quality=90&width=768&webp=1",
     companyId: 1,
     categoryId: 1,
   },
@@ -195,6 +212,7 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/ea552ac2-ec29-4648-af48-e23ee176e187.jpg?quality=90&amp;height=96&amp;width=96",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/ea552ac2-ec29-4648-af48-e23ee176e187.jpg?quality=90&width=768&webp=1",
     companyId: 1,
     categoryId: 1,
   },
@@ -207,6 +225,7 @@ const products = [
     featured: true,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/8b5f2b1c-3149-4249-8e06-eda6e7f9bfed.jpg?quality=90&amp;height=96&amp;width=96",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/8b5f2b1c-3149-4249-8e06-eda6e7f9bfed.jpg?quality=90&width=768&webp=1",
     companyId: 1,
     categoryId: 1,
   },
@@ -219,6 +238,7 @@ const products = [
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/977dadb8-ce41-4b1b-8ea8-8a80d909b7da.jpg?quality=90&amp;height=96&amp;width=96",
+    logo: "https://images.deliveryhero.io/image/pedidosya/products/977dadb8-ce41-4b1b-8ea8-8a80d909b7da.jpg?quality=90&width=768&webp=1",
     companyId: 1,
     categoryId: 1,
   },
