@@ -14,6 +14,11 @@ class Company extends Model {
           type: DataTypes.STRING,
           allowNull: false,
         },
+        slug: {
+          type: DataTypes.STRING,
+          allowNull: false,
+          unique: true,
+        },
         logo: {
           type: DataTypes.STRING,
           allowNull: false,

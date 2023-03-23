@@ -1,5 +1,5 @@
 const { Company, Product } = require("../models");
-const { Op } = require("sequelize");
+const { Op, where } = require("sequelize");
 
 async function index(req, res) {
   const query = [];
@@ -16,7 +16,6 @@ async function index(req, res) {
     query.push(prop);
   }
 
-  console.log(query);
   let products = [];
   try {
     products = await Product.findAll({
@@ -33,9 +32,10 @@ async function index(req, res) {
 
 // Display the specified resource.
 async function show(req, res) {
-  const company = await Company.findByPk(req.params.id);
+  const companyId = req.query.id;
+  const companyProducts = await Product.findAll({ where: { companyId } });
 
-  return res.json(company);
+  return res.json(companyProducts);
 }
 
 // Show the form for creating a new resource

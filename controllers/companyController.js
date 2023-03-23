@@ -7,7 +7,7 @@ async function index(req, res) {
 
 // Display the specified resource.
 async function show(req, res) {
-  const company = await Company.findByPk(req.params.id);
+  const company = await Company.findOne({ where: { slug: req.params.slug } });
   return res.json(company);
 }
 
