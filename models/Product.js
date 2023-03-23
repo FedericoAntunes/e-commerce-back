@@ -14,6 +14,11 @@ class Product extends Model {
           type: DataTypes.STRING,
           allowNull: false,
         },
+        slug: {
+          type: DataTypes.STRING,
+          allowNull: false,
+          unique: true,
+        },
         price: {
           type: DataTypes.FLOAT,
           allowNull: false,

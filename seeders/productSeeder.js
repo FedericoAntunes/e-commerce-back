@@ -1,9 +1,20 @@
 const { Product } = require("../models");
+const slugify = require("slugify");
+
+function sluggy(name) {
+  return slugify(name, {
+    replacement: "-",
+    trim: true,
+    lower: true,
+    strict: true,
+  });
+}
 
 const products = [
   {
     title: "Premium Tasty 2 Carnes",
-    price: 10, // esto es en dolares
+    slug: sluggy("Premium Tasty 2 Carnes"),
+    price: 10,
     stock: 20,
     description:
       "2 100% beef burgers, 3 slices of cheddar cheese, tomato, lettuce, onion, and Tasty sauce, on brioche bun.",
@@ -15,6 +26,7 @@ const products = [
   },
   {
     title: "Chicken McNuggets 20 units",
+    slug: sluggy("Chicken McNuggets 20 units"),
     price: 11,
     stock: 50,
     description: "20 McNuggets of chicken. To share with friends, or hide from them.",
@@ -26,6 +38,7 @@ const products = [
   },
   {
     title: "McShake with caramel sauce",
+    slug: sluggy("McShake with caramel sauce"),
     price: 5,
     stock: 12,
     description: "Delicious milk shake and ice cream with caramel sauce Lapataia.",
@@ -37,6 +50,7 @@ const products = [
   },
   {
     title: "McCombo Grande American BBQ 3 Meats",
+    slug: sluggy("McCombo Grande American BBQ 3 Meats"),
     price: 12,
     stock: 4,
     description:
@@ -49,6 +63,7 @@ const products = [
   },
   {
     title: "Great McCombo Double Quarter Pounder with Cheese",
+    slug: sluggy("Great McCombo Double Quarter Pounder with Cheese"),
     price: 13,
     stock: 1,
     description:
@@ -61,6 +76,7 @@ const products = [
   },
   {
     title: "Gourmet Salad with Crispy Chicken",
+    slug: sluggy("Gourmet Salad with Crispy Chicken"),
     price: 4,
     stock: 16,
     description:
@@ -73,6 +89,7 @@ const products = [
   },
   {
     title: "Large Sugar Free Coca-Cola",
+    slug: sluggy("Large Sugar Free Coca-Cola"),
     price: 3.8,
     stock: 50,
     description: "A Coca-Cola Zero in a 700ml Large Glass.",
@@ -85,6 +102,7 @@ const products = [
   // La Cigale API en Ingles JUANMA a partir de aca:
   {
     title: "Half a Kilo of Ice Cream",
+    slug: sluggy("Half a Kilo of Ice Cream"),
     price: 12,
     stock: 20,
     description: "Half a kilo of artisan ice cream in the flavor of your choice.",
@@ -96,6 +114,7 @@ const products = [
   },
   {
     title: "Creme Normande 800ml/ 500g",
+    slug: sluggy("Creme Normande 800ml/ 500g"),
     price: 11,
     stock: 60,
     description: "Dulce de leche ice cream with sprinkled chocolate chips, in 800 ml / 500g.",
@@ -107,6 +126,7 @@ const products = [
   },
   {
     title: "Swiss Chocolate Bonbon",
+    slug: sluggy("Swiss Chocolate Bonbon"),
     price: 6,
     stock: 35,
     description: "Swiss chocolate bonbon.",
@@ -118,6 +138,7 @@ const products = [
   },
   {
     title: "Manjar Cake",
+    slug: sluggy("Manjar Cake"),
     price: 18,
     stock: 42,
     description:
@@ -130,6 +151,7 @@ const products = [
   },
   {
     title: "Major Cake",
+    slug: sluggy("Major Cake"),
     price: 34,
     stock: 12,
     description:
@@ -142,6 +164,7 @@ const products = [
   },
   {
     title: "Classic Hot Sandwich",
+    slug: sluggy("Classic Hot Sandwich"),
     price: 8.625,
     stock: 15,
     description: "Chesse and ham, the classic hot Sandwich.",
@@ -153,6 +176,7 @@ const products = [
   },
   {
     title: "Pineapple Sandwich",
+    slug: sluggy("Pineapple Sandwich"),
     price: 13.625,
     stock: 10,
     description: "With pineapple, muzzarella and cherrys.",
@@ -164,6 +188,7 @@ const products = [
   },
   {
     title: "Hot Dog",
+    slug: sluggy("Hot Dog"),
     price: 3.7,
     stock: 30,
     description: "Classic hot dog, with mayonaisse, ketchup and mustard.",
@@ -175,6 +200,7 @@ const products = [
   },
   {
     title: "Slice of Pizza with Roquefort",
+    slug: sluggy("Slice of Pizza with Roquefort"),
     price: 6.2,
     stock: 20,
     description: "Tomato sauce and roquefort cheese.",
@@ -186,6 +212,7 @@ const products = [
   },
   {
     title: "Figazza with Muzzarella",
+    slug: sluggy("Figazza with Muzzarella"),
     price: 7.1,
     stock: 10,
     description: "Delicious dough covered with onions, bell pepper and muzarella.",
