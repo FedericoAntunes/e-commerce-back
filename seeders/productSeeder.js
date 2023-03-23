@@ -6,7 +6,7 @@ const products = [
     price: 10, // esto es en dolares
     stock: 20,
     description:
-      "2 100% beef burgers ,3 slices of cheddar cheese, tomato, lettuce, onion, and Tasty sauce, on brioche bun.",
+      "2 100% beef burgers, 3 slices of cheddar cheese, tomato, lettuce, onion, and Tasty sauce, on brioche bun.",
     featured: false,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_4c2032ce-2b11-4d6c-aa24-0ce446a0f0da.jpg?quality=90&height=96&width=96&webp=1&dpi=1.5",
