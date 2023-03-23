@@ -6,7 +6,7 @@ const users = [
     lastname: "Yaben",
     email: "seba@hotmail.com",
     password: "1234",
-    address: "Villa Dolores",
+    address: { location: "Villa Dolores", tel: "9999999" },
     avatar: null,
   },
 ];
