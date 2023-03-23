@@ -2,21 +2,33 @@ const { Company, Product } = require("../models");
 const { Op } = require("sequelize");
 
 async function index(req, res) {
-  const { companyId, featured } = req.query;
-  if (req.query) {
-    const products = await Product.findAll({
+  const query = [];
+  for (const key in req.query) {
+    const element = req.query[key];
+    const prop = {};
+    if (element === "true") {
+      prop[key] = true;
+    } else if (element === "false") {
+      prop[key] = false;
+    } else {
+      prop[key] = element;
+    }
+    query.push(prop);
+  }
+
+  console.log(query);
+  let products = [];
+  try {
+    products = await Product.findAll({
       where: {
-        /*  [Op.and]: [*/
-        companyId: companyId ? companyId : "*",
-        /*{ featured: featured === "true" ? true : "*" },*/
-        /*  ],*/
+        [Op.and]: query,
       },
     });
-    return res.json(products);
-  } else {
-    const products = await Product.findAll();
-    return res.json(products);
+  } catch (error) {
+    console.log(error);
   }
+
+  return res.json(products);
 }
 
 // Display the specified resource.
