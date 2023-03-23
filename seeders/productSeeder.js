@@ -80,7 +80,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_aec37d5e-25c6-4f95-9d78-9c40baca56ea.jpg?quality=90&height=96&width=96",
     companyId: 3,
-    categoryId: null,
+    categoryId: 1,
   },
   // La Cigale API en Ingles JUANMA a partir de aca:
   {
@@ -149,7 +149,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/470b0b30-6cf5-4782-ab84-38044410b1ce.jpg?quality=90&amp;width=248",
     companyId: 1,
-    categoryId: null,
+    categoryId: 1,
   },
   {
     title: "Pineapple Sandwich",
@@ -160,7 +160,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/cdf13045-06e3-4f30-ba53-2b4d41ab4574.jpg?quality=90&amp;width=248",
     companyId: 1,
-    categoryId: null,
+    categoryId: 1,
   },
   {
     title: "Hot Dog",
@@ -171,7 +171,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/ea552ac2-ec29-4648-af48-e23ee176e187.jpg?quality=90&amp;height=96&amp;width=96",
     companyId: 1,
-    categoryId: null,
+    categoryId: 1,
   },
   {
     title: "Slice of Pizza with Roquefort",
@@ -182,7 +182,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/8b5f2b1c-3149-4249-8e06-eda6e7f9bfed.jpg?quality=90&amp;height=96&amp;width=96",
     companyId: 1,
-    categoryId: null,
+    categoryId: 1,
   },
   {
     title: "Figazza with Muzzarella",
@@ -193,7 +193,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/977dadb8-ce41-4b1b-8ea8-8a80d909b7da.jpg?quality=90&amp;height=96&amp;width=96",
     companyId: 1,
-    categoryId: null,
+    categoryId: 1,
   },
 ];
 module.exports = async () => {
