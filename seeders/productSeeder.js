@@ -85,7 +85,7 @@ const products = [
   // La Cigale API en Ingles JUANMA a partir de aca:
   {
     title: "Half a Kilo of Ice Cream",
-    price: "$ 490.00",
+    price: 12,
     stock: 20,
     description: "Half a kilo of artisan ice cream in the flavor of your choice.",
     featured: false,
@@ -96,7 +96,7 @@ const products = [
   },
   {
     title: "Creme Normande 800ml/ 500g",
-    price: "$ 480.00",
+    price: 11,
     stock: 60,
     description: "Dulce de leche ice cream with sprinkled chocolate chips, in 800 ml / 500g.",
     featured: false,
@@ -107,7 +107,7 @@ const products = [
   },
   {
     title: "Swiss Chocolate Bonbon",
-    price: "$ 255.00",
+    price: 6,
     stock: 35,
     description: "Swiss chocolate bonbon.",
     featured: false,
@@ -118,7 +118,7 @@ const products = [
   },
   {
     title: "Manjar Cake",
-    price: "$ 720.00",
+    price: 18,
     stock: 42,
     description:
       "Manjar (caramel) and chocolate ice cream cake with a center of chantilly meringue, covered in chocolate and decorated with nuts and chantilly.",
@@ -130,7 +130,7 @@ const products = [
   },
   {
     title: "Major Cake",
-    price: "$ 1,350.00",
+    price: 34,
     stock: 12,
     description:
       "Dulce de leche, chocolate, and sambayón (egg yolk and wine) ice cream cake with a base of pionono (sponge cake), decorated with chantilly and chocolate.",
