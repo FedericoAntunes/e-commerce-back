@@ -11,7 +11,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_4c2032ce-2b11-4d6c-aa24-0ce446a0f0da.jpg?quality=90&height=96&width=96&webp=1&dpi=1.5",
     companyId: 3,
-    categoryId: null,
+    categoryId: 3,
   },
   {
     title: "Chicken McNuggets 20 units",
@@ -22,7 +22,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_a5faadbf-53ab-4424-9201-1ae5f09ea527.jpg?quality=90&height=96&width=96",
     companyId: 3,
-    categoryId: null,
+    categoryId: 1,
   },
   {
     title: "McShake with caramel sauce",
@@ -33,7 +33,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_ac613f21-6f76-4702-8023-7766aa25de3f.jpg?quality=90&height=96&width=96",
     companyId: 3,
-    categoryId: null,
+    categoryId: 2,
   },
   {
     title: "McCombo Grande American BBQ 3 Meats",
@@ -45,7 +45,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_b17037c9-f596-4d8f-af23-3796a8902884.jpg?quality=90&height=96&width=96",
     companyId: 3,
-    categoryId: null,
+    categoryId: 3,
   },
   {
     title: "Great McCombo Double Quarter Pounder with Cheese",
@@ -57,7 +57,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_3b55b126-e88e-4fe6-8cff-b955ff4e35ca.jpg?quality=90&height=96&width=96",
     companyId: 3,
-    categoryId: null,
+    categoryId: 3,
   },
   {
     title: "Gourmet Salad with Crispy Chicken",
@@ -69,7 +69,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_046ed87b-4a7d-4351-92f5-5d17dbada8e9.jpg?quality=90&height=96&width=96",
     companyId: 3,
-    categoryId: null,
+    categoryId: 1,
   },
   {
     title: "Large Sugar Free Coca-Cola",
@@ -92,7 +92,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/409862-49714a11-abfe-4b33-9efa-f05f4737ee82.jpg?quality=90&height=96&width=96&webp=1",
     companyId: 2,
-    categoryId: null,
+    categoryId: 2,
   },
   {
     title: "Creme Normande 800ml/ 500g",
@@ -103,7 +103,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/4b0009ca-859f-4f6c-88d6-dc58470b253b.jpg?quality=90&height=96&width=96&webp=1",
     companyId: 2,
-    categoryId: null,
+    categoryId: 2,
   },
   {
     title: "Swiss Chocolate Bonbon",
@@ -114,7 +114,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/409867-62bf0778-ed9c-4932-bf09-1149b4adf6d8.jpg?quality=90&height=96&width=96&webp=1",
     companyId: 2,
-    categoryId: null,
+    categoryId: 2,
   },
   {
     title: "Manjar Cake",
@@ -126,7 +126,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/182ba453-ad71-4193-a54c-2b884d346618.jpg?quality=90&height=96&width=96&webp=1",
     companyId: 2,
-    categoryId: null,
+    categoryId: 2,
   },
   {
     title: "Major Cake",
@@ -138,7 +138,7 @@ const products = [
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/28f05d13-23b1-4bb6-96d0-7ff9ec61be18.jpg?quality=90&height=96&width=96&webp=1",
     companyId: 2,
-    categoryId: null,
+    categoryId: 2,
   },
 ];
 module.exports = async () => {

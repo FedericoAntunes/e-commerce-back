@@ -32,6 +32,7 @@ async function runAllSeeders() {
 
   await require("./companySeeder")();
   // Abajo el seeder de products
+  await require("./categorySeeder")();
   await require("./productSeeder")();
 
   /**
