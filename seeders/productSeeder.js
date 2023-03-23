@@ -180,7 +180,7 @@ const products = [
     description: "Tomato sauce and roquefort cheese.",
     featured: false,
     image:
-      "https://images.deliveryhero.io/image/pedidosya/products/ea552ac2-ec29-4648-af48-e23ee176e187.jpg?quality=90&amp;height=96&amp;width=96",
+      "https://images.deliveryhero.io/image/pedidosya/products/8b5f2b1c-3149-4249-8e06-eda6e7f9bfed.jpg?quality=90&amp;height=96&amp;width=96",
     companyId: 1,
     categoryId: null,
   },
@@ -191,7 +191,7 @@ const products = [
     description: "Delicious dough covered with onions, bell pepper and muzarella.",
     featured: false,
     image:
-      "https://images.deliveryhero.io/image/pedidosya/products/ea552ac2-ec29-4648-af48-e23ee176e187.jpg?quality=90&amp;height=96&amp;width=96",
+      "https://images.deliveryhero.io/image/pedidosya/products/977dadb8-ce41-4b1b-8ea8-8a80d909b7da.jpg?quality=90&amp;height=96&amp;width=96",
     companyId: 1,
     categoryId: null,
   },
