@@ -1,9 +1,18 @@
 const { Company, Product } = require("../models");
+const { Op } = require("sequelize");
 
 async function index(req, res) {
-  const { companyId } = req.query;
-  if (companyId) {
-    const products = await Product.findAll({ where: { companyId } });
+  const { companyId, featured } = req.query;
+  console.log(companyId);
+  if (req.query) {
+    const products = await Product.findAll({
+      where: {
+        /*  [Op.and]: [*/
+        companyId: companyId ? companyId : "*",
+        /*{ featured: featured === "true" ? true : "*" },*/
+        /*  ],*/
+      },
+    });
     return res.json(products);
   } else {
     const products = await Product.findAll();
