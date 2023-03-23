@@ -29,7 +29,7 @@ const products = [
     price: 5,
     stock: 12,
     description: "Delicious milk shake and ice cream with caramel sauce Lapataia.",
-    featured: false,
+    featured: true,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/60779_ac613f21-6f76-4702-8023-7766aa25de3f.jpg?quality=90&height=96&width=96",
     companyId: 3,
@@ -110,7 +110,7 @@ const products = [
     price: 6,
     stock: 35,
     description: "Swiss chocolate bonbon.",
-    featured: false,
+    featured: true,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/409867-62bf0778-ed9c-4932-bf09-1149b4adf6d8.jpg?quality=90&height=96&width=96&webp=1",
     companyId: 2,
@@ -178,7 +178,7 @@ const products = [
     price: 6.2,
     stock: 20,
     description: "Tomato sauce and roquefort cheese.",
-    featured: false,
+    featured: true,
     image:
       "https://images.deliveryhero.io/image/pedidosya/products/8b5f2b1c-3149-4249-8e06-eda6e7f9bfed.jpg?quality=90&amp;height=96&amp;width=96",
     companyId: 1,
