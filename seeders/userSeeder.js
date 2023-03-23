@@ -9,6 +9,14 @@ const users = [
     address: { location: "Villa Dolores", tel: "9999999" },
     avatar: null,
   },
+  {
+    firstname: "Cristiano",
+    lastname: "Ronaldo",
+    email: "cris@hotmail.com",
+    password: "1234",
+    address: { location: "Peñarol", tel: "555222333" },
+    avatar: "https://www.fichajes.com/build/images/player-covers/cristiano-ronaldo.352c95f5.jpg",
+  },
 ];
 
 module.exports = async () => {
