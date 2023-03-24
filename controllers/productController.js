@@ -1,5 +1,5 @@
 const { Company, Product } = require("../models");
-const { Op, where } = require("sequelize");
+const { Op } = require("sequelize");
 
 async function index(req, res) {
   const query = [];
