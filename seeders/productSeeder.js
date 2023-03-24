@@ -117,8 +117,7 @@ const products = [
     stock: 20,
     description: "Half a kilo of artisan ice cream in the flavor of your choice.",
     featured: false,
-    image:
-      "https://images.deliveryhero.io/image/pedidosya/products/409862-49714a11-abfe-4b33-9efa-f05f4737ee82.jpg?quality=90&height=96&width=96&webp=1",
+    image: "https://i.ibb.co/9ybKxR5/Half-Kilo-Of-Ice-Cream.png",
     logo: "https://images.deliveryhero.io/image/pedidosya/products/409862-49714a11-abfe-4b33-9efa-f05f4737ee82.jpg?quality=90&width=768&webp=1",
     companyId: 2,
     categoryId: 2,
@@ -130,8 +129,7 @@ const products = [
     stock: 60,
     description: "Dulce de leche ice cream with sprinkled chocolate chips, in 800 ml / 500g.",
     featured: false,
-    image:
-      "https://images.deliveryhero.io/image/pedidosya/products/4b0009ca-859f-4f6c-88d6-dc58470b253b.jpg?quality=90&height=96&width=96&webp=1",
+    image: "https://i.ibb.co/JzfyXTV/Creme-Normande800ml500g.png",
     logo: "https://images.deliveryhero.io/image/pedidosya/products/4b0009ca-859f-4f6c-88d6-dc58470b253b.jpg?quality=90&width=768&webp=1",
     companyId: 2,
     categoryId: 2,
@@ -143,8 +141,7 @@ const products = [
     stock: 35,
     description: "Swiss chocolate bonbon.",
     featured: true,
-    image:
-      "https://images.deliveryhero.io/image/pedidosya/products/409867-62bf0778-ed9c-4932-bf09-1149b4adf6d8.jpg?quality=90&height=96&width=96&webp=1",
+    image: "https://i.ibb.co/7XMtpDV/Swiss-Chocolate-Bonbon.png",
     logo: "https://images.deliveryhero.io/image/pedidosya/products/409867-62bf0778-ed9c-4932-bf09-1149b4adf6d8.jpg?quality=90&width=768&webp=1",
     companyId: 2,
     categoryId: 2,
@@ -157,8 +154,7 @@ const products = [
     description:
       "Manjar (caramel) and chocolate ice cream cake with a center of chantilly meringue, covered in chocolate and decorated with nuts and chantilly.",
     featured: false,
-    image:
-      "https://images.deliveryhero.io/image/pedidosya/products/182ba453-ad71-4193-a54c-2b884d346618.jpg?quality=90&height=96&width=96&webp=1",
+    image: "https://i.ibb.co/svPnhX3/182ba453-ad71-4193-a54c-2b884d346618-removebg-preview.png",
     logo: "https://images.deliveryhero.io/image/pedidosya/products/182ba453-ad71-4193-a54c-2b884d346618.jpg?quality=90&width=768&webp=1",
     companyId: 2,
     categoryId: 2,
@@ -171,8 +167,7 @@ const products = [
     description:
       "Dulce de leche, chocolate, and sambayón (egg yolk and wine) ice cream cake with a base of pionono (sponge cake), decorated with chantilly and chocolate.",
     featured: false,
-    image:
-      "https://images.deliveryhero.io/image/pedidosya/products/28f05d13-23b1-4bb6-96d0-7ff9ec61be18.jpg?quality=90&height=96&width=96&webp=1",
+    image: "https://i.ibb.co/3NBztQ6/Major-Cake.png",
     logo: "https://images.deliveryhero.io/image/pedidosya/products/28f05d13-23b1-4bb6-96d0-7ff9ec61be18.jpg?quality=90&width=768&webp=1",
     companyId: 2,
     categoryId: 2,

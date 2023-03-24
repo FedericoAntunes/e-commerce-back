@@ -22,6 +22,7 @@ async function index(req, res) {
       where: {
         [Op.and]: query,
       },
+      include: Company,
     });
   } catch (error) {
     console.log(error);
