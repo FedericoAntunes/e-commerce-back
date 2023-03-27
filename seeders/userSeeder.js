@@ -9,7 +9,7 @@ module.exports = async () => {
       email: "seba@hotmail.com",
       password: await bcrypt.hash("1234", 8),
       address: { location: "Villa Dolores", tel: "9999999" },
-      avatar: null,
+      avatar: "https://datepsychology.com/wp-content/uploads/2022/09/gigachad.jpg",
     },
     {
       firstname: "Cristiano",
