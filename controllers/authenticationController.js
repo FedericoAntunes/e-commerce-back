@@ -3,19 +3,18 @@ const { User } = require("../models");
 
 async function token(req, res) {
   try {
-    const user = await User.findOne({ email: req.body.email });
+    const user = await User.findAll({ where: { email: req.body.email } });
     const password = req.body.password;
     const match = await user.comparePassword(password);
     if (match) {
-      const token = jwt.sign({ id: user._id }, process.env.SESSION_SECRET);
+      const token = jwt.sign({ id: user.id }, process.env.SESSION_SECRET);
       return res.json({
         token: token,
-        username: user.username,
         email: user.email,
         firstname: user.firstname,
         lastname: user.lastname,
-        id: user._id,
-        image: user.image,
+        id: user.id,
+        avatar: user.avatar,
       });
     } else {
       res.status(400).json({ error: "Usuario no válido" });
