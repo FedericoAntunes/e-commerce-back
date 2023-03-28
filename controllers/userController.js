@@ -37,9 +37,7 @@ async function store(req, res) {
       if (unavailableUser) {
         res.json("User already exist.");
       } else {
-        const avatar = files.avatar
-          ? files.avatar.newFilename
-          : "http://localhost:8000/img/default.jpg";
+        const avatar = files.avatar ? `/img/${files.avatar.newFilename}` : "/img/default.jpg";
         await User.create({
           firstname: fields.firstname,
           lastname: fields.lastname,
