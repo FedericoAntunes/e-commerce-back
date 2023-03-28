@@ -13,6 +13,7 @@ async function token(req, res) {
         email: user.email,
         firstname: user.firstname,
         lastname: user.lastname,
+        username: user.username,
         id: user.id,
         avatar: user.avatar,
       });
