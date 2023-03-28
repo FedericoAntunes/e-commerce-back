@@ -12,7 +12,7 @@ module.exports = (app) => {
   app.use("/categories", categoryRoutes);
   app.use("/users", userRoutes);
   app.use("/search", searchRoutes);
-  app.use("/tokens", authenticationRoutes);
+  app.use("/login", authenticationRoutes);
 
   app.use("/", publicRoutes);
 };

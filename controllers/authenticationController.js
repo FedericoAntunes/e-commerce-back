@@ -1,11 +1,11 @@
-/*const jwt = require("jsonwebtoken");
+const jwt = require("jsonwebtoken");
 const { User } = require("../models");
 
 async function token(req, res) {
   try {
     const user = await User.findAll({ where: { email: req.body.email } });
     const password = req.body.password;
-    const match = await user.comparePassword(password);
+    const match = await user.isValidPassword(password);
     if (match) {
       const token = jwt.sign({ id: user.id }, process.env.SESSION_SECRET);
       return res.json({
@@ -17,15 +17,15 @@ async function token(req, res) {
         avatar: user.avatar,
       });
     } else {
-      res.status(400).json({ error: "Usuario no válido" });
+      res.status(400).json({ error: "No valid User" });
     }
   } catch (error) {
-    console.log("No se encontró usuario");
+    console.log("Could not find User");
     console.log(error);
-    res.status(400).json({ error: "Usuario no válido" });
+    res.status(400).json({ error: "No valid User" });
   }
 }
 
 module.exports = {
   token,
-};*/
+};
