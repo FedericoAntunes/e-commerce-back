@@ -279,7 +279,7 @@ const products = [
   },
   {
     title:"Menu Double Cheese Bacon XXL",
-    slug: sluggy("Menu Crispy Chicken"),
+    slug: sluggy("Menu Double Cheese Bacon XXL"),
     price: 10.45,
     stock: 5,
     description: "Double up your cheeseburger, add bacon and now increase its size... we know, it's impressive. Grilled beef patty just the way we like it at BURGER KING, pickles, ketchup, and mustard share the stage to show you this work of art.",
