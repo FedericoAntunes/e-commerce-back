@@ -237,6 +237,72 @@ const products = [
     companyId: 1,
     categoryId: 1,
   },
+  // Burger King API
+  {
+    title:"Cheesy Doritos Crispy Chicken",
+    slug: sluggy("Cheesy Doritos Crispy Chicken"),
+    price: 7.1,
+    stock: 10,
+    description: "The taste of Doritos®, twice as crunchy: Two pieces of a breaded Doritos® cheese snack on top of two of our legendary Crispy chicken, accompanied by cheddar cheese slices, Doritos® cheddar sauce, cheddar bread, and tomato.",
+    featured: false,
+    image:
+      "https://tb-static.uber.com/prod/image-proc/processed_images/918754eb327683426211dbbe720c7dda/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
+    logo: "https://tb-static.uber.com/prod/web-eats-v2/chain-pages/logo/burger-king-5c19d8a9-abfd-4a0f-9598-202e297d7eff.png",
+    companyId: 4,
+    categoryId: 3,
+  },
+  {
+    title:"Menu Whopper Vegetal",
+    slug: sluggy("Menu Whopper Vegetal"),
+    price: 10.45,
+    stock: 5,
+    description: "100% Whopper. Vegetarian. If you're all about plants and not about meat, you're going to love the Vegetarian Whopper®. It's the same classic Whopper®, but made with plant-based ingredients. And yes, it's still flame-grilled. Can you tell the difference?.",
+    featured: false,
+    image:
+      "https://tb-static.uber.com/prod/image-proc/processed_images/8e201c5119ba663b2b0c9da5f59f02e5/859baff1d76042a45e319d1de80aec7a.jpeg",
+    logo: "https://tb-static.uber.com/prod/web-eats-v2/chain-pages/logo/burger-king-5c19d8a9-abfd-4a0f-9598-202e297d7eff.png",
+    companyId: 4,
+    categoryId: 3,
+  },
+  {
+    title:"Menu Crispy Chicken",
+    slug: sluggy("Menu Crispy Chicken"),
+    price: 7.95,
+    stock: 5,
+    description: "Crispy on the outside, tender on the inside. The best chicken with a crispy and slightly spicy breading, freshly cut tomatoes, fresh lettuce, and mayonnaise on a freshly toasted seeded bread. An authentic masterpiece.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzNmZDdmZGI1ZDIwYzk1OWFiM2Y3ZDkzY2ZiN2I1YWQvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/web-eats-v2/chain-pages/logo/burger-king-5c19d8a9-abfd-4a0f-9598-202e297d7eff.png",
+    companyId: 4,
+    categoryId: 3,
+  },
+  {
+    title:"Menu Double Cheese Bacon XXL",
+    slug: sluggy("Menu Double Cheese Bacon XXL"),
+    price: 10.45,
+    stock: 5,
+    description: "Double up your cheeseburger, add bacon and now increase its size... we know, it's impressive. Grilled beef patty just the way we like it at BURGER KING, pickles, ketchup, and mustard share the stage to show you this work of art.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZmZhNjdlOTYwNjAyNmQ3MmQ0N2Y3OTUyZmM5NWU2N2EvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/web-eats-v2/chain-pages/logo/burger-king-5c19d8a9-abfd-4a0f-9598-202e297d7eff.png",
+    companyId: 4,
+    categoryId: 3,
+  },
+  {
+    title:"Chicken Wrap",
+    slug: sluggy("Chicken Wrap"),
+    price: 5.50,
+    stock: 5,
+    description: "The most rolled option! Delicious tortilla filled with crispy chicken, cheddar cheese, tomato and fresh lettuce with a touch of mayonnaise",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNmYwMTk5NmI0OWQ2ODVlYzM5YWUxNjcxYTMwODE1YjMvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/web-eats-v2/chain-pages/logo/burger-king-5c19d8a9-abfd-4a0f-9598-202e297d7eff.png",
+    companyId: 4,
+    categoryId: 3,
+  },
 ];
 module.exports = async () => {
   await Product.bulkCreate(products);
