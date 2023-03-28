@@ -7,5 +7,6 @@ const authenticationController = require("../controllers/authenticationControlle
  * autenticación. Ejemplos: "/login" y "/logout".
  */
 router.post("/", authenticationController.token);
+router.post("/admin", authenticationController.tokenAdmin);
 
 module.exports = router;

@@ -22,9 +22,15 @@ class Admin extends Model {
           type: DataTypes.STRING,
           allowNull: false,
         },
+        username: {
+          type: DataTypes.STRING,
+          allowNull: false,
+          unique: true,
+        },
         email: {
           type: DataTypes.STRING,
           allowNull: false,
+          unique: true,
         },
         password: {
           type: DataTypes.STRING,
@@ -39,7 +45,16 @@ class Admin extends Model {
         modelName: "admin",
       },
     );
+    Admin.beforeCreate(async function (admin) {
+      if (admin.changed("password")) {
+        admin.password = await bcrypt.hash(admin.password, 8);
+      }
+    });
+
     return Admin;
+  }
+  async isValidPassword(password) {
+    return await bcrypt.compare(password, this.password);
   }
 }
 
