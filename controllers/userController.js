@@ -1,4 +1,5 @@
 const User = require("../models/User");
+const formidable = require("formidable");
 
 // Display a listing of the resource.
 async function index(req, res) {
@@ -13,7 +14,45 @@ async function show(req, res) {}
 async function create(req, res) {}
 
 // Store a newly created resource in storage.
-async function store(req, res) {}
+async function store(req, res) {
+  const form = formidable({
+    uploadDir: __dirname + "/../public/img",
+    keepExtensions: true,
+    multiples: true,
+  });
+  form.parse(req, async (err, fields, files) => {
+    const users = await User.findAll();
+    if (
+      fields.username === "" ||
+      fields.email === "" ||
+      fields.password === "" ||
+      fields.firstname === "" ||
+      fields.password === ""
+    ) {
+      res.json("Fill all the fields.");
+    } else {
+      const unavailableUser = users.some(
+        (u) => u.username === fields.username || u.email === fields.email,
+      );
+      if (unavailableUser) {
+        res.json("User already exist.");
+      } else {
+        const avatar = files.avatar
+          ? files.avatar.newFilename
+          : "http://localhost:8000/img/default.jpg";
+        await User.create({
+          firstname: fields.firstname,
+          lastname: fields.lastname,
+          email: fields.email,
+          username: fields.username,
+          avatar,
+          password: fields.password,
+        });
+        res.status(201).json("Todo OK");
+      }
+    }
+  });
+}
 
 // Show the form for editing the specified resource.
 async function edit(req, res) {}

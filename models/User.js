@@ -59,19 +59,20 @@ class User extends Model {
         const user = this.get();
         delete user.password;
         return user;
-      }),
-      // Bcrypt Password
-      User.beforeSave(async (user) => {
-        if (user.changed("password")) {
-          user.password = await bcrypt.hash(user.password, 8);
-        }
       }),*/
+      // Bcrypt Password
 
       {
         sequelize,
         modelName: "user",
       },
     );
+    User.beforeCreate(async function (user) {
+      if (user.changed("password")) {
+        user.password = await bcrypt.hash(user.password, 8);
+      }
+    });
+
     return User;
   }
   async isValidPassword(password) {
