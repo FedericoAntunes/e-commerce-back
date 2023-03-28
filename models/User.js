@@ -4,9 +4,6 @@ const bcrypt = require("bcryptjs");
 //const Role = require("./Role");
 
 class User extends Model {
-  async isValidPassword(password) {
-    return await bcrypt.compare(password, this.password);
-  }
   static initModel(sequelize) {
     User.init(
       {
@@ -46,6 +43,9 @@ class User extends Model {
       },
     );
     return User;
+  }
+  async isValidPassword(password) {
+    return await bcrypt.compare(password, this.password);
   }
 }
 

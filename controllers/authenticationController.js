@@ -3,7 +3,7 @@ const { User } = require("../models");
 
 async function token(req, res) {
   try {
-    const user = await User.findAll({ where: { email: req.body.email } });
+    const user = await User.findOne({ where: { email: req.body.email } });
     const password = req.body.password;
     const match = await user.isValidPassword(password);
     if (match) {
