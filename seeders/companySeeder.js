@@ -55,7 +55,7 @@ const companies = [
     We're proud to be a part of the Burger King family and to serve our customers with delicious, high-quality food. Come visit us today and taste the difference for yourself!`,
     logo: "https://images.rappi.com.uy/restaurants_logo/nuevo-logo-bk-1610117467515.png?e=webp&d=5x5&q=100",
     background:
-      "https://tb-static.uber.com/prod/web-eats-v2/chain-pages/splash/burger-king.jpeg",
+      "https://images.deliveryhero.io/image/pedidosya/profile-headers/burger-king-ejido-custom-header.jpg?quality=70&width=1280&webp=1",
   },
   {
     name: "Medialunas Calentitas",
