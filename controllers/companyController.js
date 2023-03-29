@@ -1,4 +1,4 @@
-const { Company } = require("../models");
+const { Company, Product } = require("../models");
 
 async function index(req, res) {
   const companies = await Company.findAll();
@@ -26,6 +26,11 @@ async function update(req, res) {}
 // Remove the specified resource from storage.
 async function destroy(req, res) {
   const companyId = req.params.id;
+  await Product.destroy({
+    where: {
+      companyId,
+    },
+  });
   await Company.destroy({
     where: {
       id: companyId,
