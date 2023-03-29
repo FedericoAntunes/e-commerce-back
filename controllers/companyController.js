@@ -24,7 +24,15 @@ async function edit(req, res) {}
 async function update(req, res) {}
 
 // Remove the specified resource from storage.
-async function destroy(req, res) {}
+async function destroy(req, res) {
+  const companyId = req.params.id;
+  await Company.destroy({
+    where: {
+      id: companyId,
+    },
+  });
+  return res.json("Company deleted");
+}
 
 // Otros handlers...
 // ...
