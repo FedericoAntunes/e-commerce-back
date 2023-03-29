@@ -56,7 +56,32 @@ async function store(req, res) {
 async function edit(req, res) {}
 
 // Update the specified resource in storage.
-async function update(req, res) {}
+async function update(req, res) {
+  const userId = req.params.id;
+
+  const form = formidable({
+    uploadDir: __dirname + "/../public/img",
+    keepExtensions: true,
+    multiples: true,
+  });
+  form.parse(req, async (err, fields, files) => {
+    if (false) {
+      res.json("Fill all the fields.");
+    } else {
+      //const avatar = files.avatar ? `/img/${files.avatar.newFilename}` : "/img/default.jpg";
+      const user = await User.findByPk(userId);
+      //user.save();
+      console.log("user:", user);
+      await user.update({
+        firstname: fields.firstname,
+        lastname: fields.lastname,
+        username: fields.username,
+        avatar: fields.avatar,
+      });
+      return res.status(201).json("Todo OK");
+    }
+  });
+}
 
 // Remove the specified resource from storage.
 async function destroy(req, res) {
