@@ -71,7 +71,6 @@ async function update(req, res) {
       //const avatar = files.avatar ? `/img/${files.avatar.newFilename}` : "/img/default.jpg";
       const user = await User.findByPk(userId);
       //user.save();
-      console.log("user:", user);
       await user.update({
         firstname: fields.firstname,
         lastname: fields.lastname,
