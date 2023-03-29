@@ -1,5 +1,6 @@
 const { Company, Product } = require("../models");
 const { Op } = require("sequelize");
+const formidable = require("formidable");
 
 async function index(req, res) {
   const query = [];
@@ -49,7 +50,33 @@ async function store(req, res) {}
 async function edit(req, res) {}
 
 // Update the specified resource in storage.
-async function update(req, res) {}
+async function update(req, res) {
+  const productId = req.params.id;
+
+  const form = formidable({
+    uploadDir: __dirname + "/../public/img",
+    keepExtensions: true,
+    multiples: true,
+  });
+  form.parse(req, async (err, fields, files) => {
+    if (false) {
+      res.json("Fill all the fields.");
+    } else {
+      //const avatar = files.avatar ? `/img/${files.avatar.newFilename}` : "/img/default.jpg";
+      const product = await Product.findByPk(productId);
+      //user.save();
+      await product.update({
+        title: fields.title,
+        price: fields.price,
+        description: fields.description,
+        featured: fields.featured,
+        image: fields.image,
+        logo: fields.logo,
+      });
+      return res.status(201).json("Product updated");
+    }
+  });
+}
 
 // Remove the specified resource from storage.
 async function destroy(req, res) {

@@ -46,7 +46,7 @@ async function store(req, res) {
           avatar,
           password: fields.password,
         });
-        res.status(201).json("Todo OK");
+        res.status(201).json("User stored");
       }
     }
   });
@@ -77,7 +77,7 @@ async function update(req, res) {
         username: fields.username,
         avatar: fields.avatar,
       });
-      return res.status(201).json("Todo OK");
+      return res.status(201).json("User updated");
     }
   });
 }
