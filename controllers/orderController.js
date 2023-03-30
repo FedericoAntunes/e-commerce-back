@@ -13,10 +13,12 @@ async function show(req, res) {
 
 // Store a newly created resource in storage.
 async function store(req, res) {
+  const { id } = req.auth;
   const { products, address } = req.body;
   const order = await Order.create({
     status: "In process",
     address,
+    userId: id,
   });
   for (const product of products) {
     await OrderProduct.create({
