@@ -564,7 +564,6 @@ const products = [
     companyId: 8,
     categoryId: 5,
   },
-   */
 ];
 
 module.exports = async () => {
