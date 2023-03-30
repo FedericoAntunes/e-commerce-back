@@ -62,8 +62,8 @@ async function update(req, res) {
     if (false) {
       res.json("Fill all the fields.");
     } else {
-      const image = files.image ? `/img/${files.image.newFilename}` : "/img/default.jpg";
-      const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default.jpg";
+      const image = files.image;
+      const logo = files.logo;
       const product = await Product.findByPk(productId);
 
       await product.update({
@@ -71,6 +71,7 @@ async function update(req, res) {
         price: fields.price,
         description: fields.description,
         featured: fields.featured,
+        stock: fields.stock,
         image,
         logo,
       });
