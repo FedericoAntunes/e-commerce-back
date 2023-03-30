@@ -62,16 +62,17 @@ async function update(req, res) {
     if (false) {
       res.json("Fill all the fields.");
     } else {
-      //const avatar = files.avatar ? `/img/${files.avatar.newFilename}` : "/img/default.jpg";
+      const image = files.image ? `/img/${files.image.newFilename}` : "/img/default.jpg";
+      const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default.jpg";
       const product = await Product.findByPk(productId);
-      //user.save();
+
       await product.update({
         title: fields.title,
         price: fields.price,
         description: fields.description,
         featured: fields.featured,
-        image: fields.image,
-        logo: fields.logo,
+        image,
+        logo,
       });
       return res.status(201).json("Product updated");
     }
