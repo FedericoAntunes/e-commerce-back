@@ -73,6 +73,21 @@ const companies = [
     background:
       "https://images.rappi.com.uy/restaurants_background/uyavenidabar-1665777769766.jpg?e=webp&d=700x100&q=100",
   },
+  {
+    name: "Kochu Restaurant",
+    slug: sluggy("kochu"),
+    description: `Kochu is a contemporary Korean restaurant that serves dishes with a modern twist. The restaurant offers a variety of Korean-inspired small plates and entrees, including dishes such as Korean fried chicken, bibimbap, and kimchi pancake. They also offer a selection of craft cocktails and a wine list that features both international and local wines. The restaurant has a modern and elegant atmosphere with wooden accents and minimalist decor. It has been praised for its friendly service and innovative take on Korean cuisine. Kochu is located at 204 Queen Street West in Milky Way, Universe.`,
+    logo: "https://d1ralsognjng37.cloudfront.net/5b3857e2-a009-4ae3-8761-576e8a3584e3",
+    background:
+      "https://duyt4h9nfnj50.cloudfront.net/resized/c4cae0bc90b6dbb83abc9072a0ba389b-w1080-cc.jpg",
+  },
+  {
+    name: "Hokkaido Sushi",
+    slug: sluggy("hokkaido-sushi"),
+    description: `Hokkaido Sushi is a sushi restaurant located in Vancouver, Canada. The restaurant specializes in traditional Japanese cuisine, particularly sushi and sashimi. The menu at Hokkaido Sushi includes a variety of sushi rolls, nigiri, and sashimi options, as well as hot dishes such as udon noodles and teriyaki chicken. Some of the most popular dishes at the restaurant include the dynamite roll, the spicy tuna roll, and the salmon sashimi. The atmosphere at Hokkaido Sushi is described as cozy and intimate, with a minimalist decor that features traditional Japanese accents. The restaurant is known for its friendly and attentive service, and its commitment to using fresh and high-quality ingredients in its dishes. Overall, Hokkaido Sushi is a well-regarded sushi restaurant in Vancouver, offering a range of traditional Japanese dishes in a welcoming and relaxed atmosphere. It is located at 2120 W Broadway in Vancouver, British Columbia.`,
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/e614f5c15137da551394c7e0767e818b/97ef7458dde62fa918635bc21265d9f5.jpeg",
+    background: "https://d1ralsognjng37.cloudfront.net/3def8874-649e-4e5e-ad10-3946dc6c43fa.jpeg",
+  },
 ];
 
 module.exports = async () => {
