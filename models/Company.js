@@ -22,20 +22,20 @@ class Company extends Model {
         description: {
           type: DataTypes.STRING(2000),
           allowNull: false,
-          defaultValue: "description"
+          defaultValue: "description",
         },
         estimated_time: {
           type: DataTypes.STRING,
           allowNull: false,
-          defaultValue: `20–35 min • $1.49 Delivery Fee • $ `
+          defaultValue: `20–35 min • $1.49 Delivery Fee • $ `,
         },
 
         logo: {
-          type: DataTypes.STRING,
+          type: DataTypes.STRING(1000),
           allowNull: false,
         },
         background: {
-          type: DataTypes.STRING,
+          type: DataTypes.STRING(1000),
           allowNull: false,
         },
       },
