@@ -15,9 +15,18 @@ class Order extends Model {
           allowNull: false,
         },
         address: {
+          type: DataTypes.JSON,
+          allowNull: false,
+        },
+        payment_method: {
           type: DataTypes.STRING,
           allowNull: false,
         },
+        payment_info: {
+          type: DataTypes.JSON,
+          allowNull: false,
+        },
+        
       },
       {
         sequelize,
