@@ -1,6 +1,7 @@
 const { Company, Product } = require("../models");
 const { Op } = require("sequelize");
 const formidable = require("formidable");
+const slugify = require("slugify");
 
 async function index(req, res) {
   const query = [];
@@ -41,38 +42,62 @@ async function show(req, res) {
 }
 
 // Show the form for creating a new resource
-async function create(req, res) {
-  const productId = req.params.id;
+async function create(req, res) {}
 
+// Store a newly created resource in storage.
+async function store(req, res) {
   const form = formidable({
     uploadDir: __dirname + "/../public/img",
     keepExtensions: true,
     multiples: true,
   });
+
   form.parse(req, async (err, fields, files) => {
-    if (false) {
+    const products = await Product.findAll();
+    if (
+      fields.title === "" ||
+      fields.price === "" ||
+      fields.description === "" ||
+      fields.featured === "" ||
+      fields.companyId === "" ||
+      fields.categoryId === "" ||
+      fields.stock === ""
+    ) {
       res.json("Fill all the fields.");
     } else {
-      const image = files.image ? `/img/${files.image.newFilename}` : "/img/default.jpg";
-      const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default.jpg";
-      const product = await Product.findByPk(productId);
+      const unavailableProduct = products.some((u) => u.title === fields.title);
 
-      await product.update({
-        title: fields.title,
-        price: fields.price,
-        description: fields.description,
-        featured: fields.featured,
-        stock: fields.stock,
-        image,
-        logo,
-      });
-      return res.status(201).json("Product created");
+      if (unavailableProduct) {
+        res.json("Product already exist.");
+      } else {
+        const image = files.image ? `/img/${files.image.newFilename}` : "/img/default.jpg";
+        const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default.jpg";
+
+        function sluggy(name) {
+          return slugify(name, {
+            replacement: "-",
+            trim: true,
+            lower: true,
+            strict: true,
+          });
+        }
+        await Product.create({
+          title: fields.title,
+          slug: sluggy(fields.title),
+          price: fields.price,
+          description: fields.description,
+          featured: fields.featured,
+          stock: fields.stock,
+          companyId: fields.companyId,
+          categoryId: fields.categoryId,
+          image,
+          logo,
+        });
+        res.status(201).json("Product stored.");
+      }
     }
   });
 }
-
-// Store a newly created resource in storage.
-async function store(req, res) {}
 
 // Show the form for editing the specified resource.
 async function edit(req, res) {}
