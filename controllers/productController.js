@@ -41,7 +41,46 @@ async function show(req, res) {
 }
 
 // Show the form for creating a new resource
-async function create(req, res) {}
+async function create(req, res) {
+  const productId = req.params.id;
+
+  const form = formidable({
+    uploadDir: __dirname + "/../public/img",
+    keepExtensions: true,
+    multiples: true,
+  });
+  form.parse(req, async (err, fields, files) => {
+    if (false) {
+      res.json("Fill all the fields.");
+    } else {
+      const image = files.image ? `/img/${files.image.newFilename}` : "/img/default.jpg";
+      const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default.jpg";
+      const product = await Product.findByPk(productId);
+
+      await product.update({
+        title: fields.title,
+        price: fields.price,
+        description: fields.description,
+        featured: fields.featured,
+        stock: fields.stock,
+        image,
+        logo,
+      });
+      return res.status(201).json("Product created");
+    }
+  });
+}
+
+// Remove the specified resource from storage.
+async function destroy(req, res) {
+  const productId = req.params.id;
+  await Product.destroy({
+    where: {
+      id: productId,
+    },
+  });
+  return res.json("Product deleted");
+}
 
 // Store a newly created resource in storage.
 async function store(req, res) {}
@@ -58,25 +97,22 @@ async function update(req, res) {
     keepExtensions: true,
     multiples: true,
   });
-  form.parse(req, async (err, fields, files) => {
-    if (false) {
-      res.json("Fill all the fields.");
-    } else {
-      const image = files.image;
-      const logo = files.logo;
-      const product = await Product.findByPk(productId);
 
-      await product.update({
-        title: fields.title,
-        price: fields.price,
-        description: fields.description,
-        featured: fields.featured,
-        stock: fields.stock,
-        image,
-        logo,
-      });
-      return res.status(201).json("Product updated");
-    }
+  form.parse(req, async (err, fields, files) => {
+    const image = files.image;
+    const logo = files.logo;
+    const product = await Product.findByPk(productId);
+
+    await product.update({
+      title: fields.title,
+      price: fields.price,
+      description: fields.description,
+      featured: fields.featured,
+      stock: fields.stock,
+      image,
+      logo,
+    });
+    return res.status(201).json("Product updated");
   });
 }
 

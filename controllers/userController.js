@@ -64,20 +64,17 @@ async function update(req, res) {
     keepExtensions: true,
     multiples: true,
   });
+
   form.parse(req, async (err, fields, files) => {
-    if (false) {
-      res.json("Fill all the fields.");
-    } else {
-      const avatar = files.avatar;
-      const user = await User.findByPk(userId);
-      await user.update({
-        firstname: fields.firstname,
-        lastname: fields.lastname,
-        username: fields.username,
-        avatar,
-      });
-      return res.status(201).json("User updated");
-    }
+    const avatar = files.avatar;
+    const user = await User.findByPk(userId);
+    await user.update({
+      firstname: fields.firstname,
+      lastname: fields.lastname,
+      username: fields.username,
+      avatar,
+    });
+    return res.status(201).json("User updated");
   });
 }
 
