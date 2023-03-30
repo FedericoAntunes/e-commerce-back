@@ -4,6 +4,6 @@ const categoryController = require("../controllers/categoryController");
 const { expressjwt: checkJwt } = require("express-jwt");
 
 router.get("/", categoryController.index);
-router.get("/:id", categoryController.show);
+router.get("/:slug", categoryController.show);
 
 module.exports = router;
