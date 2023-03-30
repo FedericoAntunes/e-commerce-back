@@ -308,7 +308,7 @@ const products = [
     companyId: 4,
     categoryId: 3,
   },
-  {
+  /* {
     title: "Spicy Tuna Roll",
     slug: sluggy("Spicy Tuna Roll"),
     price: 6,
@@ -320,7 +320,7 @@ const products = [
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/6f447d8f97ffba2172a95be386ef2090/b4facf495c22df52f3ca635379ebe613.jpeg",
     companyId: 6,
     categoryId: 4,
-  },
+  },*/
   {
     title: "Sake Nigiri",
     slug: sluggy("Sake Nigiri"),
