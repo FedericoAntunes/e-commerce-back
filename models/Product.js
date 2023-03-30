@@ -38,7 +38,7 @@ class Product extends Model {
         image: {
           type: DataTypes.STRING(1000),
         },
-        logo: { type: DataTypes.STRING },
+        logo: { type: DataTypes.STRING(1000) },
       },
       {
         sequelize,
