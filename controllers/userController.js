@@ -68,7 +68,7 @@ async function update(req, res) {
     if (false) {
       res.json("Fill all the fields.");
     } else {
-      const avatar = files.avatar ? `/img/${files.avatar.newFilename}` : "/img/default.jpg";
+      const avatar = files.avatar;
       const user = await User.findByPk(userId);
       await user.update({
         firstname: fields.firstname,
