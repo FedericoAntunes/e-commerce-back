@@ -308,7 +308,7 @@ const products = [
     companyId: 4,
     categoryId: 3,
   },
-  /* {
+  {
     title: "Spicy Tuna Roll",
     slug: sluggy("Spicy Tuna Roll"),
     price: 6,
