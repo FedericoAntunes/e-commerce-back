@@ -71,17 +71,6 @@ async function create(req, res) {
   });
 }
 
-// Remove the specified resource from storage.
-async function destroy(req, res) {
-  const productId = req.params.id;
-  await Product.destroy({
-    where: {
-      id: productId,
-    },
-  });
-  return res.json("Product deleted");
-}
-
 // Store a newly created resource in storage.
 async function store(req, res) {}
 
