@@ -7,7 +7,7 @@ async function token(req, res) {
     const password = req.body.password;
     const match = await user.isValidPassword(password);
     if (match) {
-      const token = jwt.sign({ id: user.id }, process.env.SESSION_SECRET);
+      const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET);
       return res.json({
         token: token,
         email: user.email,
@@ -33,7 +33,7 @@ async function tokenAdmin(req, res) {
     const password = req.body.password;
     const match = await admin.isValidPassword(password);
     if (match) {
-      const token = jwt.sign({ id: admin.id }, process.env.SESSION_SECRET);
+      const token = jwt.sign({ id: admin.id }, process.env.JWT_ADMIN_SECRET);
       return res.json({
         token: token,
         email: admin.email,

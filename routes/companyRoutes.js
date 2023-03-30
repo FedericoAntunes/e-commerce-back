@@ -5,7 +5,7 @@ const { expressjwt: checkJwt } = require("express-jwt");
 
 router.get("/", companyController.index);
 router.get("/:slug", companyController.show);
-router.use(checkJwt({ secret: process.env.JWT_SECRET, algorithms: ["HS256"] }));
+router.use(checkJwt({ secret: process.env.JWT_ADMIN_SECRET, algorithms: ["HS256"] }));
 router.delete("/:id", companyController.destroy);
 
 module.exports = router;
