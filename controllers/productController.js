@@ -1,4 +1,4 @@
-const { Company, Product } = require("../models");
+const { Company, Product, Category } = require("../models");
 const { Op } = require("sequelize");
 const formidable = require("formidable");
 const slugify = require("slugify");
@@ -24,7 +24,7 @@ async function index(req, res) {
       where: {
         [Op.and]: query,
       },
-      include: Company,
+      include: [Company, Category],
     });
   } catch (error) {
     console.log(error);
