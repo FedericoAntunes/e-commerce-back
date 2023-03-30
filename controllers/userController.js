@@ -68,14 +68,13 @@ async function update(req, res) {
     if (false) {
       res.json("Fill all the fields.");
     } else {
-      //const avatar = files.avatar ? `/img/${files.avatar.newFilename}` : "/img/default.jpg";
+      const avatar = files.avatar ? `/img/${files.avatar.newFilename}` : "/img/default.jpg";
       const user = await User.findByPk(userId);
-      //user.save();
       await user.update({
         firstname: fields.firstname,
         lastname: fields.lastname,
         username: fields.username,
-        avatar: fields.avatar,
+        avatar,
       });
       return res.status(201).json("User updated");
     }
