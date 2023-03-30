@@ -20,7 +20,6 @@ async function store(req, res) {
     payment_method,
     payment_info,
     userId : req.auth.id,
-    
   });
   for (const product of products) {
     await OrderProduct.create({
