@@ -553,7 +553,7 @@ const products = [
   },
   {
     title: "Shrimp Katsu",
-    slug: sluggy("Spicy Tuna Roll"),
+    slug: sluggy("Shrimp Katsu"),
     price: 24.2,
     stock: 23,
     description: "With Steamed white rice",
