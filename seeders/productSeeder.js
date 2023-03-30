@@ -318,9 +318,9 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/6f447d8f97ffba2172a95be386ef2090/b4facf495c22df52f3ca635379ebe613.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/6f447d8f97ffba2172a95be386ef2090/b4facf495c22df52f3ca635379ebe613.jpeg",
-    companyId: 6,
-    categoryId: 4,
-  },*/
+    companyId: 7,
+    categoryId: 5,
+  },
   {
     title: "Sake Nigiri",
     slug: sluggy("Sake Nigiri"),
@@ -330,8 +330,8 @@ const products = [
     featured: false,
     image: "https://d1ralsognjng37.cloudfront.net/57b898d5-6709-400c-9c32-cf4d58a60215.jpeg",
     logo: "https://d1ralsognjng37.cloudfront.net/57b898d5-6709-400c-9c32-cf4d58a60215.jpeg",
-    companyId: 6,
-    categoryId: 4,
+    companyId: 7,
+    categoryId: 5,
   },
   {
     title: "Craving Salmon Roll",
@@ -343,8 +343,8 @@ const products = [
     featured: false,
     image: "https://d1ralsognjng37.cloudfront.net/3d7ca8f8-8117-4540-b636-d88521b3ff3a.jpeg",
     logo: "https://d1ralsognjng37.cloudfront.net/3d7ca8f8-8117-4540-b636-d88521b3ff3a.jpeg",
-    companyId: 6,
-    categoryId: 4,
+    companyId: 7,
+    categoryId: 5,
   },
   {
     title: "Salmon and Avocado Roll",
@@ -355,8 +355,8 @@ const products = [
     featured: false,
     image: "https://d1ralsognjng37.cloudfront.net/3f18d47c-f1c2-424c-a14f-b4a67dcbc542.jpeg",
     logo: "https://d1ralsognjng37.cloudfront.net/3f18d47c-f1c2-424c-a14f-b4a67dcbc542.jpeg",
-    companyId: 6,
-    categoryId: 4,
+    companyId: 7,
+    categoryId: 5,
   },
   {
     title: "Sweet Potato Roll",
@@ -368,8 +368,8 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/932e41c8cdb904333463a87dd1c299df/b4facf495c22df52f3ca635379ebe613.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/932e41c8cdb904333463a87dd1c299df/b4facf495c22df52f3ca635379ebe613.jpeg",
-    companyId: 6,
-    categoryId: 4,
+    companyId: 7,
+    categoryId: 5,
   },
   {
     title: "Philadelphia Roll",
@@ -380,8 +380,8 @@ const products = [
     featured: false,
     image: "https://d1ralsognjng37.cloudfront.net/f72568e0-c48d-4147-bb6f-005e11e3a889.jpeg",
     logo: "https://d1ralsognjng37.cloudfront.net/f72568e0-c48d-4147-bb6f-005e11e3a889.jpeg",
-    companyId: 6,
-    categoryId: 4,
+    companyId: 7,
+    categoryId: 5,
   },
   {
     title: "Crunchy California Roll",
@@ -393,8 +393,8 @@ const products = [
     featured: false,
     image: "https://d1ralsognjng37.cloudfront.net/c4b6e046-b301-430a-98a1-7f641d61d28c.jpeg",
     logo: "https://d1ralsognjng37.cloudfront.net/c4b6e046-b301-430a-98a1-7f641d61d28c.jpeg",
-    companyId: 6,
-    categoryId: 4,
+    companyId: 7,
+    categoryId: 5,
   },
   {
     title: "Veggie One Roll",
@@ -405,8 +405,8 @@ const products = [
     featured: false,
     image: "https://d1ralsognjng37.cloudfront.net/cee55df0-a551-4f03-a2b4-ac4ae63a7000.jpeg",
     logo: "https://d1ralsognjng37.cloudfront.net/cee55df0-a551-4f03-a2b4-ac4ae63a7000.jpeg",
-    companyId: 6,
-    categoryId: 4,
+    companyId: 7,
+    categoryId: 5,
   },
   {
     title: "Salmon Teriyaki Roll",
@@ -418,8 +418,8 @@ const products = [
     featured: false,
     image: "https://d1ralsognjng37.cloudfront.net/9b795f7b-689a-45ad-8ca0-5eabd0c31509.jpeg",
     logo: "https://d1ralsognjng37.cloudfront.net/9b795f7b-689a-45ad-8ca0-5eabd0c31509.jpeg",
-    companyId: 6,
-    categoryId: 4,
+    companyId: 7,
+    categoryId: 5,
   },
   {
     title: "Kamikaze Salmon Roll (10pcs)",
@@ -431,8 +431,8 @@ const products = [
     featured: false,
     image: "https://d1ralsognjng37.cloudfront.net/762f5f8f-9869-48c0-a64c-6f24cae32f36",
     logo: "https://d1ralsognjng37.cloudfront.net/762f5f8f-9869-48c0-a64c-6f24cae32f36",
-    companyId: 6,
-    categoryId: 4,
+    companyId: 7,
+    categoryId: 5,
   },
   {
     title: "Imperial Roll",
@@ -443,8 +443,8 @@ const products = [
     featured: false,
     image: "https://d1ralsognjng37.cloudfront.net/643e0c80-f73e-416d-8e05-e73d2c950e6f",
     logo: "https://d1ralsognjng37.cloudfront.net/643e0c80-f73e-416d-8e05-e73d2c950e6f",
-    companyId: 7,
-    categoryId: 4,
+    companyId: 8,
+    categoryId: 5,
   },
   {
     title: "6 pcs Sashimi and 6 pcs Sushi",
@@ -455,8 +455,8 @@ const products = [
     featured: false,
     image: "https://d1ralsognjng37.cloudfront.net/dd8785cb-f42e-45c3-b0fb-ee50b9093dd6",
     logo: "https://d1ralsognjng37.cloudfront.net/dd8785cb-f42e-45c3-b0fb-ee50b9093dd6",
-    companyId: 7,
-    categoryId: 4,
+    companyId: 8,
+    categoryId: 5,
   },
   {
     title: "Dragon",
@@ -469,8 +469,8 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/fd09f99398bf3393e7e9980fb0d8bb0b/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/fd09f99398bf3393e7e9980fb0d8bb0b/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
-    categoryId: 4,
+    companyId: 8,
+    categoryId: 5,
   },
   {
     title: "Miami Heat Roll",
@@ -483,8 +483,8 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/fd09f99398bf3393e7e9980fb0d8bb0b/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/fd09f99398bf3393e7e9980fb0d8bb0b/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
-    categoryId: 4,
+    companyId: 8,
+    categoryId: 5,
   },
   {
     title: "JB Roll",
@@ -496,8 +496,8 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/9cf142257090d6a9fcebe0f082785daa/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/9cf142257090d6a9fcebe0f082785daa/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
-    categoryId: 4,
+    companyId: 8,
+    categoryId: 5,
   },
   {
     title: "Hibachi Chicken",
@@ -509,8 +509,8 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/a1eef9e452601f6c7b68b6f4c7ca4bce/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/a1eef9e452601f6c7b68b6f4c7ca4bce/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
-    categoryId: 4,
+    companyId: 8,
+    categoryId: 5,
   },
   {
     title: "Spicy Tuna Temaki",
@@ -522,8 +522,8 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/3c7bf5df341facf1c5a21b6aea21faea/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/3c7bf5df341facf1c5a21b6aea21faea/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
-    categoryId: 4,
+    companyId: 8,
+    categoryId: 5,
   },
   {
     title: "California Eel Temaki",
@@ -535,8 +535,8 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/a823838d3c22b1e7506d9de16c332094/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/a823838d3c22b1e7506d9de16c332094/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
-    categoryId: 4,
+    companyId: 8,
+    categoryId: 5,
   },
   {
     title: "Chicken Katsu",
@@ -548,12 +548,12 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/eb782adbfa31d4cf9d31d07852d151f3/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/eb782adbfa31d4cf9d31d07852d151f3/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
-    categoryId: 4,
+    companyId: 8,
+    categoryId: 5,
   },
   {
     title: "Shrimp Katsu",
-    slug: sluggy("Spicy Tuna Roll"),
+    slug: sluggy("Shrimp Katsu"),
     price: 24.2,
     stock: 23,
     description: "With Steamed white rice",
@@ -561,8 +561,8 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/4882f95c177414a333c7e92821578934/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/4882f95c177414a333c7e92821578934/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
-    categoryId: 4,
+    companyId: 8,
+    categoryId: 5,
   },
 ];
 module.exports = async () => {
