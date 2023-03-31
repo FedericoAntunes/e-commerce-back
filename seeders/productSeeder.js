@@ -564,6 +564,72 @@ const products = [
     companyId: 8,
     categoryId: 21,
   },
+  {
+    title: "Quesadilla",
+    slug: sluggy("Quesadilla"),
+    price: 12,
+    stock: 20,
+    description: "Tortilla Of Your Choice, Selected Beans, Sauteed Fajita Peppers & Onions, Fillings (Veggies/Proteins), Homemade Salsas, Cheese & Side Sour Cream. Vegetarian Guacamole Included (Tofu Excluded).",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80NGI1N2Y0Mi0wNWUxLTQwNDQtYmJiMS1hZmY3MmVkNDIyY2UuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80NGI1N2Y0Mi0wNWUxLTQwNDQtYmJiMS1hZmY3MmVkNDIyY2UuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  },
+  {
+    title: "Taco",
+    slug: sluggy("Taco"),
+    price: 5,
+    stock: 10,
+    description: "Choice Of Soft Corn, Flour Tortilla Or Crispy U Shape Shell, Add Pinto, Black Beans Or Vegan Refried Beans, Sauteed Fajita Peppers & Onions, Choice Of Fillings (Veggies/Proteins) Homemade Salsa, Cheese & Sour Cream. Vegetarian Guacamole Included (Tofu Excluded).",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80OTE2ODQ1ZS01MGViLTRkYTktYjdkOC01NTMwYTg5NTFhZDQuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80OTE2ODQ1ZS01MGViLTRkYTktYjdkOC01NTMwYTg5NTFhZDQuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  },
+  {
+    title: "Nachos-Gluten Free",
+    slug: sluggy("Nachos-Gluten Free"),
+    price: 13,
+    stock: 15,
+    description: "Tortilla Of Your Choice, Selected Beans, Sauteed Fajita Peppers & Onions, Fillings (Veggies/Proteins), Homemade Salsas, Cheese & Side Sour Cream. Vegetarian Guacamole Included (Tofu Excluded).",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8xODNlYWMxMC1jNTNjLTQyYmMtOWY4NC05YjQ5YjFiYWQ4MTkuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8xODNlYWMxMC1jNTNjLTQyYmMtOWY4NC05YjQ5YjFiYWQ4MTkuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  },
+  {
+    title: "Salad Bowl",
+    slug: sluggy("Salad Bowl"),
+    price: 16,
+    stock: 17,
+    description: "Served In A Baked Tortilla Bowl, Romaine Lettuce, Sauteed Fajita Peppers & Onions, Selected Beans, Choice Of Fillings (Veggies/Proteins) Salsa, Cheese, Sour Cream & Choice Of Dressings. Vegetarian Guacamole Included (Tofu Excluded).",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMzMwZDVhNC1iYWE0LTQzZjQtODgwOC05MGNkZTQ1ZWU4NWYuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMzMwZDVhNC1iYWE0LTQzZjQtODgwOC05MGNkZTQ1ZWU4NWYuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  },
+  {
+    title: "Burrito Bowl",
+    slug: sluggy("Salad Bowl"),
+    price: 13,
+    stock: 32,
+    description: "Same Ingredients As A Burrito, Served In A Takeout Bowl Container, 6(Inch) Flour Or Soft Corn Tortilla Comes On The Side. Vegetarian Bowl Guacamole Included (Tofu Excluded).",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMzMwZDVhNC1iYWE0LTQzZjQtODgwOC05MGNkZTQ1ZWU4NWYuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMzMwZDVhNC1iYWE0LTQzZjQtODgwOC05MGNkZTQ1ZWU4NWYuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  },
+  
 ];
 
 module.exports = async () => {
