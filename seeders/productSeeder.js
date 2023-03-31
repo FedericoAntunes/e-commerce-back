@@ -564,7 +564,7 @@ const products = [
     companyId: 8,
     categoryId: 21,
   },
-  {
+  { //Burrito Gringo API:
     title: "Quesadilla",
     slug: sluggy("Quesadilla"),
     price: 12,
@@ -629,11 +629,221 @@ const products = [
       "Same Ingredients As A Burrito, Served In A Takeout Bowl Container, 6(Inch) Flour Or Soft Corn Tortilla Comes On The Side. Vegetarian Bowl Guacamole Included (Tofu Excluded).",
     featured: false,
     image:
-      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMzMwZDVhNC1iYWE0LTQzZjQtODgwOC05MGNkZTQ1ZWU4NWYuanBlZw==",
-    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMzMwZDVhNC1iYWE0LTQzZjQtODgwOC05MGNkZTQ1ZWU4NWYuanBlZw==",
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC83Mjg1OWIxZi1mZGMwLTQxY2ItOTVkMS0yNDg5ZDQ4ZTdlNTQuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC83Mjg1OWIxZi1mZGMwLTQxY2ItOTVkMS0yNDg5ZDQ4ZTdlNTQuanBlZw==",
     companyId: 12,
     categoryId: 4,
   },
+  {
+    title: "Guacamole",
+    slug: sluggy("Guacamole"),
+    price: 2.85,
+    stock: 32,
+    description:
+      "All Natural Ingredients Homemade Guacamole 100% Free Food Fillings-glutenn Free-vegan.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8yODdjMTQzOC1kZjc5LTQ4ZTctOWIyYy01MDY3ODgxOGQyODIuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8yODdjMTQzOC1kZjc5LTQ4ZTctOWIyYy01MDY3ODgxOGQyODIuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  }, 
+  {
+    title: "Jarritos Bottled Soda",
+    slug: sluggy("Jarritos Bottled Soda"),
+    price: 3.95,
+    stock: 22,
+    description:
+      "Authentic Mexican Cola With Natural Ingredients.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9iMGFhMGY2Ny1jMDY3LTQ3YzItYWY0MS02ZWY0MWM1MzZmYmUuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9iMGFhMGY2Ny1jMDY3LTQ3YzItYWY0MS02ZWY0MWM1MzZmYmUuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  },
+  {
+    title: "Burrito",
+    slug: sluggy("Burrito"),
+    price: 9.95,
+    stock: 12,
+    description:
+      "Tortilla Of Your Choice, Add Pinto, Black Beans Or Vegan Refried Beans, Sauteed Fajita Peppers & Onions, Mexican Lime Rice, Choice Of Fillings (Veggies/Proteins) Homemade Salsa, Cheese & Sour Cream. Vegetarian Guacamole Included (Tofu Excluded).",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84NzNjMzE1Yi02NTQ3LTQxOTUtOGE2YS0yMmM3NGE0OTYzM2UuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84NzNjMzE1Yi02NTQ3LTQxOTUtOGE2YS0yMmM3NGE0OTYzM2UuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  },
+  {
+    title: "Homemade Salsa",
+    slug: sluggy("Homemade Salsa"),
+    price: 2.25,
+    stock: 16,
+    description:
+      "All-Natural Homemade Fresh Salsas & Fire Roasted-gluten Free-vegan.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9mY2M3YWZmOC0wOGVlLTQ5OTItYjRlYy0yNjg4MDY2YTA0NmMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9mY2M3YWZmOC0wOGVlLTQ5OTItYjRlYy0yNjg4MDY2YTA0NmMuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  }, 
+  {
+    title: "Homemade Cookies",
+    slug: sluggy("Homemade Cookies"),
+    price: 2.99,
+    stock: 40,
+    description:
+      "Made With Real Butter, Chocolate Chips & Organic Coconut.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80YWFmNTc4ZC1mZTRlLTQ1ZGEtYTdmZC01YTBhNGE3ZmM0ZGYuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80YWFmNTc4ZC1mZTRlLTQ1ZGEtYTdmZC01YTBhNGE3ZmM0ZGYuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  }, 
+  { // La Fiesta Latina
+    title: "Tacos with Fries",
+    slug: sluggy("Tacos with Fries"),
+    price: 18,
+    stock: 20,
+    description:
+      "Make it a meal with 3 tacos and fresh potatoes fries. Tasty and delicious. Your choices beef, chicken, pork or vegetarian or vegan,",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8xNWEwMzRlNC02YzE2LTQ5YmItYWViYi0wOWVhMDAzOWY3MmQuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8xNWEwMzRlNC02YzE2LTQ5YmItYWViYi0wOWVhMDAzOWY3MmQuanBlZw==",
+    companyId: 11,
+    categoryId: 4,
+  },
+  { 
+    title: "Mexican Chicken Fajitas",
+    slug: sluggy("Mexican Chicken Fajitas"),
+    price: 23,
+    stock: 59,
+    description:
+      "Sizzling fajitas of your choice beef or chorizo or chicken with fresh slices of sweet papers and onion. Serve with rice, beans, warm corn tortillas, and spicy sauces.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84NTQ4ZTE2OS00MjI5LTRlNGUtODQ4Zi00NzI5MGVhMmUxM2QuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84NTQ4ZTE2OS00MjI5LTRlNGUtODQ4Zi00NzI5MGVhMmUxM2QuanBlZw==",
+    companyId: 11,
+    categoryId: 4,
+  },
+  { 
+    title: "Authentic Big Handmade 2 Quesadillas",
+    slug: sluggy("Authentic Big Handmade 2 Quesadillas"),
+    price: 20,
+    stock: 19,
+    description:
+      "Real and Authentic of Handmade in our restaurant QUESADILLAS gluten free and fully loaded with cheese and your favorite topping to chose, with side of guacamole and fresh spicy salsa.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84MDRkNTFlMS02OTA5LTQ1YjctOWNiZS0zNWYzYzgyZWM2YjcuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84MDRkNTFlMS02OTA5LTQ1YjctOWNiZS0zNWYzYzgyZWM2YjcuanBlZw==",
+    companyId: 11,
+    categoryId: 4,
+  },
+  { 
+    title: "Picada",
+    slug: sluggy("Picada"),
+    price: 25,
+    stock: 48,
+    description:
+      "Large Mexican Appetizer for the Amigos or Big Familia. Chicharron, Yuca Frita, Plantain,Tortilla chips, Chorizo, Salsas and Guacamole. You will Enjoy it!",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84OGY2YjYwZi0xOTc4LTQ5NzQtOTkxMC01ODFjYWE0MmNkZTEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84OGY2YjYwZi0xOTc4LTQ5NzQtOTkxMC01ODFjYWE0MmNkZTEuanBlZw==",
+    companyId: 11,
+    categoryId: 4,
+  },
+  { 
+    title: "El Ranchero",
+    slug: sluggy("El Ranchero"),
+    price: 22,
+    stock: 34,
+    description:
+      "Feeling Mexican cowboy, try slices of steak with 2 eggs, refried caramelized beans , Mexican rice, Fresh cut chips and salsas.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8xNTJhYjA2MS1iNTBiLTQ5YTktYWE5NS01N2UwY2IyYWE2NGMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8xNTJhYjA2MS1iNTBiLTQ5YTktYWE5NS01N2UwY2IyYWE2NGMuanBlZw==",
+    companyId: 11,
+    categoryId: 4,
+  },
+  { 
+    title: "Nachos for Everyone",
+    slug: sluggy("Nachos for Everyone"),
+    price: 20,
+    stock: 34,
+    description:
+      "Fresh and crispy nachos fully loaded with tons of veggies and chorizo. Spicy sauces on the side.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNWM5ODk0Nzk4ZjBmOWY4ODAxNjhmY2Y2NTM3YmU4Y2YvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNWM5ODk0Nzk4ZjBmOWY4ODAxNjhmY2Y2NTM3YmU4Y2YvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 11,
+    categoryId: 4,
+  },
+  { 
+    title: "Mexican Panini",
+    slug: sluggy("Mexican Panini"),
+    price: 19,
+    stock: 26,
+    description:
+      "Scrumptious panini with your favorite meat choice beef or cochinita pibil or chorizo or ham or cheese. Fries on the side.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMWIyMzk2OWUwMzFlOGI1ZDY4YThhODVlOTFhNTBjODIvYjRmYWNmNDk1YzIyZGY1MmYzY2E2MzUzNzllYmU2MTMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMWIyMzk2OWUwMzFlOGI1ZDY4YThhODVlOTFhNTBjODIvYjRmYWNmNDk1YzIyZGY1MmYzY2E2MzUzNzllYmU2MTMuanBlZw==",
+    companyId: 11,
+    categoryId: 4,
+  },
+  { 
+    title: "Pollo con Mole",
+    slug: sluggy("Pollo con Mole"),
+    price: 20,
+    stock: 18,
+    description:
+      "Popular dish, chicken with mole sauce, tasty refried beans, and Mexican rice.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMWIyMzk2OWUwMzFlOGI1ZDY4YThhODVlOTFhNTBjODIvYjRmYWNmNDk1YzIyZGY1MmYzY2E2MzUzNzllYmU2MTMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMWIyMzk2OWUwMzFlOGI1ZDY4YThhODVlOTFhNTBjODIvYjRmYWNmNDk1YzIyZGY1MmYzY2E2MzUzNzllYmU2MTMuanBlZw==",
+    companyId: 11,
+    categoryId: 4,
+  },
+  { 
+    title: "Enchiladas Rojas with chicken",
+    slug: sluggy("Enchiladas Rojas with chicken"),
+    price: 18,
+    stock: 53,
+    description:
+      "Red tomatoes sauce with jalapeno, spices and nicely cooked and pour over three fresh tortillas stuffed with shredded chicken with a mozzarella cheese and , queso fresco and sour cream, cilantro and onions. Rice on the side.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC82MDljMGI2Mi1lZjA2LTQ5ODAtYTAxYi1jNjY3NjcwYjk3MjkuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC82MDljMGI2Mi1lZjA2LTQ5ODAtYTAxYi1jNjY3NjcwYjk3MjkuanBlZw==",
+    companyId: 11,
+    categoryId: 4,
+  },
+  { 
+    title: "Chilaquiles with Egg",
+    slug: sluggy("Chilaquiles with Egg"),
+    price: 18,
+    stock: 34,
+    description:
+      "Enjoy crispy corn tortilla 100% Gluten free, bathed in Spicy RED tomato or GREEN Tomatillo Sauce with cheese and sour cream. 2 Eggs on the side and refried beans.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC81ZTVjZWZlYy0xOWY2LTQzMGMtYjljZC0zZmU1YmU1YmI0MDAuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC81ZTVjZWZlYy0xOWY2LTQzMGMtYjljZC0zZmU1YmU1YmI0MDAuanBlZw==",
+    companyId: 11,
+    categoryId: 4,
+  },                    
 ];
 
 module.exports = async () => {
