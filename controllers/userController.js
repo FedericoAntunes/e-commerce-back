@@ -57,7 +57,13 @@ async function edit(req, res) {}
 
 // Update the specified resource in storage.
 async function update(req, res) {
+  const users = await User.findAll();
+
   const userId = req.params.id;
+
+  const filteredUsers = users.filter((user) => {
+    return user.id !== Number(userId);
+  });
 
   const form = formidable({
     uploadDir: __dirname + "/../public/img",
@@ -66,22 +72,31 @@ async function update(req, res) {
   });
 
   form.parse(req, async (err, fields, files) => {
-    const avatar = files.avatar && `/img/${files.avatar.newFilename}`;
+    const unavailableUsername = filteredUsers.some((u) => u.username === fields.username);
+    const unavailableUserEmail = filteredUsers.some((u) => u.email === fields.email);
 
-    const user = await User.findByPk(userId);
+    if (unavailableUsername) {
+      res.json("Unavailable username");
+    } else if (unavailableUserEmail) {
+      res.json("Unavailable user email");
+    } else {
+      const avatar = files.avatar && `/img/${files.avatar.newFilename}`;
 
-    const userUpdated = {
-      firstname: fields.firstname,
-      lastname: fields.lastname,
-      username: fields.username,
-      avatar,
-    };
+      const user = await User.findByPk(userId);
 
-    if (!avatar) delete userUpdated.avatar;
+      const userUpdated = {
+        firstname: fields.firstname,
+        lastname: fields.lastname,
+        username: fields.username,
+        avatar,
+      };
 
-    await user.update(userUpdated);
+      if (!avatar) delete userUpdated.avatar;
 
-    return res.status(201).json("User updated");
+      await user.update(userUpdated);
+
+      return res.status(201).json("User updated");
+    }
   });
 }
 
