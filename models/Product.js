@@ -29,7 +29,7 @@ class Product extends Model {
           defaultValue: 0,
         },
         description: {
-          type: DataTypes.STRING,
+          type: DataTypes.STRING(1500),
           allowNull: false,
         },
         featured: {
@@ -37,9 +37,9 @@ class Product extends Model {
           defaultValue: false,
         },
         image: {
-          type: DataTypes.STRING(1000),
+          type: DataTypes.STRING(1500),
         },
-        logo: { type: DataTypes.STRING(1000) },
+        logo: { type: DataTypes.STRING(1500) },
       },
       {
         sequelize,

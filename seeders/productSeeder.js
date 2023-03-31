@@ -618,7 +618,7 @@ const products = [
   },
   {
     title: "Burrito Bowl",
-    slug: sluggy("Salad Bowl"),
+    slug: sluggy("Burrito Bowl"),
     price: 13,
     stock: 32,
     description: "Same Ingredients As A Burrito, Served In A Takeout Bowl Container, 6(Inch) Flour Or Soft Corn Tortilla Comes On The Side. Vegetarian Bowl Guacamole Included (Tofu Excluded).",
