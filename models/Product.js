@@ -29,7 +29,7 @@ class Product extends Model {
           defaultValue: 0,
         },
         description: {
-          type: DataTypes.STRING,
+          type: DataTypes.STRING(500),
           allowNull: false,
         },
         featured: {
