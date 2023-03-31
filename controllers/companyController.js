@@ -16,7 +16,41 @@ async function show(req, res) {
 async function create(req, res) {}
 
 // Store a newly created resource in storage.
-async function store(req, res) {}
+async function store(req, res) {
+  const form = formidable({
+    uploadDir: __dirname + "/../public/img",
+    keepExtensions: true,
+    multiples: true,
+  });
+
+  form.parse(req, async (err, fields, files) => {
+    const companies = await Company.findAll();
+    if (fields.name === "" || fields.description === "") {
+      return res.json("Fill all the fields.");
+    } else {
+      const unavailableCompany = companies.some((u) => u.name === fields.name);
+
+      if (unavailableCompany) {
+        return res.json("Company name already exist.");
+      } else {
+        const background = files.background
+          ? `/img/${files.background.newFilename}`
+          : "/img/default.jpg";
+        const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default.jpg";
+
+        await Company.create({
+          name: fields.name,
+          description: fields.description,
+          slug: "",
+          estimated_time: `20–35 min • $1.49 Delivery Fee • $ `,
+          background,
+          logo,
+        });
+        res.status(201).json("Company stored.");
+      }
+    }
+  });
+}
 
 // Show the form for editing the specified resource.
 async function edit(req, res) {}
