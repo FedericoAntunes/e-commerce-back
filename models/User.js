@@ -43,6 +43,10 @@ class User extends Model {
         avatar: {
           type: DataTypes.STRING,
         },
+        reg_mode: {
+          type: DataTypes.STRING,
+          allowNull: false,
+        },
       },
       // Email Slugify
       /* User.beforeCreate((user) => {

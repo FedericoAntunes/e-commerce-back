@@ -8,5 +8,6 @@ const authenticationController = require("../controllers/authenticationControlle
  */
 router.post("/", authenticationController.token);
 router.post("/admin", authenticationController.tokenAdmin);
+router.post("/google", authenticationController.googleAuth);
 
 module.exports = router;
