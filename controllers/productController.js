@@ -104,11 +104,9 @@ async function update(req, res) {
   });
 
   form.parse(req, async (err, fields, files) => {
-    const image = files.image;
-    const logo = files.logo;
-    const product = await Product.findByPk(productId);
-
-    await product.update({
+    const image = files.image && `/img/${files.image.newFilename}`;
+    const logo = files.logo && `/img/${files.logo.newFilename}`;
+    const updatedProduct = {
       title: fields.title,
       price: fields.price,
       description: fields.description,
@@ -117,7 +115,13 @@ async function update(req, res) {
       categoryId: fields.categoryId,
       image,
       logo,
-    });
+    };
+    if (!image) delete updatedProduct.image;
+    if (!logo) delete updatedProduct.logo;
+
+    const product = await Product.findByPk(productId);
+
+    await product.update(updatedProduct);
     return res.status(201).json("Product updated");
   });
 }

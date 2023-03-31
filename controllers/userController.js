@@ -66,14 +66,21 @@ async function update(req, res) {
   });
 
   form.parse(req, async (err, fields, files) => {
-    const avatar = files.avatar;
+    const avatar = files.avatar && `/img/${files.avatar.newFilename}`;
+
     const user = await User.findByPk(userId);
-    await user.update({
+
+    const userUpdated = {
       firstname: fields.firstname,
       lastname: fields.lastname,
       username: fields.username,
       avatar,
-    });
+    };
+
+    if (!avatar) delete userUpdated.avatar;
+
+    await user.update(userUpdated);
+
     return res.status(201).json("User updated");
   });
 }

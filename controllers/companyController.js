@@ -32,20 +32,24 @@ async function update(req, res) {
   });
 
   form.parse(req, async (err, fields, files) => {
-    const background = files.background
-      ? `/img/${files.background.newFilename}`
-      : "/img/default.jpg";
-    const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default.jpg";
+    const background = files.background && `/img/${files.background.newFilename}`;
+
+    const logo = files.logo && `/img/${files.logo.newFilename}`;
 
     const company = await Company.findByPk(companyId);
 
-    await company.update({
+    const updatedCompany = {
       name: fields.name,
       description: fields.description,
       estimated_time: `20–35 min • $1.49 Delivery Fee • $ `,
       background,
       logo,
-    });
+    };
+
+    if (!background) delete updatedCompany.background;
+    if (!logo) delete updatedCompany.logo;
+
+    await company.update(updatedCompany);
     return res.status(201).json("Company updated");
   });
 }
