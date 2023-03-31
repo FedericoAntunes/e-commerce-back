@@ -1,7 +1,6 @@
 const { Company, Product, Category } = require("../models");
 const { Op } = require("sequelize");
 const formidable = require("formidable");
-const slugify = require("slugify");
 
 async function index(req, res) {
   const query = [];
@@ -73,20 +72,12 @@ async function store(req, res) {
         const image = files.image ? `/img/${files.image.newFilename}` : "/img/default.jpg";
         const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default.jpg";
 
-        function sluggy(name) {
-          return slugify(name, {
-            replacement: "-",
-            trim: true,
-            lower: true,
-            strict: true,
-          });
-        }
         await Product.create({
           title: fields.title,
-          slug: sluggy(fields.title),
           price: fields.price,
           description: fields.description,
           featured: fields.featured,
+          slug: "",
           stock: fields.stock,
           companyId: fields.companyId,
           categoryId: fields.categoryId,
@@ -123,6 +114,7 @@ async function update(req, res) {
       description: fields.description,
       featured: fields.featured,
       stock: fields.stock,
+      categoryId: fields.categoryId,
       image,
       logo,
     });
