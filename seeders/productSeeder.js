@@ -564,7 +564,7 @@ const products = [
     companyId: 8,
     categoryId: 21,
   },
-  {
+  { //Burrito Gringo API:
     title: "Quesadilla",
     slug: sluggy("Quesadilla"),
     price: 12,
@@ -629,11 +629,81 @@ const products = [
       "Same Ingredients As A Burrito, Served In A Takeout Bowl Container, 6(Inch) Flour Or Soft Corn Tortilla Comes On The Side. Vegetarian Bowl Guacamole Included (Tofu Excluded).",
     featured: false,
     image:
-      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMzMwZDVhNC1iYWE0LTQzZjQtODgwOC05MGNkZTQ1ZWU4NWYuanBlZw==",
-    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMzMwZDVhNC1iYWE0LTQzZjQtODgwOC05MGNkZTQ1ZWU4NWYuanBlZw==",
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC83Mjg1OWIxZi1mZGMwLTQxY2ItOTVkMS0yNDg5ZDQ4ZTdlNTQuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC83Mjg1OWIxZi1mZGMwLTQxY2ItOTVkMS0yNDg5ZDQ4ZTdlNTQuanBlZw==",
     companyId: 12,
     categoryId: 4,
   },
+  {
+    title: "Guacamole",
+    slug: sluggy("Guacamole"),
+    price: 2.85,
+    stock: 32,
+    description:
+      "All Natural Ingredients Homemade Guacamole 100% Free Food Fillings-glutenn Free-vegan.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8yODdjMTQzOC1kZjc5LTQ4ZTctOWIyYy01MDY3ODgxOGQyODIuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8yODdjMTQzOC1kZjc5LTQ4ZTctOWIyYy01MDY3ODgxOGQyODIuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  }, 
+  {
+    title: "Jarritos Bottled Soda",
+    slug: sluggy("Jarritos Bottled Soda"),
+    price: 3.95,
+    stock: 22,
+    description:
+      "Authentic Mexican Cola With Natural Ingredients.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9iMGFhMGY2Ny1jMDY3LTQ3YzItYWY0MS02ZWY0MWM1MzZmYmUuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9iMGFhMGY2Ny1jMDY3LTQ3YzItYWY0MS02ZWY0MWM1MzZmYmUuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  },
+  {
+    title: "Burrito",
+    slug: sluggy("Burrito"),
+    price: 9.95,
+    stock: 12,
+    description:
+      "Tortilla Of Your Choice, Add Pinto, Black Beans Or Vegan Refried Beans, Sauteed Fajita Peppers & Onions, Mexican Lime Rice, Choice Of Fillings (Veggies/Proteins) Homemade Salsa, Cheese & Sour Cream. Vegetarian Guacamole Included (Tofu Excluded).",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84NzNjMzE1Yi02NTQ3LTQxOTUtOGE2YS0yMmM3NGE0OTYzM2UuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84NzNjMzE1Yi02NTQ3LTQxOTUtOGE2YS0yMmM3NGE0OTYzM2UuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  },
+  {
+    title: "Homemade Salsa",
+    slug: sluggy("Homemade Salsa"),
+    price: 2.25,
+    stock: 16,
+    description:
+      "All-Natural Homemade Fresh Salsas & Fire Roasted-gluten Free-vegan.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9mY2M3YWZmOC0wOGVlLTQ5OTItYjRlYy0yNjg4MDY2YTA0NmMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9mY2M3YWZmOC0wOGVlLTQ5OTItYjRlYy0yNjg4MDY2YTA0NmMuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  }, 
+  {
+    title: "Homemade Cookies",
+    slug: sluggy("Homemade Cookies"),
+    price: 2.99,
+    stock: 40,
+    description:
+      "Made With Real Butter, Chocolate Chips & Organic Coconut.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80YWFmNTc4ZC1mZTRlLTQ1ZGEtYTdmZC01YTBhNGE3ZmM0ZGYuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80YWFmNTc4ZC1mZTRlLTQ1ZGEtYTdmZC01YTBhNGE3ZmM0ZGYuanBlZw==",
+    companyId: 12,
+    categoryId: 4,
+  },      
 ];
 
 module.exports = async () => {
