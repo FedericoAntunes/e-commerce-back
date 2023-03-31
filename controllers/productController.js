@@ -62,12 +62,12 @@ async function store(req, res) {
       fields.categoryId === "" ||
       fields.stock === ""
     ) {
-      res.json("Fill all the fields.");
+      return res.json("Fill all the fields.");
     } else {
       const unavailableProduct = products.some((u) => u.title === fields.title);
 
       if (unavailableProduct) {
-        res.json("Product already exist.");
+        return res.json("Product already exist.");
       } else {
         const image = files.image ? `/img/${files.image.newFilename}` : "/img/default.jpg";
         const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default.jpg";
