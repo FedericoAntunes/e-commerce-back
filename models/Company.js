@@ -1,4 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
+const slugify = require("slugify");
 
 class Company extends Model {
   static initModel(sequelize) {
@@ -44,6 +45,24 @@ class Company extends Model {
         modelName: "company",
       },
     );
+    function sluggy(name) {
+      return slugify(name, {
+        replacement: "-",
+        trim: true,
+        lower: true,
+        strict: true,
+      });
+    }
+
+    Company.beforeCreate(async function (company) {
+      company.slug = await sluggy(company.name);
+    });
+
+    Company.beforeUpdate(async function (company) {
+      if (company.changed("name")) {
+        company.slug = await sluggy(company.name);
+      }
+    });
     return Company;
   }
 }
