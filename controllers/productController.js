@@ -95,7 +95,13 @@ async function edit(req, res) {}
 
 // Update the specified resource in storage.
 async function update(req, res) {
+  const products = await Product.findAll();
+
   const productId = req.params.id;
+
+  const filteredProducts = products.filter((product) => {
+    return product.id !== Number(productId);
+  });
 
   const form = formidable({
     uploadDir: __dirname + "/../public/img",
@@ -104,25 +110,31 @@ async function update(req, res) {
   });
 
   form.parse(req, async (err, fields, files) => {
+    const unavailableProduct = filteredProducts.some((u) => u.title === fields.title);
     const image = files.image && `/img/${files.image.newFilename}`;
     const logo = files.logo && `/img/${files.logo.newFilename}`;
-    const updatedProduct = {
-      title: fields.title,
-      price: fields.price,
-      description: fields.description,
-      featured: fields.featured,
-      stock: fields.stock,
-      categoryId: fields.categoryId,
-      image,
-      logo,
-    };
-    if (!image) delete updatedProduct.image;
-    if (!logo) delete updatedProduct.logo;
 
-    const product = await Product.findByPk(productId);
+    if (unavailableProduct) {
+      res.json("Product name already in use.");
+    } else {
+      const updatedProduct = {
+        title: fields.title,
+        price: fields.price,
+        description: fields.description,
+        featured: fields.featured,
+        stock: fields.stock,
+        categoryId: fields.categoryId,
+        image,
+        logo,
+      };
+      if (!image) delete updatedProduct.image;
+      if (!logo) delete updatedProduct.logo;
 
-    await product.update(updatedProduct);
-    return res.status(201).json("Product updated");
+      const product = await Product.findByPk(productId);
+
+      await product.update(updatedProduct);
+      return res.status(201).json("Product updated");
+    }
   });
 }
 
