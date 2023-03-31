@@ -108,6 +108,22 @@ const companies = [
     background:
       "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMTU1NTQ4MTBkODc4N2JlYjQ2NDViNTNmOGY3M2NiMDMvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
   },
+  {
+    name: "La Fiesta Latina",
+    slug: sluggy("La Fiesta Latina"),
+    description: `La Fiesta Latina Restaurant is a vibrant and authentic Mexican food destination located in Canada. As soon as you step through the doors, you'll be transported to the heart of Mexico, with its warm and inviting atmosphere, colorful decor, and lively music that will make you feel like you're in a fiesta.
+    The menu at La Fiesta Latina Restaurant is bursting with traditional Mexican dishes made with fresh, high-quality ingredients. Whether you're craving savory tacos, zesty enchiladas, or flavorful fajitas, you'll find it all here. The restaurant also offers a range of vegetarian and gluten-free options, so everyone can indulge in the delicious flavors of Mexico..`,
+    logo: "https://d1ralsognjng37.cloudfront.net/4adb042e-a7b4-46af-9359-7d03018091cf.jpeg",
+    background: "https://d1ralsognjng37.cloudfront.net/4adb042e-a7b4-46af-9359-7d03018091cf.jpeg",
+  },
+  {
+    name: "Burrito Gringo (566 Bronson Ave)",
+    slug: sluggy("Burrito Gringo (566 Bronson Ave)"),
+    description: `Burrito Gringo is a popular Mexican food destination located on 566 Bronson Ave in Canada. As soon as you enter the restaurant, you'll be greeted with a friendly and welcoming atmosphere, with a fun and modern decor that perfectly captures the spirit of Mexican street food.
+    The star of the show at Burrito Gringo is, of course, their delicious burritos. These hearty, overstuffed burritos are made with your choice of protein, such as savory shredded beef or tender grilled chicken, and piled high with fresh toppings like crisp lettuce, juicy tomatoes, and tangy salsa. Each burrito is wrapped in a warm flour tortilla and served with a side of crispy tortilla chips, making for a satisfying and delicious meal.`,
+    logo: "https://d1ralsognjng37.cloudfront.net/4adb042e-a7b4-46af-9359-7d03018091cf.jpeg",
+    background: "https://d1ralsognjng37.cloudfront.net/4adb042e-a7b4-46af-9359-7d03018091cf.jpeg",
+  },
 ];
 
 module.exports = async () => {

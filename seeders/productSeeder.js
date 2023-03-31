@@ -565,6 +565,7 @@ const products = [
     categoryId: 5,
   },
 ];
+
 module.exports = async () => {
   await Product.bulkCreate(products);
   console.log("[Database] Se corrió el seeder de Products.");
