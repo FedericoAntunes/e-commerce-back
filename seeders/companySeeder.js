@@ -124,6 +124,14 @@ const companies = [
     logo: "https://d1ralsognjng37.cloudfront.net/4adb042e-a7b4-46af-9359-7d03018091cf.jpeg",
     background: "https://d1ralsognjng37.cloudfront.net/4adb042e-a7b4-46af-9359-7d03018091cf.jpeg",
   },
+  {
+    name: "Luxe Blooms Flower Cafe",
+    slug: sluggy("Luxe Blooms Flower Cafe"),
+    description: `lol`,
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzM0YjNlYWM4ZTRhNWMyODYwNTk0ZDU3NDhjZDBkMjIvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
+    background:
+      "https://tb-static.uber.com/prod/image-proc/processed_images/334b3eac8e4a5c2860594d5748cd0d22/93b5fd796682c6d5302cd5bec164fe90.jpeg",
+  },
 ];
 
 module.exports = async () => {

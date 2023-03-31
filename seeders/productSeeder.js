@@ -564,7 +564,8 @@ const products = [
     companyId: 8,
     categoryId: 21,
   },
-  { //Burrito Gringo API:
+  {
+    //Burrito Gringo API:
     title: "Quesadilla",
     slug: sluggy("Quesadilla"),
     price: 12,
@@ -647,14 +648,13 @@ const products = [
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8yODdjMTQzOC1kZjc5LTQ4ZTctOWIyYy01MDY3ODgxOGQyODIuanBlZw==",
     companyId: 12,
     categoryId: 4,
-  }, 
+  },
   {
     title: "Jarritos Bottled Soda",
     slug: sluggy("Jarritos Bottled Soda"),
     price: 3.95,
     stock: 22,
-    description:
-      "Authentic Mexican Cola With Natural Ingredients.",
+    description: "Authentic Mexican Cola With Natural Ingredients.",
     featured: false,
     image:
       "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9iMGFhMGY2Ny1jMDY3LTQ3YzItYWY0MS02ZWY0MWM1MzZmYmUuanBlZw==",
@@ -681,30 +681,29 @@ const products = [
     slug: sluggy("Homemade Salsa"),
     price: 2.25,
     stock: 16,
-    description:
-      "All-Natural Homemade Fresh Salsas & Fire Roasted-gluten Free-vegan.",
+    description: "All-Natural Homemade Fresh Salsas & Fire Roasted-gluten Free-vegan.",
     featured: false,
     image:
       "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9mY2M3YWZmOC0wOGVlLTQ5OTItYjRlYy0yNjg4MDY2YTA0NmMuanBlZw==",
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9mY2M3YWZmOC0wOGVlLTQ5OTItYjRlYy0yNjg4MDY2YTA0NmMuanBlZw==",
     companyId: 12,
     categoryId: 4,
-  }, 
+  },
   {
     title: "Homemade Cookies",
     slug: sluggy("Homemade Cookies"),
     price: 2.99,
     stock: 40,
-    description:
-      "Made With Real Butter, Chocolate Chips & Organic Coconut.",
+    description: "Made With Real Butter, Chocolate Chips & Organic Coconut.",
     featured: false,
     image:
       "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80YWFmNTc4ZC1mZTRlLTQ1ZGEtYTdmZC01YTBhNGE3ZmM0ZGYuanBlZw==",
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80YWFmNTc4ZC1mZTRlLTQ1ZGEtYTdmZC01YTBhNGE3ZmM0ZGYuanBlZw==",
     companyId: 12,
     categoryId: 4,
-  }, 
-  { // La Fiesta Latina
+  },
+  {
+    // La Fiesta Latina
     title: "Tacos with Fries",
     slug: sluggy("Tacos with Fries"),
     price: 18,
@@ -718,7 +717,7 @@ const products = [
     companyId: 11,
     categoryId: 4,
   },
-  { 
+  {
     title: "Mexican Chicken Fajitas",
     slug: sluggy("Mexican Chicken Fajitas"),
     price: 23,
@@ -732,7 +731,7 @@ const products = [
     companyId: 11,
     categoryId: 4,
   },
-  { 
+  {
     title: "Authentic Big Handmade 2 Quesadillas",
     slug: sluggy("Authentic Big Handmade 2 Quesadillas"),
     price: 20,
@@ -746,7 +745,7 @@ const products = [
     companyId: 11,
     categoryId: 4,
   },
-  { 
+  {
     title: "Picada",
     slug: sluggy("Picada"),
     price: 25,
@@ -760,7 +759,7 @@ const products = [
     companyId: 11,
     categoryId: 4,
   },
-  { 
+  {
     title: "El Ranchero",
     slug: sluggy("El Ranchero"),
     price: 22,
@@ -774,7 +773,7 @@ const products = [
     companyId: 11,
     categoryId: 4,
   },
-  { 
+  {
     title: "Nachos for Everyone",
     slug: sluggy("Nachos for Everyone"),
     price: 20,
@@ -788,7 +787,7 @@ const products = [
     companyId: 11,
     categoryId: 4,
   },
-  { 
+  {
     title: "Mexican Panini",
     slug: sluggy("Mexican Panini"),
     price: 19,
@@ -802,13 +801,12 @@ const products = [
     companyId: 11,
     categoryId: 4,
   },
-  { 
+  {
     title: "Pollo con Mole",
     slug: sluggy("Pollo con Mole"),
     price: 20,
     stock: 18,
-    description:
-      "Popular dish, chicken with mole sauce, tasty refried beans, and Mexican rice.",
+    description: "Popular dish, chicken with mole sauce, tasty refried beans, and Mexican rice.",
     featured: false,
     image:
       "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMWIyMzk2OWUwMzFlOGI1ZDY4YThhODVlOTFhNTBjODIvYjRmYWNmNDk1YzIyZGY1MmYzY2E2MzUzNzllYmU2MTMuanBlZw==",
@@ -816,7 +814,7 @@ const products = [
     companyId: 11,
     categoryId: 4,
   },
-  { 
+  {
     title: "Enchiladas Rojas with chicken",
     slug: sluggy("Enchiladas Rojas with chicken"),
     price: 18,
@@ -830,7 +828,7 @@ const products = [
     companyId: 11,
     categoryId: 4,
   },
-  { 
+  {
     title: "Chilaquiles with Egg",
     slug: sluggy("Chilaquiles with Egg"),
     price: 18,
@@ -843,7 +841,152 @@ const products = [
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC81ZTVjZWZlYy0xOWY2LTQzMGMtYjljZC0zZmU1YmU1YmI0MDAuanBlZw==",
     companyId: 11,
     categoryId: 4,
-  },                    
+  },
+  {
+    title: "Turkey Croissant Sandwich",
+    slug: sluggy("Turkey Croissant Sandwich"),
+    price: 8,
+    stock: 12,
+    description:
+      "Fresh butter croissant, garlic aioli, sliced deli turkey,arugula,smoked cheddar cheese,red onions, tomatoes.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZTEwMzJhMTA4M2NkNjE4YzQzMTYxMmNmNWUxZWU3ZjQvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/e1032a1083cd618c431612cf5e1ee7f4/4218ca1d09174218364162cd0b1a8cc1.jpeg",
+    companyId: 13,
+    categoryId: 13,
+  },
+  {
+    title: "Flavored Lemonade",
+    slug: sluggy("Flavored Lemonade"),
+    price: 4,
+    stock: 24,
+    description: "Delicious and beatiful Flavored Lemonade.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNzlmMDk3NmZkNTk0N2NjZmQ4MzZjYWRlYTQwMWNlMDIvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/79f0976fd5947ccfd836cadea401ce02/4218ca1d09174218364162cd0b1a8cc1.jpeg",
+    companyId: 13,
+    categoryId: 2,
+  },
+  {
+    title: "Custard and Strawberry Filled Croissant",
+    slug: sluggy("Custard and Strawberry Filled Croissant"),
+    price: 9,
+    stock: 34,
+    description: "Croissant full of delicious Custards and Strawberries.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMWM1MzM0NDM4NWMwODU2MzY3OTA0ZjE1MmRhZWI1ZGIvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/1c53344385c0856367904f152daeb5db/4218ca1d09174218364162cd0b1a8cc1.jpeg",
+    companyId: 13,
+    categoryId: 13,
+  },
+  {
+    title: "Nutella and Strawberry Filled Croissant",
+    slug: sluggy("Nutella and Strawberry Filled Croissant"),
+    price: 9,
+    stock: 26,
+    description: "Croissant with Nutella and Strawberries, an absolute manjar.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYmM5YTI3NjAyZGE1MGU0NGVlMzMwYjEyMzE2OTA1MzMvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/bc9a27602da50e44ee330b1231690533/4218ca1d09174218364162cd0b1a8cc1.jpeg",
+    companyId: 13,
+    categoryId: 13,
+  },
+  {
+    title: "Mango Mania",
+    slug: sluggy("Mango Mania"),
+    price: 7.5,
+    stock: 12,
+    description: "Beatiful looking ice cream of mango.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYWQwZjdkMWRiNGFiOGFiMDcwNTlhM2Y2MWU4YmJjZmQvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/ad0f7d1db4ab8ab07059a3f61e8bbcfd/4218ca1d09174218364162cd0b1a8cc1.jpeg",
+    companyId: 13,
+    categoryId: 13,
+  },
+  {
+    title: "Flavored Latte",
+    slug: sluggy("Flavored Latte"),
+    price: 6.2,
+    stock: 15,
+    description: "Sweet Latte with vainilla.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZWI5ZjAwMDhiZGI1YjhlMjY2YjBjNGQyOTE1N2ZkZWQvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/eb9f0008bdb5b8e266b0c4d29157fded/4218ca1d09174218364162cd0b1a8cc1.jpeg",
+    companyId: 13,
+    categoryId: 2,
+  },
+  {
+    title: "Bloom Flower Espresso",
+    slug: sluggy("Bloom Flower Espresso"),
+    price: 6.2,
+    stock: 15,
+    description: "Delicious Cafe Expresso.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMDQ3MWFkZTRmMDY4MjhlNjI5OGQxZGNhMDQ1M2I0NDIvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/0471ade4f06828e6298d1dca0453b442/4218ca1d09174218364162cd0b1a8cc1.jpeg",
+    companyId: 13,
+    categoryId: 2,
+  },
+  {
+    title: "Strawberry Banana",
+    slug: sluggy("Strawberry Banana"),
+    price: 7.5,
+    stock: 5,
+    description: "Smoothy of Strawberry with Banana.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNzBmNTNjMDc4NmJhOTg2MjJjYTJjNzA0ODI5OGVkN2QvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/70f53c0786ba98622ca2c7048298ed7d/4218ca1d09174218364162cd0b1a8cc1.jpeg",
+    companyId: 13,
+    categoryId: 19,
+  },
+  {
+    title: "Chocolate Truffle Mousse",
+    slug: sluggy("Chocolate Truffle Mousse"),
+    price: 6.5,
+    stock: 7,
+    description: "Astonishing beatiful Chocolate Truffle Mousse cake.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvM2MwYzc0Y2E0YzFlODQxZjNiMThjYjE1N2M1YjNiYTMvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/3c0c74ca4c1e841f3b18cb157c5b3ba3/4218ca1d09174218364162cd0b1a8cc1.jpeg",
+    companyId: 13,
+    categoryId: 13,
+  },
+  {
+    title: "Vegan Chocolate Brownie Cake",
+    slug: sluggy("Vegan Chocolate Brownie Cake"),
+    price: 6.5,
+    stock: 19,
+    description: "Vegan brownie with chocolate.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNjEyN2Y5Y2UxMTFlMDhmODg0ODU2NTRiNDBjMzBlZDYvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/6127f9ce111e08f88485654b40c30ed6/4218ca1d09174218364162cd0b1a8cc1.jpeg",
+    companyId: 13,
+    categoryId: 20,
+  },
+  {
+    title: "Vegetarian Croissant Sandwich",
+    slug: sluggy("Vegetarian Croissant Sandwich"),
+    price: 8,
+    stock: 12,
+    description:
+      "Fresh butter croissant, garlic aioli, arugula, smoked cheddar cheese, red onions, tomatoes cucumber, salt, pepper.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvN2ZkY2RkZTYyYjAwYTkzNDRkMWNjMDg2ZTMyYzEwZTcvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/7fdcdde62b00a9344d1cc086e32c10e7/4218ca1d09174218364162cd0b1a8cc1.jpeg",
+    companyId: 13,
+    categoryId: 2,
+  },
 ];
 
 module.exports = async () => {
