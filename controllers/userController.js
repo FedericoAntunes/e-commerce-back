@@ -76,9 +76,9 @@ async function update(req, res) {
     const unavailableUserEmail = filteredUsers.some((u) => u.email === fields.email);
 
     if (unavailableUsername) {
-      res.json("Unavailable username");
+      return res.json("Unavailable username");
     } else if (unavailableUserEmail) {
-      res.json("Unavailable user email");
+      return res.json("Unavailable user email");
     } else {
       const avatar = files.avatar && `/img/${files.avatar.newFilename}`;
 

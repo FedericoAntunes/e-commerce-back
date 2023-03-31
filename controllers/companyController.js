@@ -23,7 +23,13 @@ async function edit(req, res) {}
 
 // Update the specified resource in storage.
 async function update(req, res) {
+  const companies = await Company.findAll();
+
   const companyId = req.params.id;
+
+  const filteredCompanies = companies.filter((company) => {
+    return company.id !== Number(companyId);
+  });
 
   const form = formidable({
     uploadDir: __dirname + "/../public/img",
@@ -32,37 +38,32 @@ async function update(req, res) {
   });
 
   form.parse(req, async (err, fields, files) => {
-    const background = files.background && `/img/${files.background.newFilename}`;
+    const unavailableComapanyName = filteredCompanies.some((u) => u.name === fields.name);
 
-    const logo = files.logo && `/img/${files.logo.newFilename}`;
+    if (unavailableComapanyName) {
+      return res.json("Unavailable comapany name");
+    } else {
+      const background = files.background && `/img/${files.background.newFilename}`;
 
-    const company = await Company.findByPk(companyId);
+      const logo = files.logo && `/img/${files.logo.newFilename}`;
 
-    const updatedCompany = {
-      name: fields.name,
-      description: fields.description,
-      estimated_time: `20–35 min • $1.49 Delivery Fee • $ `,
-      background,
-      logo,
-    };
+      const company = await Company.findByPk(companyId);
 
-    if (!background) delete updatedCompany.background;
-    if (!logo) delete updatedCompany.logo;
+      const updatedCompany = {
+        name: fields.name,
+        description: fields.description,
+        estimated_time: `20–35 min • $1.49 Delivery Fee • $ `,
+        background,
+        logo,
+      };
 
-    await company.update(updatedCompany);
-    return res.status(201).json("Company updated");
+      if (!background) delete updatedCompany.background;
+      if (!logo) delete updatedCompany.logo;
+
+      await company.update(updatedCompany);
+      return res.status(201).json("Company updated");
+    }
   });
-}
-
-// Remove the specified resource from storage.
-async function destroy(req, res) {
-  const productId = req.params.id;
-  await Product.destroy({
-    where: {
-      id: productId,
-    },
-  });
-  return res.json("Product deleted");
 }
 
 // Remove the specified resource from storage.
