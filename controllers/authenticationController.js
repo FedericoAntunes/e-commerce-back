@@ -54,7 +54,7 @@ async function tokenAdmin(req, res) {
 }
 
 async function googleAuth(req, res) {
-  const { email, firstname, lastname, avatar } = req.body;
+  const { email, firstname = "Nameless user", lastname = "Nameless user", avatar } = req.body;
   const users = await User.findAll();
   const userExists = users.find((u) => u.email === email);
   if (userExists && userExists.reg_mode !== "google") {
