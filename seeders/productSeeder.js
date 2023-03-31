@@ -443,7 +443,7 @@ const products = [
     featured: false,
     image: "https://d1ralsognjng37.cloudfront.net/643e0c80-f73e-416d-8e05-e73d2c950e6f",
     logo: "https://d1ralsognjng37.cloudfront.net/643e0c80-f73e-416d-8e05-e73d2c950e6f",
-    companyId: 7,
+    companyId: 8,
     categoryId: 21,
   },
   {
@@ -455,7 +455,7 @@ const products = [
     featured: false,
     image: "https://d1ralsognjng37.cloudfront.net/dd8785cb-f42e-45c3-b0fb-ee50b9093dd6",
     logo: "https://d1ralsognjng37.cloudfront.net/dd8785cb-f42e-45c3-b0fb-ee50b9093dd6",
-    companyId: 7,
+    companyId: 8,
     categoryId: 21,
   },
   {
@@ -469,7 +469,7 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/fd09f99398bf3393e7e9980fb0d8bb0b/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/fd09f99398bf3393e7e9980fb0d8bb0b/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
+    companyId: 8,
     categoryId: 21,
   },
   {
@@ -483,7 +483,7 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/fd09f99398bf3393e7e9980fb0d8bb0b/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/fd09f99398bf3393e7e9980fb0d8bb0b/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
+    companyId: 8,
     categoryId: 21,
   },
   {
@@ -496,7 +496,7 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/9cf142257090d6a9fcebe0f082785daa/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/9cf142257090d6a9fcebe0f082785daa/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
+    companyId: 8,
     categoryId: 21,
   },
   {
@@ -509,7 +509,7 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/a1eef9e452601f6c7b68b6f4c7ca4bce/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/a1eef9e452601f6c7b68b6f4c7ca4bce/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
+    companyId: 8,
     categoryId: 21,
   },
   {
@@ -522,7 +522,7 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/3c7bf5df341facf1c5a21b6aea21faea/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/3c7bf5df341facf1c5a21b6aea21faea/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
+    companyId: 8,
     categoryId: 21,
   },
   {
@@ -535,7 +535,7 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/a823838d3c22b1e7506d9de16c332094/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/a823838d3c22b1e7506d9de16c332094/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
+    companyId: 8,
     categoryId: 21,
   },
   {
@@ -548,7 +548,7 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/eb782adbfa31d4cf9d31d07852d151f3/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/eb782adbfa31d4cf9d31d07852d151f3/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
+    companyId: 8,
     categoryId: 21,
   },
   {
@@ -561,10 +561,11 @@ const products = [
     image:
       "https://tb-static.uber.com/prod/image-proc/processed_images/4882f95c177414a333c7e92821578934/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/4882f95c177414a333c7e92821578934/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-    companyId: 7,
+    companyId: 8,
     categoryId: 21,
   },
 ];
+
 module.exports = async () => {
   await Product.bulkCreate(products);
   console.log("[Database] Se corrió el seeder de Products.");
