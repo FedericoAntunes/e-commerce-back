@@ -987,6 +987,258 @@ const products = [
     companyId: 13,
     categoryId: 2,
   },
+  // PIZZA C.O.
+  {
+    title: "The Adelaide",
+    price: 23,
+    stock: 15,
+    description: "White Sauce, Fior Di Latte, Smoked provolone, Mushrooms, Spinach, Truffle Oil.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvN2ZjNzMzMjRhNGM2MTQ1NjI2ZWE5YTg4M2ZlYWRhZjMvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images4.alphacoders.com/276/276908.jpg",
+    companyId: 9,
+    categoryId: 16,
+  },
+  {
+    title: "Yorkville Special",
+    price: 23,
+    stock: 8,
+    description:
+      "Olive Oil, Fior Di Latte, Goat Cheese, Crushed Walnuts, Honey, Truffle Oil and Kosher Salt.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZTRjNThiNDM5YjE4OWZjNTdmNTYzN2M1MmE3MmRkM2MvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images4.alphacoders.com/276/276908.jpg",
+    companyId: 9,
+    categoryId: 16,
+  },
+  {
+    title: "Danforth Pi",
+    price: 20,
+    stock: 25,
+    description:
+      "Pesto Sauce, Mozzarella Cheese, Feta Cheese, Kalamata Olives, Mushrooms, Grilled Chicken, Cherry Tomatoes.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvOWViZWNiZjliMjAyMmEyYjNkM2UzNTE3YzQwM2M0ZWIvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images4.alphacoders.com/276/276908.jpg",
+    companyId: 9,
+    categoryId: 16,
+  },
+  {
+    title: "Cheese Pi",
+    price: 16,
+    stock: 31,
+    description: "Classic pizza with cheese.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZTY2Mjg2MjdjNzY1ZThjMDRmYmZiN2Q4M2E5ZTI5NDgvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images4.alphacoders.com/276/276908.jpg",
+    companyId: 9,
+    categoryId: 16,
+  },
+  {
+    title: "The Avenue",
+    price: 20,
+    stock: 14,
+    description:
+      "San Marzano tomato sauce, mozzarella cheese, smoked provolone, beef brisket & BBQ sauce drizzle.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYmI5Zjk4ODM1NzE1MWNlNGI3ZGY2YWZhMjI4YTNiYmYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images4.alphacoders.com/276/276908.jpg",
+    companyId: 9,
+    categoryId: 16,
+  },
+  {
+    title: "Main Salad",
+    price: 18,
+    stock: 36,
+    description:
+      "Choose your greens, two protein topping selections & unlimited choice of salad toppings.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMTA1OGQ3OGU5YjU3MjU3YTM3MTZiOWRlZjJiMzIxYjEvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images4.alphacoders.com/276/276908.jpg",
+    companyId: 9,
+    categoryId: 8,
+  },
+  {
+    title: "Side Salad",
+    price: 13,
+    stock: 22,
+    description:
+      "Choose your greens, two protein topping selections & unlimited choice of salad toppings.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNTg2OWIyNTY2NThlMTYxYmVkMWNmMzM0YjRlNmU2YjUvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images4.alphacoders.com/276/276908.jpg",
+    companyId: 9,
+    categoryId: 8,
+  },
+  {
+    title: "Chocolate Chip",
+    price: 3.5,
+    stock: 59,
+    description: "One Chocolate Chip cookie.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZTliMGNjNzFmZTRkYTNiYWRkNjI4YjI0ZjA3NmU3OTgvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images4.alphacoders.com/276/276908.jpg",
+    companyId: 9,
+    categoryId: 19,
+  },
+  {
+    title: "Mill St. Organic",
+    price: 8,
+    stock: 20,
+    description: "341ml bottle Alc: 4.20%",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZDU0OWUzMmIzNzA0NjhmNDkyMWU5OTk1NjliNzJkZmYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images4.alphacoders.com/276/276908.jpg",
+    companyId: 9,
+    categoryId: 12,
+  },
+  {
+    title: "Stella Artois",
+    price: 8,
+    stock: 14,
+    description: "330ml bottle Alc:5%",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzJiMTNkMjFiZjFhMmVkNTViNjBjZmIxMDlhZDlkNjkvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images4.alphacoders.com/276/276908.jpg",
+    companyId: 9,
+    categoryId: 12,
+  },
+  // PIZZA NERDS
+  {
+    title: "Gladstone - Calabrese Pizza",
+    price: 20,
+    stock: 34,
+    description: "Tomato, slightly spicy calabrese sausage, and arugula, cheese!",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvY2ZiZTI5NGJlZTU3YzQyNWU2NmQ1MjVkODQwZDY0MTQvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images7.alphacoders.com/596/596343.jpg",
+    companyId: 10,
+    categoryId: 16,
+  },
+  {
+    title: "Queen Elizabeth - Goat Cheese Pizza",
+    price: 21,
+    stock: 8,
+    description: "Tomato sauce with local cheese, basil, goat cheese, and spicy honey.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvODRkYzgxYzkzYWU3NDBhNGE4ZmRjODIzM2I4NGQwYzYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images7.alphacoders.com/596/596343.jpg",
+    companyId: 10,
+    categoryId: 16,
+  },
+  {
+    title: "Bank - Mushroom Pizzai",
+    price: 22,
+    stock: 25,
+    description:
+      "White pizza with cheese, marinated portabello mushrooms, cracked black pepper, parmesan and truffle oil.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYTdmYzAyZDc4N2JhOGU3YTZiNzg5ZGE1MWE3MmQyZmYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images7.alphacoders.com/596/596343.jpg",
+    companyId: 10,
+    categoryId: 16,
+  },
+  {
+    title: "Lyon - Nerd Pizza",
+    price: 19,
+    stock: 31,
+    description:
+      "Black-pepper-molasses bacon, local cheese, pickled red onion and chili basil honey.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvOGU1ZThmZDlkMmU3MzkzMGZiZGQ0YmI3ZTIzNDlhNTkvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images7.alphacoders.com/596/596343.jpg",
+    companyId: 10,
+    categoryId: 16,
+  },
+  {
+    title: "Hank - Kale Caesar Salad",
+    price: 12,
+    stock: 14,
+    description: "Kale, caesar dressing, lemon, bacon, panko and parmesan.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMTkyY2Y4YmZjY2ZmMGQzMDQzZWViZmE0OTgxYmYxZWYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images7.alphacoders.com/596/596343.jpg",
+    companyId: 10,
+    categoryId: 8,
+  },
+  {
+    title: "Frank - 'Deluxe' Pizza",
+    price: 24,
+    stock: 36,
+    description:
+      "Tomato sauce with local cheese, handmade sausage, charred green peppers and marinated mushrooms.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYzA4NGIyNDI4NmU5MTJjMTBkMDFkMmQwNDg1MGFlNzYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images7.alphacoders.com/596/596343.jpg",
+    companyId: 10,
+    categoryId: 16,
+  },
+  {
+    title: "Gilmour - Hawaiian Pizza",
+    price: 21,
+    stock: 22,
+    description:
+      "Tomato sauce, local cheese, roasted pineapple, dry cured bacon and zesty bbq drizzle.",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMTE4YmNmYzVhMTU3OTFiMTA2NWM1MzI4ZmE3Mjk3YmYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images7.alphacoders.com/596/596343.jpg",
+    companyId: 10,
+    categoryId: 16,
+  },
+  {
+    title: "Artizen Kombucha (Raspberry Hibiscus)",
+    price: 6,
+    stock: 59,
+    description: "Artizen is a smooth, small batch artisan kombucha. Made locally.",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvN2RkYmUwY2UzOTYwMmIxZDI0YTAyZjBiMmIzOWU4YmEvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images7.alphacoders.com/596/596343.jpg",
+    companyId: 10,
+    categoryId: 12,
+  },
+  {
+    title: "Artizen Kombucha (Lemon Ginger)",
+    price: 6,
+    stock: 20,
+    description: "Artizen is a smooth, small batch artisan kombucha. Made locally",
+    featured: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvM2I4ZjViZDNmMDdiYjc2OWE5NDYyYmY2ODJkZWVmOGYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images7.alphacoders.com/596/596343.jpg",
+    companyId: 10,
+    categoryId: 12,
+  },
+  {
+    title: "California IPA (473ml) ABV 6.4%",
+    price: 6,
+    stock: 35,
+    description:
+      "Like a juicier west coast IPA. It's a collaboration that pairs great with pizza!!",
+    featured: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvOGIwOWQwM2VhYzY0OGViMzRkNDBiZmUyM2NkZjc2YjkvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://images7.alphacoders.com/596/596343.jpg",
+    companyId: 10,
+    categoryId: 12,
+  },
 ];
 
 module.exports = async () => {
