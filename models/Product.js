@@ -56,13 +56,25 @@ class Product extends Model {
     }
     Product.beforeCreate(async function (product) {
       product.slug = await sluggy(product.title);
+      product.price = await product.price.toFixed(2);
+    });
+
+    Product.beforeBulkCreate(async function (products) {
+      for (const product of products) {
+        product.slug = await sluggy(product.title);
+        product.price = await product.price.toFixed(2);
+      }
     });
 
     Product.beforeUpdate(async function (product) {
       if (product.changed("title")) {
         product.slug = await sluggy(product.title);
       }
+      if (product.changed("price")) {
+        product.price = await product.price.toFixed(2);
+      }
     });
+
     return Product;
   }
 }
