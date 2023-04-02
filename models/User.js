@@ -71,6 +71,7 @@ class User extends Model {
         modelName: "user",
       },
     );
+
     User.beforeCreate(async function (user) {
       if (user.changed("password")) {
         user.password = await bcrypt.hash(user.password, 8);
@@ -83,5 +84,12 @@ class User extends Model {
     return await bcrypt.compare(password, this.password);
   }
 }
+
+User.prototype.toJSON = function () {
+  var values = Object.assign({}, this.get());
+
+  delete values.password;
+  return values;
+};
 
 module.exports = User;
