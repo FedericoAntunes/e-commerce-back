@@ -13,9 +13,9 @@ module.exports = (app) => {
   app.use("/categories", categoryRoutes);
   app.use("/users", userRoutes);
   app.use("/admins", adminRoutes);
+  app.use("/orders", orderRoutes);
 
   app.use("/login", authenticationRoutes);
-  app.use("/order", orderRoutes);
 
   app.use("/", publicRoutes);
 };
