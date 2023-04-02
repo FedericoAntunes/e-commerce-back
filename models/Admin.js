@@ -59,7 +59,7 @@ class Admin extends Model {
 }
 
 Admin.prototype.toJSON = function () {
-  var values = Object.assign({}, this.get());
+  const values = Object.assign({}, this.get());
 
   delete values.password;
   return values;
