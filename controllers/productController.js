@@ -119,7 +119,7 @@ async function update(req, res) {
     } else {
       const updatedProduct = {
         title: fields.title,
-        price: fields.price,
+        price: Number(fields.price),
         description: fields.description,
         featured: fields.featured,
         stock: fields.stock,
