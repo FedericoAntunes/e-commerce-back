@@ -47,7 +47,7 @@ async function store(req, res) {
           password: fields.password,
           reg_mode: "email",
         });
-        res.status(201).json("User stored");
+        return res.status(201).json("User stored");
       }
     }
   });

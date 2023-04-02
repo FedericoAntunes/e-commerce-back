@@ -46,7 +46,7 @@ async function store(req, res) {
           background,
           logo,
         });
-        res.status(201).json("Company stored.");
+        return res.status(201).json("Company stored.");
       }
     }
   });

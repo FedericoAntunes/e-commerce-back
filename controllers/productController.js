@@ -74,7 +74,7 @@ async function store(req, res) {
 
         await Product.create({
           title: fields.title,
-          price: fields.price,
+          price: Number(fields.price),
           description: fields.description,
           featured: fields.featured,
           slug: "",
@@ -84,7 +84,7 @@ async function store(req, res) {
           image,
           logo,
         });
-        res.status(201).json("Product stored.");
+        return res.status(201).json("Product stored.");
       }
     }
   });
