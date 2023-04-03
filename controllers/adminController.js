@@ -3,7 +3,7 @@ const formidable = require("formidable");
 
 // Display a listing of the resource.
 async function index(req, res) {
-  const admins = await Admin.findAll();
+  const admins = await Admin.findAll({ order: [["createdAt", "DESC"]] });
   return res.json(admins);
 }
 

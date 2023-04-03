@@ -2,7 +2,7 @@ const { Company, Product } = require("../models");
 const formidable = require("formidable");
 
 async function index(req, res) {
-  const companies = await Company.findAll();
+  const companies = await Company.findAll({ order: [["createdAt", "DESC"]] });
   return res.json(companies);
 }
 

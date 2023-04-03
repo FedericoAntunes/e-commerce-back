@@ -24,6 +24,7 @@ async function index(req, res) {
         [Op.and]: query,
       },
       include: [Company, Category],
+      order: [["createdAt", "DESC"]],
     });
   } catch (error) {
     console.log(error);

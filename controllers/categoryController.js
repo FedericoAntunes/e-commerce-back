@@ -1,7 +1,7 @@
 const { Category } = require("../models");
 
 async function index(req, res) {
-  const categories = await Category.findAll();
+  const categories = await Category.findAll({ order: [["createdAt", "DESC"]] });
   return res.json(categories);
 }
 
