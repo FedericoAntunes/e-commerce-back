@@ -28,16 +28,22 @@ async function store(req, res) {
       payment_info,
       userId: req.auth.id,
     });
+    const orderProducts = [];
     for (const product of products) {
-      await OrderProduct.create({
+      const orderProduct = {
         qty: product.quantity,
         unit_price: product.price,
         product_name: product.title,
         orderId: order.id,
         productId: product.id,
-      });
+        image: product.image,
+      };
+      orderProducts.push(orderProduct);
+      await OrderProduct.create(orderProduct);
     }
-    return res.status(201).json("Order created successfully");
+    order.dataValues.products = orderProducts;
+    console.log(order);
+    return res.status(201).json(order);
   }
   return res.status(406).json("Error");
 }
