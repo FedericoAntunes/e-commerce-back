@@ -19,6 +19,8 @@ const Product = require("./Product");
 const Company = require("./Company");
 const Order = require("./Order");
 const OrderProduct = require("./OrderProduct");
+const ShoppingCart = require("./ShoppingCart");
+const ShoppingCartProducts = require("./ShoppingCartProducts");
 
 User.initModel(sequelize);
 Admin.initModel(sequelize);
@@ -27,7 +29,8 @@ Product.initModel(sequelize);
 Company.initModel(sequelize);
 Order.initModel(sequelize);
 OrderProduct.initModel(sequelize);
-
+ShoppingCart.initModel(sequelize);
+ShoppingCartProducts.initModel(sequelize);
 /**
  * Luego de definir los modelos, se pueden establecer relaciones entre los
  * mismos (usando métodos como belongsTo, hasMany y belongsToMany)...
@@ -36,6 +39,14 @@ OrderProduct.initModel(sequelize);
 // 1 a N
 Company.hasMany(Product);
 Product.belongsTo(Company);
+
+// N a N
+ShoppingCart.belongsToMany(Product, { through: ShoppingCartProducts });
+Product.belongsToMany(ShoppingCart, { through: ShoppingCartProducts });
+
+// 1 a 1
+User.hasOne(ShoppingCart);
+ShoppingCart.belongsTo(User);
 
 // N a N
 Product.belongsToMany(Order, { through: OrderProduct });

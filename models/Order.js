@@ -14,6 +14,10 @@ class Order extends Model {
           type: DataTypes.STRING,
           allowNull: false,
         },
+        total_price: {
+          type: DataTypes.FLOAT,
+          allowNull: false,
+        },
         address: {
           type: DataTypes.JSON,
           allowNull: false,
@@ -26,7 +30,6 @@ class Order extends Model {
           type: DataTypes.JSON,
           allowNull: false,
         },
-        
       },
       {
         sequelize,

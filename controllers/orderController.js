@@ -13,24 +13,33 @@ async function show(req, res) {
 
 // Store a newly created resource in storage.
 async function store(req, res) {
-  const { products, address, payment_method, payment_info } = req.body;
-  const order = await Order.create({
-    status: "In process",
-    address,
-    payment_method,
-    payment_info,
-    userId : req.auth.id,
-  });
+  const { shippingData, total_price } = req.body;
+  const { products, address, payment_method, payment_info } = shippingData;
+  let total = 0;
   for (const product of products) {
-    await OrderProduct.create({
-      qty: product.quantity,
-      unit_price: product.price,
-      product_name: product.title,
-      orderId: order.id,
-      productId: product.id,
-    });
+    total += product.price * product.quantity;
   }
-  return res.status(201).json("Order created successfully");
+  if (Math.abs(total - total_price) < 0.02) {
+    const order = await Order.create({
+      status: "In process",
+      address,
+      total_price,
+      payment_method,
+      payment_info,
+      userId: req.auth.id,
+    });
+    for (const product of products) {
+      await OrderProduct.create({
+        qty: product.quantity,
+        unit_price: product.price,
+        product_name: product.title,
+        orderId: order.id,
+        productId: product.id,
+      });
+    }
+    return res.status(201).json("Order created successfully");
+  }
+  return res.status(406).json("Error");
 }
 
 // Show the form for editing the specified resource.
