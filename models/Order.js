@@ -5,9 +5,9 @@ class Order extends Model {
     Order.init(
       {
         id: {
-          type: DataTypes.BIGINT.UNSIGNED,
+          type: DataTypes.UUID,
+          defaultValue: DataTypes.UUIDV4,
           primaryKey: true,
-          autoIncrement: true,
           allowNull: false,
         },
         status: {
