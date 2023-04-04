@@ -7,9 +7,11 @@ async function index(req, res) {
 
 // Display the specified resource.
 async function show(req, res) {
-  const order = await Order.findByPk(req.params.id);
+  const order = await Order.findOne({where: {userId: req.auth.id}, order: [["createdAt", "DESC"]]});
+  console.log(order);
   return res.json(order);
 }
+
 
 // Store a newly created resource in storage.
 async function store(req, res) {
