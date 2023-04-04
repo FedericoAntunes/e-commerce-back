@@ -11,7 +11,6 @@ async function show(req, res) {
     where: { userId: req.auth.id },
     order: [["createdAt", "DESC"]],
   });
-  console.log(order);
   return res.json(order);
 }
 
@@ -23,7 +22,10 @@ async function store(req, res) {
   for (const product of products) {
     total += product.price * product.quantity;
   }
-  if (Math.abs(total - total_price) < 0.02) {
+  if (
+    Math.abs(total + total * Number(process.env.TAX) + Number(process.env.SHIPPING) - total_price) <
+    0.02
+  ) {
     const order = await Order.create({
       status: "In process",
       address,
@@ -46,10 +48,9 @@ async function store(req, res) {
       await OrderProduct.create(orderProduct);
     }
     order.dataValues.products = orderProducts;
-    console.log(order);
     return res.status(201).json(order);
   }
-  return res.status(406).json("Error");
+  return res.status(406).json({ Error: "Error" });
 }
 
 // Show the form for editing the specified resource.
@@ -64,12 +65,10 @@ async function destroy(req, res) {}
 // Otros handlers...
 // ...
 async function userOrders(req, res) {
-  const orders = await OrderProduct.findAll({
+  const orders = await Order.findAll({
     order: [["createdAt", "DESC"]],
-    include: [
-      { model: Product },
-      { model: Order, include: [{ model: User, where: { id: req.auth.id } }] },
-    ],
+    where: { userId: req.auth.id },
+    include: [{ model: OrderProduct, include: [{ model: Product }] }],
   });
   return res.json(orders);
 }
