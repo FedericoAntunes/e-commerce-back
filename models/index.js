@@ -51,6 +51,10 @@ ShoppingCart.belongsTo(User);
 // N a N
 Product.belongsToMany(Order, { through: OrderProduct });
 Order.belongsToMany(Product, { through: OrderProduct });
+OrderProduct.belongsTo(Order);
+Order.hasMany(OrderProduct);
+OrderProduct.belongsTo(Product);
+Product.hasMany(OrderProduct);
 
 // 1 a N
 User.hasMany(Order);

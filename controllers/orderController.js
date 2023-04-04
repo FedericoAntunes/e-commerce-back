@@ -1,4 +1,4 @@
-const { Order, OrderProduct } = require("../models");
+const { Order, OrderProduct, Product, User } = require("../models");
 
 async function index(req, res) {
   const orders = await Order.findAll({ order: [["createdAt", "DESC"]] });
@@ -7,11 +7,13 @@ async function index(req, res) {
 
 // Display the specified resource.
 async function show(req, res) {
-  const order = await Order.findOne({where: {userId: req.auth.id}, order: [["createdAt", "DESC"]]});
+  const order = await Order.findOne({
+    where: { userId: req.auth.id },
+    order: [["createdAt", "DESC"]],
+  });
   console.log(order);
   return res.json(order);
 }
-
 
 // Store a newly created resource in storage.
 async function store(req, res) {
@@ -61,6 +63,16 @@ async function destroy(req, res) {}
 
 // Otros handlers...
 // ...
+async function userOrders(req, res) {
+  const orders = await OrderProduct.findAll({
+    order: [["createdAt", "DESC"]],
+    include: [
+      { model: Product },
+      { model: Order, include: [{ model: User, where: { id: req.auth.id } }] },
+    ],
+  });
+  return res.json(orders);
+}
 
 module.exports = {
   index,
@@ -69,4 +81,5 @@ module.exports = {
   edit,
   update,
   destroy,
+  userOrders,
 };
