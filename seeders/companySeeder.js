@@ -20,6 +20,7 @@ const companies = [
     logo: "https://images.rappi.com.uy/restaurants_logo/lapasiva-centro-1581453375579.png?e=webp&q=80&d=200x200",
     background:
       "https://images.deliveryhero.io/image/pedidosya/header-backgrounds/mobile/pizza-4.jpg?quality=100&width=550&webp=1",
+    valoration: (Math.random() + 4).toFixed(1),
   },
   {
     name: "La Cigale",
@@ -31,6 +32,7 @@ const companies = [
     logo: "https://images.deliveryhero.io/image/pedidosya/restaurants/la-cigale-nuevo-centro.jpg?quality=100&width=100",
     background:
       "https://images.deliveryhero.io/image/pedidosya/profile-headers/la-cigale-pocitos-custom-header.jpg?quality=70&width=1280&webp=1",
+    valoration: (Math.random() + 4).toFixed(1),
   },
   {
     name: "Mc Donald's",
@@ -43,6 +45,7 @@ const companies = [
     logo: "https://images.rappi.com.uy/restaurants_logo/111919-1543425311.png?e=webp&d=100x100&q=100",
     background:
       "https://images.deliveryhero.io/image/pedidosya/profile-headers/mc-donalds-uruguay-header-custom-2020.jpg?quality=100&width=1440&webp=1",
+    valoration: (Math.random() + 4).toFixed(1),
   },
   {
     name: "Burger King",
@@ -56,6 +59,8 @@ const companies = [
     logo: "https://images.rappi.com.uy/restaurants_logo/nuevo-logo-bk-1610117467515.png?e=webp&d=5x5&q=100",
     background:
       "https://images.deliveryhero.io/image/pedidosya/profile-headers/burger-king-ejido-custom-header.jpg?quality=70&width=1280&webp=1",
+
+    valoration: (Math.random() + 4).toFixed(1),
   },
   {
     name: "Medialunas Calentitas",
@@ -64,6 +69,8 @@ const companies = [
     logo: "https://images.rappi.com.uy/restaurants_logo/mediaslunascalentitas-logo-1-1567609569925.png?e=webp&d=100x100&q=100",
     background:
       "https://images.rappi.com.uy/restaurants_background/uymedialunascalentitass-1666634475880.jpg?e=webp&d=700x100&q=100",
+
+    valoration: (Math.random() + 4).toFixed(1),
   },
   {
     name: "Avenida Bar",
@@ -72,6 +79,8 @@ const companies = [
     logo: "https://images.rappi.com.uy/restaurants_logo/avenidabar-1568314996192.png?e=webp&d=100x100&q=100",
     background:
       "https://images.rappi.com.uy/restaurants_background/uyavenidabar-1665777769766.jpg?e=webp&d=700x100&q=100",
+
+    valoration: (Math.random() + 4).toFixed(1),
   },
   {
     name: "Kochu Restaurant",
@@ -80,6 +89,8 @@ const companies = [
     logo: "https://d1ralsognjng37.cloudfront.net/5b3857e2-a009-4ae3-8761-576e8a3584e3",
     background:
       "https://duyt4h9nfnj50.cloudfront.net/resized/c4cae0bc90b6dbb83abc9072a0ba389b-w1080-cc.jpg",
+
+    valoration: (Math.random() + 4).toFixed(1),
   },
   {
     name: "Hokkaido Sushi",
@@ -87,6 +98,8 @@ const companies = [
     description: `Hokkaido Sushi is a sushi restaurant located in Vancouver, Canada. The restaurant specializes in traditional Japanese cuisine, particularly sushi and sashimi. The menu at Hokkaido Sushi includes a variety of sushi rolls, nigiri, and sashimi options, as well as hot dishes such as udon noodles and teriyaki chicken. Some of the most popular dishes at the restaurant include the dynamite roll, the spicy tuna roll, and the salmon sashimi. The atmosphere at Hokkaido Sushi is described as cozy and intimate, with a minimalist decor that features traditional Japanese accents. The restaurant is known for its friendly and attentive service, and its commitment to using fresh and high-quality ingredients in its dishes. Overall, Hokkaido Sushi is a well-regarded sushi restaurant in Vancouver, offering a range of traditional Japanese dishes in a welcoming and relaxed atmosphere. It is located at 2120 W Broadway in Vancouver, British Columbia.`,
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/e614f5c15137da551394c7e0767e818b/97ef7458dde62fa918635bc21265d9f5.jpeg",
     background: "https://d1ralsognjng37.cloudfront.net/3def8874-649e-4e5e-ad10-3946dc6c43fa.jpeg",
+
+    valoration: (Math.random() + 4).toFixed(1),
   },
   {
     name: "Pi Co. Pizza Bar",
@@ -97,6 +110,8 @@ const companies = [
       Overall, Pi Co. Pizza Bar is a great choice for anyone looking for delicious, customizable pizza in a casual and contemporary setting.`,
     logo: "https://images4.alphacoders.com/276/276908.jpg",
     background: "https://images4.alphacoders.com/276/276908.jpg",
+
+    valoration: (Math.random() + 4).toFixed(1),
   },
   {
     name: "Pizza Nerds",
@@ -105,6 +120,8 @@ const companies = [
       The menu at Pizza Nerds features a variety of pizza options with unique and creative toppings, such as the "Prosciutto & Fig" pizza with fresh figs, prosciutto, goat cheese, and balsamic glaze, or the "Vegan Dragon" pizza with vegan cheese, dragon sauce, and veggies. In addition to pizza, the restaurant also offers appetizers like garlic knots and salads, as well as drinks like soda and beer.`,
     logo: "https://images7.alphacoders.com/596/596343.jpg",
     background: "https://images7.alphacoders.com/596/596343.jpg",
+
+    valoration: (Math.random() + 4).toFixed(1),
   },
   {
     name: "La Fiesta Latina",
@@ -113,6 +130,8 @@ const companies = [
     The menu at La Fiesta Latina Restaurant is bursting with traditional Mexican dishes made with fresh, high-quality ingredients. Whether you're craving savory tacos, zesty enchiladas, or flavorful fajitas, you'll find it all here. The restaurant also offers a range of vegetarian and gluten-free options, so everyone can indulge in the delicious flavors of Mexico..`,
     logo: "https://d1ralsognjng37.cloudfront.net/c8109a01-ffba-40a5-86e6-1b18a3cf1ea5.jpeg",
     background: "https://d1ralsognjng37.cloudfront.net/c8109a01-ffba-40a5-86e6-1b18a3cf1ea5.jpeg",
+
+    valoration: (Math.random() + 4).toFixed(1),
   },
   {
     name: "Burrito Gringo (566 Bronson Ave)",
@@ -121,6 +140,8 @@ const companies = [
     The star of the show at Burrito Gringo is, of course, their delicious burritos. These hearty, overstuffed burritos are made with your choice of protein, such as savory shredded beef or tender grilled chicken, and piled high with fresh toppings like crisp lettuce, juicy tomatoes, and tangy salsa. Each burrito is wrapped in a warm flour tortilla and served with a side of crispy tortilla chips, making for a satisfying and delicious meal.`,
     logo: "https://d1ralsognjng37.cloudfront.net/4d4db85e-a5d9-4ecd-9e92-dec6882cf7c4",
     background: "https://d1ralsognjng37.cloudfront.net/4d4db85e-a5d9-4ecd-9e92-dec6882cf7c4",
+
+    valoration: (Math.random() + 4).toFixed(1),
   },
   {
     name: "Luxe Blooms Flower Cafe",
@@ -129,6 +150,8 @@ const companies = [
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzM0YjNlYWM4ZTRhNWMyODYwNTk0ZDU3NDhjZDBkMjIvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
     background:
       "https://tb-static.uber.com/prod/image-proc/processed_images/334b3eac8e4a5c2860594d5748cd0d22/93b5fd796682c6d5302cd5bec164fe90.jpeg",
+
+    valoration: (Math.random() + 4).toFixed(1),
   },
 ];
 

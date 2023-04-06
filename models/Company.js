@@ -39,6 +39,11 @@ class Company extends Model {
           type: DataTypes.STRING(1000),
           allowNull: false,
         },
+        valoration: {
+          type: DataTypes.FLOAT,
+          allowNull: false,
+          defaultValue: 0,
+        },
       },
       {
         sequelize,
