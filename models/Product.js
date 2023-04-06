@@ -32,7 +32,7 @@ class Product extends Model {
           type: DataTypes.STRING(1500),
           allowNull: false,
         },
-        featured: {
+        in_offer: {
           type: DataTypes.BOOLEAN,
           defaultValue: false,
         },
