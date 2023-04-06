@@ -62,7 +62,7 @@ async function store(req, res) {
       fields.title === "" ||
       fields.price === "" ||
       fields.description === "" ||
-      fields.featured === "" ||
+      fields.in_offer === "" ||
       fields.companyId === "" ||
       fields.categoryId === "" ||
       fields.stock === ""
@@ -81,7 +81,7 @@ async function store(req, res) {
           title: fields.title,
           price: Number(fields.price),
           description: fields.description,
-          featured: fields.featured,
+          in_offer: fields.in_offer,
           slug: "",
           stock: fields.stock,
           companyId: fields.companyId,
@@ -126,7 +126,7 @@ async function update(req, res) {
         title: fields.title,
         price: Number(fields.price),
         description: fields.description,
-        featured: fields.featured,
+        in_offer: fields.in_offer,
         stock: fields.stock,
         categoryId: fields.categoryId,
         image,
