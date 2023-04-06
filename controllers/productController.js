@@ -35,10 +35,14 @@ async function index(req, res) {
 
 // Display the specified resource.
 async function show(req, res) {
-  const companyId = req.query.id;
-  const companyProducts = await Product.findAll({ where: { companyId } });
+  const productId = req.params.id;
 
-  return res.json(companyProducts);
+  const product = await Product.findOne({
+    where: { id: productId },
+    include: [{ model: Category }],
+  });
+
+  return res.json(product);
 }
 
 // Show the form for creating a new resource
