@@ -8,7 +8,11 @@ async function index(req, res) {
 }
 
 // Display the specified resource.
-async function show(req, res) {}
+async function show(req, res) {
+  const userId = req.params.id;
+  const user = await User.findOne({ where: { id: userId } });
+  return res.json(user);
+}
 
 // Show the form for creating a new resource
 async function create(req, res) {}
