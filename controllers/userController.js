@@ -33,14 +33,16 @@ async function store(req, res) {
       fields.firstname === "" ||
       fields.password === ""
     ) {
-      res.json("Fill all the fields.");
+      return res.json("Fill all the fields.");
     } else {
-      const unavailableUser = users.some(
-        (u) => u.username === fields.username || u.email === fields.email,
-      );
-      if (unavailableUser) {
-        res.json("User already exist.");
-      } else {
+      const unavailableUsername = users.some((u) => u.username === fields.username);
+      const unavailableUserEmail = users.some((u) => u.email === fields.email);
+
+      if (unavailableUserEmail) {
+        return res.json("User email already exist.");
+      } else if (unavailableUsername) {
+        return res.json("Username already exist.");
+      } else if (!unavailableUserEmail && !unavailableUsername) {
         const avatar = files.avatar ? `/img/${files.avatar.newFilename}` : "/img/default.jpg";
         await User.create({
           firstname: fields.firstname,
