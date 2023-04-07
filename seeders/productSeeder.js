@@ -1239,6 +1239,142 @@ const products = [
     companyId: 10,
     categoryId: 12,
   },
+  // Chinese Products:  Mr. Luo Noodle House & Hey Niu Niu 罗罐中米粉
+  {
+    title: "Golden Soup Beef Brisket Rice Noodle 金汤牛腩米粉",
+    price: 13.99,
+    stock: 15,
+    description:
+      "123",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC85ZWMxYWJhNy01Nzk3LTRmZTctYTQ4My1mOTQxMmNmOGZlNDIuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC85ZWMxYWJhNy01Nzk3LTRmZTctYTQ4My1mOTQxMmNmOGZlNDIuanBlZw==",
+    companyId: 14,
+    categoryId: 5,
+  },
+  {
+    title: "Tomato Beef Brisket Rice Noodle 番茄牛腩米粉",
+    price: 13.99,
+    stock: 25,
+    description:
+      "123",
+    in_offer: true,
+    image:
+      " https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8wMzBkMjQ0Yy05NzI0LTRiYjQtOTQ1Yi1hMDk3ZmEwN2RjZTguanBlZw==",
+    logo: " https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8wMzBkMjQ0Yy05NzI0LTRiYjQtOTQ1Yi1hMDk3ZmEwN2RjZTguanBlZw==",
+    companyId: 14,
+    categoryId: 5,
+  },
+  {
+    title: "Signature Fish Soup Rice Noodle 原味鱼汤米粉",
+    price: 12.50,
+    stock: 3,
+    description:
+      "123",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80MzcwZWE5NC0zYzQ2LTQ0ODMtOTQ3NS04Y2Y5YjA5NzBkNDcuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80MzcwZWE5NC0zYzQ2LTQ0ODMtOTQ3NS04Y2Y5YjA5NzBkNDcuanBlZw==",
+    companyId: 14,
+    categoryId: 5,
+  },
+  {
+    title: "Bone Soup Minced Meat Rice Noodle 骨汤肉沫米粉",
+    price: 11.99,
+    stock: 43,
+    description:
+      "123",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8xMTE3NWRlMi1hZGEyLTQxNDUtYTAwOS1iNjYwZjVkNjQ2YTQuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8xMTE3NWRlMi1hZGEyLTQxNDUtYTAwOS1iNjYwZjVkNjQ2YTQuanBlZw==",
+    companyId: 14,
+    categoryId: 5,
+  },
+  {
+    title: "Chinese Sauerkraut Fish Fillet Rice Noodle 酸菜鱼片米粉",
+    price: 12.99,
+    stock: 12,
+    description:
+      "123",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC82YTc0ODA0Ny1lYjY1LTRmNjUtODk5Ny00ODBkOTNiOTNiMWYuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC82YTc0ODA0Ny1lYjY1LTRmNjUtODk5Ny00ODBkOTNiOTNiMWYuanBlZw==",
+    companyId: 14,
+    categoryId: 5,
+  },
+  {
+    title: "Spicy Pork Intestine Rice Noodle 麻辣肥肠米粉",
+    price: 14.99,
+    stock: 67,
+    description:
+      "123",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80NTk5MTg2ZS1iNjA0LTRjOGUtYjIzYy1iYTI5ZThlODJlMDYuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80NTk5MTg2ZS1iNjA0LTRjOGUtYjIzYy1iYTI5ZThlODJlMDYuanBlZw==",
+    companyId: 14,
+    categoryId: 5,
+  },
+  {
+    title: "Kimchi with Beef Slice Rice Noodle 泡菜肥牛米粉",
+    price: 12.99,
+    stock: 89,
+    description:
+      "123",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC85NzhlNDUwNS0zZWM4LTQ0MjAtYWQ5OC02ZjY3MjIzYmI3NTEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC85NzhlNDUwNS0zZWM4LTQ0MjAtYWQ5OC02ZjY3MjIzYmI3NTEuanBlZw==",
+    companyId: 14,
+    categoryId: 5,
+  },
+  {
+    title: "Braised Pork Rice Bowl 红烧肉饭",
+    price: 13.99,
+    stock: 7,
+    description:
+      "123",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMTQ3ZDYwMGQ1Zjk4OTRkNjJiNWE5ZTliYWU0ZmI1ZWQvYjRmYWNmNDk1YzIyZGY1MmYzY2E2MzUzNzllYmU2MTMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMTQ3ZDYwMGQ1Zjk4OTRkNjJiNWE5ZTliYWU0ZmI1ZWQvYjRmYWNmNDk1YzIyZGY1MmYzY2E2MzUzNzllYmU2MTMuanBlZw==",
+    companyId: 14,
+    categoryId: 5,
+  },
+  {
+    title: "Stir-fried Pork Rice Bowl 小炒肉饭",
+    price: 13.99,
+    stock: 70,
+    description:
+      "123",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZDRiNWFiOTI4ODNiMWQ0OWZlZTFjYWFlNWMyODYwZDEvYjRmYWNmNDk1YzIyZGY1MmYzY2E2MzUzNzllYmU2MTMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZDRiNWFiOTI4ODNiMWQ0OWZlZTFjYWFlNWMyODYwZDEvYjRmYWNmNDk1YzIyZGY1MmYzY2E2MzUzNzllYmU2MTMuanBlZw==",
+    companyId: 14,
+    categoryId: 5,
+  },
+  {
+    title: "Pork Bone Stew 特色酱骨头饭",
+    price: 14.99,
+    stock: 26,
+    description:
+      "123",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNDZlN2U0MjhiMTI0MmUzMWVmOTQ3NWNkOTk3MzJhOGYvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNDZlN2U0MjhiMTI0MmUzMWVmOTQ3NWNkOTk3MzJhOGYvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 14,
+    categoryId: 5,
+  },
+
+
+
+
+ 
 ];
 
 module.exports = async () => {
