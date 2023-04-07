@@ -153,6 +153,28 @@ const companies = [
 
     valoration: (Math.random() + 4).toFixed(1),
   },
+  // Chinese Food Companies:
+  {
+    name: "Mr. Luo Noodle House & Hey Niu Niu 罗罐中米粉",
+    slug: sluggy("Mr. Luo Noodle House & Hey Niu Niu 罗罐中米粉"),
+    description: ``,
+    logo: "https://d1ralsognjng37.cloudfront.net/66e6c7c6-dfaf-41a4-84ed-1ec3f20a6791.jpeg",
+    background:
+      "https://d1ralsognjng37.cloudfront.net/66e6c7c6-dfaf-41a4-84ed-1ec3f20a6791.jpeg",
+
+    valoration: (Math.random() + 4).toFixed(1),
+  },
+  {
+    name: "Lucky Chinese Restaurant (3774 Lawrence)",
+    slug: sluggy("Lucky Chinese Restaurant (3774 Lawrence)"),
+    description: ``,
+    logo: " https://d1ralsognjng37.cloudfront.net/7e62f3b9-cdd6-44a8-9bb4-143bf009b917.jpeg",
+    background:
+      " https://d1ralsognjng37.cloudfront.net/7e62f3b9-cdd6-44a8-9bb4-143bf009b917.jpeg",
+
+    valoration: (Math.random() + 4).toFixed(1),
+  },
+
 ];
 
 module.exports = async () => {
