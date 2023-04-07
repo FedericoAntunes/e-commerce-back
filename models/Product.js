@@ -6,7 +6,7 @@ class Product extends Model {
     Product.init(
       {
         id: {
-          type: DataTypes.BIGINT.UNSIGNED,
+          type: DataTypes.BIGINT,
           primaryKey: true,
           autoIncrement: true,
           allowNull: false,
