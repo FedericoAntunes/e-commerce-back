@@ -1370,6 +1370,126 @@ const products = [
     companyId: 14,
     categoryId: 5,
   },
+  // Lucky Chinese Restaurant
+  {
+    title: "Lucky Chilli Chicken Boneless",
+    price: 14.94,
+    stock: 42,
+    description:
+      "Server with steam rice. Spicy.",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvN2YzYjI3YzI1MWI1ZjNiZjhmMjNjNDNkY2UzYzlkNTEvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvN2YzYjI3YzI1MWI1ZjNiZjhmMjNjNDNkY2UzYzlkNTEvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 5,
+  },
+  {
+    title: "Chicken Pakora ( 8pcs )",
+    price: 16.00,
+    stock: 22,
+    description:
+      "Crunchy chicken 8 pcs",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNzQxYThjODc0MzcwMzY5MTQ1Nzc3MTM3NjZjMTIzYzEvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNzQxYThjODc0MzcwMzY5MTQ1Nzc3MTM3NjZjMTIzYzEvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 5,
+  },
+  {
+    title: "Beef with Broccoli",
+    price: 16.67,
+    stock: 39,
+    description:
+      "Server with steam rice.",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzZjNmM0YWY2Yzg3ZjU2ZDRhY2UwOGRiNTU2NTA4NGUvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzZjNmM0YWY2Yzg3ZjU2ZDRhY2UwOGRiNTU2NTA4NGUvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 5,
+  },
+  {
+    title: "Manchurian Chicken Fried Rice",
+    price: 14.94,
+    stock: 65,
+    description:
+      "Spicy. Server with steam rice.",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNjI0NGU0NjkyMzU0NWVmOTRkYzQ5MzMyMzRjYmI3ZTkvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNjI0NGU0NjkyMzU0NWVmOTRkYzQ5MzMyMzRjYmI3ZTkvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 5,
+  },
+  {
+    title: "Chicken Fried Wonton (12 pcs)",
+    price: 11.49,
+    stock: 12,
+    description:
+      "Fried chicken.",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYjM5NzZiYTlmZDBhZGQ4ZDg0NjhlODRlOGE5ZWRiNjMvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYjM5NzZiYTlmZDBhZGQ4ZDg0NjhlODRlOGE5ZWRiNjMvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 5,
+  },
+  {
+    title: "Chilli Tofu",
+    price: 14.94,
+    stock: 12,
+    description:
+      "Our special tofu",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZjg4MTU2YjdlYTVhMzQzNTgwODE1OTM4MjcyNzVjZjgvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZjg4MTU2YjdlYTVhMzQzNTgwODE1OTM4MjcyNzVjZjgvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 5,
+  },
+  {
+    title: "Lucky Hakka Noodle",
+    price: 16.09,
+    stock: 12,
+    description:
+      "Soft noodle",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvOTM0ZDBlYjNlNmZjZWZjMzA1Mzg1NzQxMTk3NTkyMDAvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvOTM0ZDBlYjNlNmZjZWZjMzA1Mzg1NzQxMTk3NTkyMDAvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 5,
+  },
+  {
+    title: "Steam Rice",
+    price: 3.44,
+    stock: 12,
+    description:
+      "Special rice.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMjQyMmQ5ZWQ4NGMyY2I2YTRmMmJhZDNkMGYwODFmODMvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMjQyMmQ5ZWQ4NGMyY2I2YTRmMmJhZDNkMGYwODFmODMvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 5,
+  },
+  {
+    title: "3 kinds of Meat Curry Fried Rice",
+    price: 17.82,
+    stock: 98,
+    description:
+      "Curry spicy.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYTUwMjhjODk5N2NiYjI1YjJhZWZmZTMxOTM5YzdiOGIvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYTUwMjhjODk5N2NiYjI1YjJhZWZmZTMxOTM5YzdiOGIvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 5,
+  },
+
+
 
 
 
