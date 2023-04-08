@@ -125,49 +125,66 @@ const companies = [
   },
   // Korean Restaurants CategoryId: 17, CompanyId: 12
   {
-    
     name: "The Owl of Minerva",
     slug: sluggy("The Owl of Minerva"),
     description: ``,
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zYWM5YTkyZS00NTRkLTQwNTAtYjMyNi1mODhjMzM5MGU4YzYuanBlZw==",
-    background: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zYWM5YTkyZS00NTRkLTQwNTAtYjMyNi1mODhjMzM5MGU4YzYuanBlZw==",
+    background:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zYWM5YTkyZS00NTRkLTQwNTAtYjMyNi1mODhjMzM5MGU4YzYuanBlZw==",
 
     valoration: (Math.random() + 4).toFixed(1),
   },
   // CategoryId: 17, CompanyId: 13
   {
-    
     name: "Suhan Dumplings",
     slug: sluggy("Suhan Dumplings"),
     description: ``,
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9jOGE0ODgxMS0yY2VlLTQ5OGUtYjVjOS1kNzg0YzYzMDcxNWE=",
-    background: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9jOGE0ODgxMS0yY2VlLTQ5OGUtYjVjOS1kNzg0YzYzMDcxNWE=",
+    background:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9jOGE0ODgxMS0yY2VlLTQ5OGUtYjVjOS1kNzg0YzYzMDcxNWE=",
 
     valoration: (Math.random() + 4).toFixed(1),
   },
   // Indian  My Roti Place food CategoryId: 10 , CompanyId: 14
   {
-    
     name: "My Roti Place",
     slug: sluggy("My Roti Place"),
     description: ``,
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3Jlc2l6ZWQvMTUyODEzNTgyNTk4OC13NTUwLTZjLmpwZw==",
-    background: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3Jlc2l6ZWQvMTUyODEzNTgyNTk4OC13NTUwLTZjLmpwZw==",
+    background:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3Jlc2l6ZWQvMTUyODEzNTgyNTk4OC13NTUwLTZjLmpwZw==",
 
     valoration: (Math.random() + 4).toFixed(1),
   },
-    // Indian  La SANI GRILL DUNDAS food CategoryId: 10 , CompanyId: 15
-    {
-    
-      name: "La Sani Grill Dundas",
-      slug: sluggy("La Sani Grill Dundas"),
-      description: ``,
-      logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYWQ2OGEwODc4ODEyMzBmZDdmMmE5Zjg4NTdjNTNlMjYvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
-      background: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYWQ2OGEwODc4ODEyMzBmZDdmMmE5Zjg4NTdjNTNlMjYvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
-  
-      valoration: (Math.random() + 4).toFixed(1),
-    },
- 
+  // Indian  La SANI GRILL DUNDAS food CategoryId: 10 , CompanyId: 15
+  {
+    name: "La Sani Grill Dundas",
+    slug: sluggy("La Sani Grill Dundas"),
+    description: ``,
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYWQ2OGEwODc4ODEyMzBmZDdmMmE5Zjg4NTdjNTNlMjYvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
+    background:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYWQ2OGEwODc4ODEyMzBmZDdmMmE5Zjg4NTdjNTNlMjYvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
+
+    valoration: (Math.random() + 4).toFixed(1),
+  },
+  //The Grand Pizzeria & Bar | CompanyId: 16
+  {
+    name: "Nonna's Best Italian",
+    description: ``,
+    logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
+    background: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
+
+    valoration: (Math.random() + 4).toFixed(1),
+  },
+  // The Grand Pizzeria & Bar | CompanyId: 17
+  {
+    name: "The Grand Pizzeria & Bar",
+    description: ``,
+    logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
+    background: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
+
+    valoration: (Math.random() + 4).toFixed(1),
+  },
 ];
 
 module.exports = async () => {

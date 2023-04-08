@@ -1368,7 +1368,7 @@ const products = [
     categoryId: 17,
   },
   {
-    title: "KamjaTang(감자탕)",
+    title: "KamjaTangs(감자탕)",
     price: 18.99,
     stock: 34,
     description: "desc",
@@ -1717,7 +1717,8 @@ const products = [
     companyId: 14,
     categoryId: 10,
   },
-  {   //La Sani Grill Dundas CategoryId: 10 , CompanyId: 15
+  {
+    //La Sani Grill Dundas CategoryId: 10 , CompanyId: 15
     title: "Boneless Chicken Biryani",
     price: 12.99,
     stock: 41,
@@ -1729,7 +1730,7 @@ const products = [
     companyId: 15,
     categoryId: 10,
   },
-  {   
+  {
     title: "Beef Seekh kebab",
     price: 15.99,
     stock: 28,
@@ -1741,7 +1742,7 @@ const products = [
     companyId: 15,
     categoryId: 10,
   },
-  {   
+  {
     title: "Malai Tikka",
     price: 15.99,
     stock: 49,
@@ -1753,7 +1754,7 @@ const products = [
     companyId: 15,
     categoryId: 10,
   },
-  {   
+  {
     title: "Chicken Tikka Boti",
     price: 15.99,
     stock: 11,
@@ -1765,7 +1766,7 @@ const products = [
     companyId: 15,
     categoryId: 10,
   },
-  {   
+  {
     title: "Lahori Chikar Cholay",
     price: 13.99,
     stock: 77,
@@ -1777,7 +1778,7 @@ const products = [
     companyId: 15,
     categoryId: 10,
   },
-  {   
+  {
     title: "Red Lentils (Masoor Dall)",
     price: 13.99,
     stock: 22,
@@ -1789,7 +1790,7 @@ const products = [
     companyId: 15,
     categoryId: 10,
   },
-  {   
+  {
     title: "Karahi Paneer",
     price: 14.99,
     stock: 22,
@@ -1801,7 +1802,7 @@ const products = [
     companyId: 15,
     categoryId: 10,
   },
-  {   
+  {
     title: "Palak Paneer",
     price: 14.99,
     stock: 40,
@@ -1813,7 +1814,7 @@ const products = [
     companyId: 15,
     categoryId: 10,
   },
-  {   
+  {
     title: "Rogani Naan",
     price: 2.99,
     stock: 1,
@@ -1825,7 +1826,7 @@ const products = [
     companyId: 15,
     categoryId: 10,
   },
-  {   
+  {
     title: "Garlic Naan",
     price: 3.99,
     stock: 8,
@@ -1837,7 +1838,7 @@ const products = [
     companyId: 15,
     categoryId: 10,
   },
-  {   
+  {
     title: "Seekh Kebab Roll",
     price: 9.99,
     stock: 25,
@@ -1849,14 +1850,254 @@ const products = [
     companyId: 15,
     categoryId: 10,
   },
-  
-  
-  
-  
-  
-  
-
-  
+  // Nonna's Best Italian | CompanyId: 16
+  {
+    title: "Manicotti",
+    price: 19.99,
+    stock: 42,
+    description:
+      "Tube pasta filled with spinach and ricotta cheese. Topped with tomato sauce and melted mozzarella.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC81ZmQzN2I5ZS03ZGY1LTRlMjMtYWFjOS05YzhjZDY3MGVhOWMuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
+    companyId: 16,
+    categoryId: 7,
+  },
+  {
+    title: "Chicken Parmesan",
+    price: 20.99,
+    stock: 28,
+    description:
+      "Served with fettuccine alfredo. Lightly breaded and fried chicken breast topped with tomato sauce, melted mozzarella, and parmesan cheese.",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9iNDMxNThjYS00YTJjLTRmNmMtYTFiNS0zYWVlNTg2NzQwNDUuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
+    companyId: 16,
+    categoryId: 7,
+  },
+  {
+    title: "Nonna Focaccia",
+    price: 5.99,
+    stock: 11,
+    description: "Italian style topped with marinara sauce.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84OGQzMTBhOS1iMGIwLTRlZmUtOTY1Ni1lMzUwY2EwZTY1NWYuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
+    companyId: 16,
+    categoryId: 7,
+  },
+  {
+    title: "Meat Lasagna",
+    price: 19.99,
+    stock: 77,
+    description: "Ground beef, lasagna noodles with melted mozzarella, and tomato sauce.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9hZDVkNDA2Yi05NmNmLTQxMTMtYTQxMi01MjZhYmVhYTkwNWEuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
+    companyId: 16,
+    categoryId: 7,
+  },
+  {
+    title: "Tomato and Basil Penne",
+    price: 20.99,
+    stock: 22,
+    description: "desc",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvODZjMWM1ZGU1NTY5MGFiNzYyMjI3ZDE4YmY1ZDMxM2EvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
+    companyId: 16,
+    categoryId: 7,
+  },
+  {
+    title: "Antipasto Italiano",
+    price: 20,
+    stock: 22,
+    description: "Mix salami, prosciutto Italian cheese, and green and black olives grilled bread.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9kNGZlNzE5Yy0zZmNhLTQ2MWQtOGZkNi0wZTQ0ZjJlZWJkNTcuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
+    companyId: 16,
+    categoryId: 7,
+  },
+  {
+    title: "Antipasto Di Mare",
+    price: 18,
+    stock: 40,
+    description:
+      "Mixed seafood, with squids, mussels, shrimps, scallops, and fresh veggies in an olive oil garlic lemon sauce.",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8wYTFhZDg0NC0zNGZiLTRiMmYtOGYyMC01OGU3ZDc3M2M0ZWYuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
+    companyId: 16,
+    categoryId: 7,
+  },
+  {
+    title: "Pizza Romana",
+    price: 19,
+    stock: 22,
+    description:
+      "Tomato sauce, mozzarella cheese, italian prosciutto, mushroom, arugula, parmigiano flakes.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC85NDVlNzg5MC04Njg0LTQ1YTEtOTY4OS05OTllYTViMmFmZWQuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
+    companyId: 16,
+    categoryId: 7,
+  },
+  {
+    title: "Pizza Margherita",
+    price: 15,
+    stock: 8,
+    description: "Tomato sauce, bocconcini cheese, fresh basil, origagano.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80ODJmNWJjZS0zY2JiLTQ1MjktOWViYi0wOWE1NGIzZjVhZTUuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
+    companyId: 16,
+    categoryId: 7,
+  },
+  {
+    title: "Biscotti Tuscany Style Assorted",
+    price: 7,
+    stock: 25,
+    description: "",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zYTZiZjMwNC00OWFlLTRhMGQtOGU0Zi1jZGViNjhhZjE0OTEuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
+    companyId: 16,
+    categoryId: 7,
+  },
+  // The Grand Pizzeria & Bar | CompanyId: 17
+  {
+    title: "Family Shrimp Linguine",
+    price: 61.99,
+    stock: 25,
+    description: "Shrimp with sun-dried tomato pesto, fresh basil in cashew cream. Serves 4.",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNzk0NGJlYTA1MjFmYjM0M2Q4NTQ4NGRlYmJhODVhYjIvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
+    companyId: 17,
+    categoryId: 7,
+  },
+  {
+    title: "Bruschetta",
+    price: 14.99,
+    stock: 28,
+    description: "Tomatoes, oregano, parmesan, and fresh basil on toasted ciabatta.",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMjdjZWQ1YjNlMWI5MDJlOTM5NDhhZGM0ZDliNGQxZjMvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
+    companyId: 17,
+    categoryId: 7,
+  },
+  {
+    title: "Sambuca Shrimp",
+    price: 18.99,
+    stock: 11,
+    description: "Tomato, garlic, crostini, sambuca cream sauce.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNzZiYTI1NTQxZTE1M2NmMDliNzYxYmI0NzU4NmY4MGYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
+    companyId: 17,
+    categoryId: 7,
+  },
+  {
+    title: "Poutine",
+    price: 15.99,
+    stock: 77,
+    description: "Fries, St. Albert cheese curds, gravy (mushroom).",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzJiOGFhNWM5NTdmZDRmNTlkYTlmZjJkOTI0MmEzNjYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
+    companyId: 17,
+    categoryId: 7,
+  },
+  {
+    title: "Nachos Italiano",
+    price: 19.99,
+    stock: 22,
+    description:
+      "Mozzarella, tomatoes, basil, banana peppers, olives, tortilla chips, parmesan, served with fresh tomato sauce & sour cream.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZDIyMzhjZWUwYzJiMmNlZTU0NWQxMWEyNzQyYjY0MjAvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
+    companyId: 17,
+    categoryId: 7,
+  },
+  {
+    title: "Meatballs",
+    price: 13.99,
+    stock: 22,
+    description: "Homemade veal & pork meatballs in marinara sauce.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMGM0OGU4ZDUyNTdiMjc3MDZlMjI5YTk3Yjk0YjU4NWYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
+    companyId: 17,
+    categoryId: 7,
+  },
+  {
+    title: "Rigatoni Al Pollo",
+    price: 27.99,
+    stock: 40,
+    description: "Rigatoni with chicken, crispy bacon, basil in cashew cream.",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZTZhNzJhMTY4M2FhOGQ2YWMxNmUzNWUwMTIyM2IxYzMvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
+    companyId: 17,
+    categoryId: 7,
+  },
+  {
+    title: "Ravioli Alla Grand",
+    price: 27.99,
+    stock: 22,
+    description:
+      "Leek & mushroom ravioli with Italian sausage, porcini mushrooms, tomato, basil, cream sauce.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNGExOTI0NzMzNWU1N2E3MzExNGE0NmQ2MWM0MDM5NmUvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
+    companyId: 17,
+    categoryId: 7,
+  },
+  {
+    title: "Spaghetti and Meatballs",
+    price: 23.99,
+    stock: 28,
+    description: "Homemade veal & pork meatballs, marinara sauce on spaghetti.",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZmU2ZWUyOGQ5OGY1YjIwZTExZjU3NDg4ZDc3MTFmMzIvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
+    companyId: 17,
+    categoryId: 7,
+  },
+  {
+    title: "Burrata Pizza",
+    price: 26.99,
+    stock: 25,
+    description: "Prosciutto, burrata cheese, cherry tomatoes, basil pesto.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZjExZmU3Nzk2MTliOTQyY2E4Y2UxYjdlMGI4MDcwOWYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
+    companyId: 17,
+    categoryId: 7,
+  },
 ];
 
 module.exports = async () => {

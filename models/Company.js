@@ -63,6 +63,12 @@ class Company extends Model {
       company.slug = await sluggy(company.name);
     });
 
+    Company.beforeBulkCreate(async function (companies) {
+      for (const company of companies) {
+        company.slug = await sluggy(company.name);
+      }
+    });
+
     Company.beforeUpdate(async function (company) {
       if (company.changed("name")) {
         company.slug = await sluggy(company.name);
