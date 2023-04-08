@@ -1596,7 +1596,267 @@ const products = [
     companyId: 13,
     categoryId: 17,
   },
+  // Indian food CategoryId: 10 , CompanyId: 14
+  {
+    title: "Create your own roti",
+    price: 12.99,
+    stock: 47,
+    description: "desc",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9iNjM2MzI4Ny1hNjBjLTRjNmQtYTQ5NC1mNWEwZTRkOWQ4ZWIuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9iNjM2MzI4Ny1hNjBjLTRjNmQtYTQ5NC1mNWEwZTRkOWQ4ZWIuanBlZw==",
+    companyId: 14,
+    categoryId: 10,
+  },
+  {
+    title: "Butter Chicken Roti",
+    price: 17.99,
+    stock: 22,
+    description: "desc",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zYTdmMWYwNS1kNTE3LTRkODQtYjY2ZS04NDJkMTYwMDA4NTIuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zYTdmMWYwNS1kNTE3LTRkODQtYjY2ZS04NDJkMTYwMDA4NTIuanBlZw==",
+    companyId: 14,
+    categoryId: 10,
+  },
+  {
+    title: "That Veggie  Samosa",
+    price: 6.99,
+    stock: 14,
+    description: "desc",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNWQ2ZmQ2YzkwMzI3MmU1MjIyODQ1NDZjMTU5ZjBlYjkvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNWQ2ZmQ2YzkwMzI3MmU1MjIyODQ1NDZjMTU5ZjBlYjkvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 14,
+    categoryId: 10,
+  },
+  {
+    title: "Chicken Dum Biryani(Boneless)",
+    price: 17.99,
+    stock: 56,
+    description: "desc",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMmNhMGQ3M2JhMGQ3ZWU5NTM3OTdjN2IzNmNmZmQyNjAvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMmNhMGQ3M2JhMGQ3ZWU5NTM3OTdjN2IzNmNmZmQyNjAvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 14,
+    categoryId: 10,
+  },
+  {
+    title: "Honey Garlic Cauliflower",
+    price: 12.99,
+    stock: 90,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9lODZmMGJjOS1iOGJmLTQ4ZGItOGYzOC05MTBiODZlNTlmOTUuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9lODZmMGJjOS1iOGJmLTQ4ZGItOGYzOC05MTBiODZlNTlmOTUuanBlZw==",
+    companyId: 14,
+    categoryId: 10,
+  },
+  {
+    title: "It's 406 Chicken",
+    price: 12.99,
+    stock: 90,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMDJjM2I4MzI3MmEyNmRhZDg3NTk2NzVhYmU3Y2Y0YzMvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMDJjM2I4MzI3MmEyNmRhZDg3NTk2NzVhYmU3Y2Y0YzMvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 14,
+    categoryId: 10,
+  },
+  {
+    title: "Street samosa chat",
+    price: 9.99,
+    stock: 45,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvM2Q1ZGNhZDAxMGZmMzNlYTU1NjM4MTdhMTI2ZjAxZjEvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvM2Q1ZGNhZDAxMGZmMzNlYTU1NjM4MTdhMTI2ZjAxZjEvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 14,
+    categoryId: 10,
+  },
+  {
+    title: "Paneer Bhurji Roti",
+    price: 17.99,
+    stock: 22,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMDhhY2RiZDRkYmMyODhiMWM0NjVjM2FlZWIwYWE1ZmUvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMDhhY2RiZDRkYmMyODhiMWM0NjVjM2FlZWIwYWE1ZmUvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 14,
+    categoryId: 10,
+  },
+  {
+    title: "Chicken Curry Roti",
+    price: 17.99,
+    stock: 85,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNDljNjFiMzkwMDdlYzAzOTgwZTQ5NDdmNWY0NTk2ZTkvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNDljNjFiMzkwMDdlYzAzOTgwZTQ5NDdmNWY0NTk2ZTkvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 14,
+    categoryId: 10,
+  },
+  {
+    title: "Saag Paneer Roti",
+    price: 17.99,
+    stock: 85,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZjE2OGEyZGFiNjk5ZTdkNjE3NjI2NTZiNzFhODBhNzkvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZjE2OGEyZGFiNjk5ZTdkNjE3NjI2NTZiNzFhODBhNzkvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 14,
+    categoryId: 10,
+  },
+  {   //La Sani Grill Dundas CategoryId: 10 , CompanyId: 15
+    title: "Boneless Chicken Biryani",
+    price: 12.99,
+    stock: 41,
+    description: "desc",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYWUwOWEyZDQyMjYwYzY3NWQ5Y2Q1NDdmYWNhZjVjZGYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYWUwOWEyZDQyMjYwYzY3NWQ5Y2Q1NDdmYWNhZjVjZGYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 10,
+  },
+  {   
+    title: "Beef Seekh kebab",
+    price: 15.99,
+    stock: 28,
+    description: "desc",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZjUxNjNmM2ExYzI1NzJhZGJkN2U1MTJjYjdiZDQzMWEvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZjUxNjNmM2ExYzI1NzJhZGJkN2U1MTJjYjdiZDQzMWEvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 15,
+    categoryId: 10,
+  },
+  {   
+    title: "Malai Tikka",
+    price: 15.99,
+    stock: 49,
+    description: "desc",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYTg4M2VhMjkzMTUzMjlhNGI1Mzk3YzU3MGM1YTYxMWQvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYTg4M2VhMjkzMTUzMjlhNGI1Mzk3YzU3MGM1YTYxMWQvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 15,
+    categoryId: 10,
+  },
+  {   
+    title: "Chicken Tikka Boti",
+    price: 15.99,
+    stock: 11,
+    description: "desc",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMDU2NmJmOTc5MDVlY2YxMDhiYWEzNTZiYzhiNTBiMzgvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMDU2NmJmOTc5MDVlY2YxMDhiYWEzNTZiYzhiNTBiMzgvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 15,
+    categoryId: 10,
+  },
+  {   
+    title: "Lahori Chikar Cholay",
+    price: 13.99,
+    stock: 77,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzkyNjI5NjRlODJlNGMyZDg4MDQ5MmJkYTcwNGY0MGQvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzkyNjI5NjRlODJlNGMyZDg4MDQ5MmJkYTcwNGY0MGQvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 10,
+  },
+  {   
+    title: "Red Lentils (Masoor Dall)",
+    price: 13.99,
+    stock: 22,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNTk1MWJjY2ZiNTRmYTRlMTFiZThmNWUzZGI2OGEwOTQvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNTk1MWJjY2ZiNTRmYTRlMTFiZThmNWUzZGI2OGEwOTQvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 10,
+  },
+  {   
+    title: "Karahi Paneer",
+    price: 14.99,
+    stock: 22,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvN2JlNWFlZWExNjUwYzA3MTg1ZmMwMzUxYWU4MzNlNmEvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvN2JlNWFlZWExNjUwYzA3MTg1ZmMwMzUxYWU4MzNlNmEvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 10,
+  },
+  {   
+    title: "Palak Paneer",
+    price: 14.99,
+    stock: 40,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYzMwZTI1OWEyZDYyNmI3NDQ2YWU3YTFmNzE5MGJjYzMvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYzMwZTI1OWEyZDYyNmI3NDQ2YWU3YTFmNzE5MGJjYzMvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 15,
+    categoryId: 10,
+  },
+  {   
+    title: "Rogani Naan",
+    price: 2.99,
+    stock: 1,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYjI1M2Q0NmM2MWQ2M2ExNGU5NGIyYTI4NGUxYjUyOTEvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYjI1M2Q0NmM2MWQ2M2ExNGU5NGIyYTI4NGUxYjUyOTEvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 15,
+    categoryId: 10,
+  },
+  {   
+    title: "Garlic Naan",
+    price: 3.99,
+    stock: 8,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvOTRjZTMzMzNkN2I1ODBhMzk3ZjZkOTM0Y2Y5ZWYzMGEvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvOTRjZTMzMzNkN2I1ODBhMzk3ZjZkOTM0Y2Y5ZWYzMGEvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 15,
+    categoryId: 10,
+  },
+  {   
+    title: "Seekh Kebab Roll",
+    price: 9.99,
+    stock: 25,
+    description: "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvODQwYWVhNTZhYzg2NTUxZTYxNDYzNjBmZjQxOGQyYjcvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvODQwYWVhNTZhYzg2NTUxZTYxNDYzNjBmZjQxOGQyYjcvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 15,
+    categoryId: 10,
+  },
+  
+  
+  
+  
+  
+  
 
+  
 ];
 
 module.exports = async () => {

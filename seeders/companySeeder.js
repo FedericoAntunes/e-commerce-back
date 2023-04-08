@@ -145,6 +145,29 @@ const companies = [
 
     valoration: (Math.random() + 4).toFixed(1),
   },
+  // Indian  My Roti Place food CategoryId: 10 , CompanyId: 14
+  {
+    
+    name: "My Roti Place",
+    slug: sluggy("My Roti Place"),
+    description: ``,
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3Jlc2l6ZWQvMTUyODEzNTgyNTk4OC13NTUwLTZjLmpwZw==",
+    background: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3Jlc2l6ZWQvMTUyODEzNTgyNTk4OC13NTUwLTZjLmpwZw==",
+
+    valoration: (Math.random() + 4).toFixed(1),
+  },
+    // Indian  La SANI GRILL DUNDAS food CategoryId: 10 , CompanyId: 15
+    {
+    
+      name: "La Sani Grill Dundas",
+      slug: sluggy("La Sani Grill Dundas"),
+      description: ``,
+      logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYWQ2OGEwODc4ODEyMzBmZDdmMmE5Zjg4NTdjNTNlMjYvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
+      background: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYWQ2OGEwODc4ODEyMzBmZDdmMmE5Zjg4NTdjNTNlMjYvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
+  
+      valoration: (Math.random() + 4).toFixed(1),
+    },
+ 
 ];
 
 module.exports = async () => {
