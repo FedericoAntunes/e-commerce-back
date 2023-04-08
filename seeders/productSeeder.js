@@ -1619,6 +1619,79 @@ const products = [
     companyId: 16,
     categoryId: 6,
   },
+  // J San Restaurant Japanese
+  {
+    title: "Torched Sushi & Roll Combo (13 pcs)",
+    price: 22.95,
+    stock: 43,
+    description:
+      "desc",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNTEwOTg1YjFkMjEzMjMzYWQ0OGMxYTgwNjEzNDFiNDIvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNTEwOTg1YjFkMjEzMjMzYWQ0OGMxYTgwNjEzNDFiNDIvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 17,
+    categoryId: 6,
+  },
+  {
+    title: "All Salmon Combo (15 pcs)",
+    price: 20.95,
+    stock: 21,
+    description:
+      "desc",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYjUwZDY2NDg0NTJiZTYwZTc3ZjM5ZmU4YTQ2NWQ0YTIvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYjUwZDY2NDg0NTJiZTYwZTc3ZjM5ZmU4YTQ2NWQ0YTIvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 17,
+    categoryId: 6,
+  },
+  {
+    title: "California Roll",
+    price: 6.95,
+    stock: 34,
+    description:
+      "desc",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZjEwYmRmZTdjOTNlYjUyYmFmYTU2Yzk0Mzk0ODZlNjQvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZjEwYmRmZTdjOTNlYjUyYmFmYTU2Yzk0Mzk0ODZlNjQvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 17,
+    categoryId: 6,
+  },
+  {
+    title: "Octopus Sashimi (3 pcs)",
+    price: 7.95,
+    stock: 63,
+    description:
+      "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvODVmMTI0ZWUyYzZkZGQ3YmU5MDg5MDllNDdhYjQ4MTMvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvODVmMTI0ZWUyYzZkZGQ3YmU5MDg5MDllNDdhYjQ4MTMvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 17,
+    categoryId: 6,
+  },
+  {
+    title: "Red Dragon Roll (8 pcs)",
+    price: 14.95,
+    stock: 11,
+    description:
+      "desc",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZGQ1ZTljOTNlNjY1OTFhYjc0ZDViMTZiMzI3NDNkNzQvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZGQ1ZTljOTNlNjY1OTFhYjc0ZDViMTZiMzI3NDNkNzQvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==",
+    companyId: 17,
+    categoryId: 6,
+  },
+
+
+
+
+
+
+
 
 
 
