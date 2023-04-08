@@ -185,6 +185,17 @@ const companies = [
 
     valoration: (Math.random() + 4).toFixed(1),
   },
+  { //16
+    name: "J San Sushi Bar",
+    slug: sluggy("J San Sushi Bar"),
+    description: ``,
+    logo: "https://d1ralsognjng37.cloudfront.net/e719559d-99c9-4e87-9876-5b2929c7a9cc.jpeg",
+    background:
+      "https://d1ralsognjng37.cloudfront.net/e719559d-99c9-4e87-9876-5b2929c7a9cc.jpeg",
+
+    valoration: (Math.random() + 4).toFixed(1),
+  },
+
 ];
 
 module.exports = async () => {
