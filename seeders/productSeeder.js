@@ -1488,6 +1488,142 @@ const products = [
     companyId: 15,
     categoryId: 5,
   },
+  //Japanese Restaurant:  Bikkuri Japanese Restaurant [SMB]
+  {
+    title: "Dynamite Maki(8pcs)",
+    price: 13.99,
+    stock: 23,
+    description:
+      "Shrimp tempura, avocado, cucumber, and spicy mayo",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMmZiNzRlZjhkMDkwYmFmNmU3OGU5YzY0MmE1NzcyMGUvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMmZiNzRlZjhkMDkwYmFmNmU3OGU5YzY0MmE1NzcyMGUvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 16,
+    categoryId: 6,
+  },
+  {
+    title: "Spicy Tuna Maki",
+    price: 7.99,
+    stock: 34,
+    description:
+      "Chopped tuna with spicy mayo.",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzdiZDQ5NzQwNDhjZTE4MGRhZTg1NTQ5OTg3ZjhlNmUvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzdiZDQ5NzQwNDhjZTE4MGRhZTg1NTQ5OTg3ZjhlNmUvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 16,
+    categoryId: 6,
+  },
+  {
+    title: "California Roll",
+    price: 7.50,
+    stock: 47,
+    description:
+      "California roll sushi.",
+    in_offer: true,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZWQ1Y2U5OGY5YzVjZjE3ODMxZjg5M2M5MjJjZGRmNDEvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZWQ1Y2U5OGY5YzVjZjE3ODMxZjg5M2M5MjJjZGRmNDEvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 16,
+    categoryId: 6,
+  },
+  {
+    title: "Spring Roll",
+    price: 5.50,
+    stock: 68,
+    description:
+      "Deep fried vegetables spring roll.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvY2QzN2U3MmU2MzY0OTUwM2IwMjZmOTZmMDY0MTI0ZDQvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvY2QzN2U3MmU2MzY0OTUwM2IwMjZmOTZmMDY0MTI0ZDQvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 16,
+    categoryId: 6,
+  },
+  {
+    title: "Ebi Tempura Appetizer",
+    price: 12.99,
+    stock: 75,
+    description:
+      "Five  pieces of shrimp tempura.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMWFkYTg0ZDU5YWZlNmExMDFjZjdmNzdiOTEyMGU1NWQvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMWFkYTg0ZDU5YWZlNmExMDFjZjdmNzdiOTEyMGU1NWQvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 16,
+    categoryId: 6,
+  },
+  {
+    title: "Age Gyoza (deep fried)",
+    price: 6.50,
+    stock: 12,
+    description:
+      "Deep fried vegetable dumpling (5 pcs)",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZTk3NzhmMDdiZTJjYjE2ZDQ4ZThmNTQ3MGQ3YzAxZDkvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZTk3NzhmMDdiZTJjYjE2ZDQ4ZThmNTQ3MGQ3YzAxZDkvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 16,
+    categoryId: 6,
+  },
+  {
+    title: "Chicken Karaage",
+    price: 9.99,
+    stock: 98,
+    description:
+      "Deep fried chicken.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNGVjZmFjM2RmZjdiNTZiNzEzMTE1YzhjMjlhZTc0OTkvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvNGVjZmFjM2RmZjdiNTZiNzEzMTE1YzhjMjlhZTc0OTkvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 16,
+    categoryId: 6,
+  },
+  {
+    title: "Tempura Appetizer",
+    price: 11.99,
+    stock: 5,
+    description:
+      "Three pieces of shrimp and vegetable tempura.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvOGFlOWIxZDE1ZmFhMjRiNTFkYTBiOGM1ZmY0ZGVlOWUvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvOGFlOWIxZDE1ZmFhMjRiNTFkYTBiOGM1ZmY0ZGVlOWUvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 16,
+    categoryId: 6,
+  },
+  {
+    title: "Vegetable Tempura Appetizer",
+    price: 10.99,
+    stock: 42,
+    description:
+      "Mixed vegetable tempura.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZDAxNTliNjA0YmUxODdiZGI3OGIzMDVhM2JlNjVmYzgvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZDAxNTliNjA0YmUxODdiZGI3OGIzMDVhM2JlNjVmYzgvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 16,
+    categoryId: 6,
+  },
+  {
+    title: "Agedashi Tofu",
+    price: 5.50,
+    stock: 22,
+    description:
+      "Deep fried tofu.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMjBkNjQzMGI0Nzk3ZWZkNzVmNGMxOWFiM2JlZDczZGMvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMjBkNjQzMGI0Nzk3ZWZkNzVmNGMxOWFiM2JlZDczZGMvNDIxOGNhMWQwOTE3NDIxODM2NDE2MmNkMGIxYThjYzEuanBlZw==",
+    companyId: 16,
+    categoryId: 6,
+  },
+
+
+
+
+
 
 
 

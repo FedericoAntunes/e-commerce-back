@@ -164,7 +164,7 @@ const companies = [
 
     valoration: (Math.random() + 4).toFixed(1),
   },
-  {
+  { //15
     name: "Lucky Chinese Restaurant (3774 Lawrence)",
     slug: sluggy("Lucky Chinese Restaurant (3774 Lawrence)"),
     description: ``,
@@ -174,7 +174,17 @@ const companies = [
 
     valoration: (Math.random() + 4).toFixed(1),
   },
+  // Japanese Restaurants
+  { //15
+    name: "Bikkuri Japanese Restaurant [SMB]",
+    slug: sluggy("Bikkuri Japanese Restaurant [SMB]"),
+    description: ``,
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/ad3d620c368e20881077838515ec7c21/1d4135bf27b924efdd528452baa17174.webp",
+    background:
+      "https://tb-static.uber.com/prod/image-proc/processed_images/ad3d620c368e20881077838515ec7c21/1d4135bf27b924efdd528452baa17174.webp",
 
+    valoration: (Math.random() + 4).toFixed(1),
+  },
 ];
 
 module.exports = async () => {
