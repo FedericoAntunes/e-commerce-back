@@ -123,6 +123,28 @@ const companies = [
 
     valoration: (Math.random() + 4).toFixed(1),
   },
+  // Korean Restaurants CategoryId: 17, CompanyId: 12
+  {
+    
+    name: "The Owl of Minerva",
+    slug: sluggy("The Owl of Minerva"),
+    description: ``,
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zYWM5YTkyZS00NTRkLTQwNTAtYjMyNi1mODhjMzM5MGU4YzYuanBlZw==",
+    background: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zYWM5YTkyZS00NTRkLTQwNTAtYjMyNi1mODhjMzM5MGU4YzYuanBlZw==",
+
+    valoration: (Math.random() + 4).toFixed(1),
+  },
+  // CategoryId: 17, CompanyId: 13
+  {
+    
+    name: "Suhan Dumplings",
+    slug: sluggy("Suhan Dumplings"),
+    description: ``,
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9jOGE0ODgxMS0yY2VlLTQ5OGUtYjVjOS1kNzg0YzYzMDcxNWE=",
+    background: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9jOGE0ODgxMS0yY2VlLTQ5OGUtYjVjOS1kNzg0YzYzMDcxNWE=",
+
+    valoration: (Math.random() + 4).toFixed(1),
+  },
 ];
 
 module.exports = async () => {
