@@ -6,6 +6,7 @@ const authenticationRoutes = require("./authenticationRoutes");
 const userRoutes = require("./userRoutes");
 const orderRoutes = require("./orderRoutes");
 const adminRoutes = require("./adminRoutes");
+const seederRoutes = require("./seederRoutes");
 
 module.exports = (app) => {
   app.use("/companies", companyRoutes);
@@ -14,6 +15,7 @@ module.exports = (app) => {
   app.use("/users", userRoutes);
   app.use("/admins", adminRoutes);
   app.use("/orders", orderRoutes);
+  app.use("/seeders", seederRoutes);
 
   app.use("/login", authenticationRoutes);
 
