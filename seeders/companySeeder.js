@@ -185,6 +185,13 @@ const companies = [
 
     valoration: (Math.random() + 4).toFixed(1),
   },
+  {
+    name: "Ichiban Bakery",
+    description: ``,
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84NDZjMWNjMi0yYTAwLTRjNDgtYmEzNC01OWNhYmRkZGZiYzkuanBlZw==",
+    background: "https://d1ralsognjng37.cloudfront.net/52636038-3c9a-4fe3-894f-92271524aaaa.jpeg",
+    valoration: (Math.random() + 4).toFixed(1),
+  },
 ];
 
 module.exports = async () => {
