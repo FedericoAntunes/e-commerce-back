@@ -2128,7 +2128,7 @@ const products = [
     description: "",
     in_offer: false,
     image: "https://d1ralsognjng37.cloudfront.net/7c429632-4aae-4b45-97c0-4370e2999c95.jpeg",
-    logo: "https://d1ralsognjng37.cloudfront.net/a0e6e3f8-1548-49aa-9d1d-e277df79b0fd.jpeg",
+    logo: "https://d1ralsognjng37.cloudfront.net/7c429632-4aae-4b45-97c0-4370e2999c95.jpeg",
     companyId: 18,
     categoryId: 13,
   },
