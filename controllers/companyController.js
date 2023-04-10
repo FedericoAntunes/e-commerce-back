@@ -1,5 +1,6 @@
 const { Company, Product } = require("../models");
 const formidable = require("formidable");
+const { Op } = require("sequelize");
 
 async function index(req, res) {
   const { tag } = req.query;
