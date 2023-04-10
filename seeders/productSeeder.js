@@ -2154,6 +2154,54 @@ const products = [
     companyId: 18,
     categoryId: 13,
   },
+  {
+    title: "Vegan Burrito",
+    price: 10.9,
+    stock: 12,
+    description: "You are the chef today, build your burrito in tortilla (30 cm.) to your liking.",
+    in_offer: false,
+    image: "https://d1ralsognjng37.cloudfront.net/c322d5f2-88c9-4da0-b83b-957e5955376d.jpeg",
+    logo: "https://d1ralsognjng37.cloudfront.net/c322d5f2-88c9-4da0-b83b-957e5955376d.jpeg",
+    companyId: 19,
+    categoryId: 20,
+  },
+  {
+    title: "Aloo Gobi",
+    price: 10.9,
+    stock: 12,
+    description: "Vegan dish, cauliflower, and potatoes cooked with spices, onions, and tomatoes.",
+    in_offer: false,
+    image:
+      "	https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMjc3NzM2NC01ODQ3LTQ1MzItOGNhNy02NTQ3ZjkzZGFjMTAuanBlZw==",
+    logo: "	https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMjc3NzM2NC01ODQ3LTQ1MzItOGNhNy02NTQ3ZjkzZGFjMTAuanBlZw==",
+    companyId: 19,
+    categoryId: 20,
+  },
+
+  {
+    title: "Aloo Saag",
+    price: 16.99,
+    stock: 12,
+    description: "Potatoes and spinach simmered in the herb, onions, garlic, ginger, and tomatoes.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9mODk2NTBjYi03MTljLTQ4NDktOTY3Yy05OGRiMjExMDBlMGEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9mODk2NTBjYi03MTljLTQ4NDktOTY3Yy05OGRiMjExMDBlMGEuanBlZw==",
+    companyId: 19,
+    categoryId: 20,
+  },
+  {
+    title: "Bhindi (Okra)",
+    price: 15.99,
+    stock: 12,
+    description: "Fresh ladyfingers cooked with tomatoes, onions, and spices.",
+    in_offer: false,
+    image:
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80ZWRjZGI1Ny05ODg4LTQ2ZGQtODY2NS1lYjljMTIwMDMyZjEuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC80ZWRjZGI1Ny05ODg4LTQ2ZGQtODY2NS1lYjljMTIwMDMyZjEuanBlZw==",
+    companyId: 19,
+    categoryId: 20,
+  },
 ];
 
 module.exports = async () => {

@@ -77,9 +77,9 @@ const companies = [
     name: "Luxe Blooms Flower Cafe",
     slug: sluggy("Luxe Blooms Flower Cafe"),
     description: `CAFÉ & FLOWER SHOP @luxe.blooms flowers shop • coffee • pastries • desserts • balloons NOW OPEN 254 Dalhousie Street • Calling all brides and bachelorettes!`,
-    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzM0YjNlYWM4ZTRhNWMyODYwNTk0ZDU3NDhjZDBkMjIvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
+    logo: "https://tb-static.uber.com/prod/image-proc/processed_images/334b3eac8e4a5c2860594d5748cd0d22/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg",
     background:
-      "https://tb-static.uber.com/prod/image-proc/processed_images/334b3eac8e4a5c2860594d5748cd0d22/93b5fd796682c6d5302cd5bec164fe90.jpeg",
+      "https://tb-static.uber.com/prod/image-proc/processed_images/334b3eac8e4a5c2860594d5748cd0d22/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg",
     valoration: (Math.random() + 4).toFixed(1),
     tags: "Bakery",
   },
@@ -194,6 +194,14 @@ const companies = [
     background: "https://thumbs.dreamstime.com/b/rich-bakery-9883921.jpg",
     valoration: (Math.random() + 4).toFixed(1),
     tags: "Bakery",
+  },
+  {
+    name: "GOLD VEGAN FOOD",
+    description: `Calle Atocha 116 Madrid Restaurante Wrapipans Bar, EMEA 28012`,
+    logo: "https://d1ralsognjng37.cloudfront.net/caeaff72-6f9d-49f8-8175-51b7bec24c81.webp",
+    background: "https://d1ralsognjng37.cloudfront.net/caeaff72-6f9d-49f8-8175-51b7bec24c81.webp",
+    valoration: (Math.random() + 4).toFixed(1),
+    tags: "Vegan",
   },
 ];
 
