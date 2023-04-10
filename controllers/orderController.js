@@ -1,7 +1,7 @@
 const { Order, OrderProduct, Product, User } = require("../models");
 
 async function index(req, res) {
-  const orders = await Order.findAll({ order: [["createdAt", "DESC"]] });
+  const orders = await Order.findAll({ order: [["updatedAt", "DESC"]] });
   return res.json(orders);
 }
 
