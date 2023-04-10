@@ -56,3 +56,5 @@ async function runAllSeeders() {
 }
 
 runAllSeeders();
+
+module.exports = runAllSeeders;
