@@ -2,6 +2,11 @@ const { Company, Product } = require("../models");
 const formidable = require("formidable");
 
 async function index(req, res) {
+  const { tag } = req.query;
+  if (tag) {
+    const filteredCompanies = await Company.findAll({ where: { tags: { [Op.substring]: tag } } });
+    return res.json(filteredCompanies);
+  }
   const companies = await Company.findAll({ order: [["updatedAt", "DESC"]] });
   return res.json(companies);
 }
