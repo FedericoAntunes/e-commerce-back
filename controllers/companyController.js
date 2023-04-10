@@ -43,8 +43,8 @@ async function store(req, res) {
       } else {
         const background = files.background
           ? `/img/${files.background.newFilename}`
-          : "/img/default.jpg";
-        const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default.jpg";
+          : "//img/default-company.jpg";
+        const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default-company.jpg";
 
         await Company.create({
           name: fields.name,
