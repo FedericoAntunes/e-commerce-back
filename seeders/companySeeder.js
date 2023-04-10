@@ -19,6 +19,7 @@ const companies = [
       "https://duyt4h9nfnj50.cloudfront.net/resized/c4cae0bc90b6dbb83abc9072a0ba389b-w1080-cc.jpg",
 
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Sushi · Asian · Korean",
   },
   {
     name: "Hokkaido Sushi",
@@ -28,6 +29,7 @@ const companies = [
     background: "https://d1ralsognjng37.cloudfront.net/3def8874-649e-4e5e-ad10-3946dc6c43fa.jpeg",
 
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Sushi · Asian · Japanese",
   },
   {
     name: "Pi Co. Pizza Bar",
@@ -38,8 +40,8 @@ const companies = [
       Overall, Pi Co. Pizza Bar is a great choice for anyone looking for delicious, customizable pizza in a casual and contemporary setting.`,
     logo: "https://images4.alphacoders.com/276/276908.jpg",
     background: "https://images4.alphacoders.com/276/276908.jpg",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Pizza · Healthy · Drinks",
   },
   {
     name: "Pizza Nerds",
@@ -48,8 +50,8 @@ const companies = [
       The menu at Pizza Nerds features a variety of pizza options with unique and creative toppings, such as the "Prosciutto & Fig" pizza with fresh figs, prosciutto, goat cheese, and balsamic glaze, or the "Vegan Dragon" pizza with vegan cheese, dragon sauce, and veggies. In addition to pizza, the restaurant also offers appetizers like garlic knots and salads, as well as drinks like soda and beer.`,
     logo: "https://images7.alphacoders.com/596/596343.jpg",
     background: "https://images7.alphacoders.com/596/596343.jpg",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Pizza · Healthy · Drinks",
   },
   {
     name: "La Fiesta Latina",
@@ -58,8 +60,8 @@ const companies = [
     The menu at La Fiesta Latina Restaurant is bursting with traditional Mexican dishes made with fresh, high-quality ingredients. Whether you're craving savory tacos, zesty enchiladas, or flavorful fajitas, you'll find it all here. The restaurant also offers a range of vegetarian and gluten-free options, so everyone can indulge in the delicious flavors of Mexico..`,
     logo: "https://d1ralsognjng37.cloudfront.net/c8109a01-ffba-40a5-86e6-1b18a3cf1ea5.jpeg",
     background: "https://d1ralsognjng37.cloudfront.net/c8109a01-ffba-40a5-86e6-1b18a3cf1ea5.jpeg",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Mexican",
   },
   {
     name: "Burrito Gringo (566 Bronson Ave)",
@@ -68,8 +70,8 @@ const companies = [
     The star of the show at Burrito Gringo is, of course, their delicious burritos. These hearty, overstuffed burritos are made with your choice of protein, such as savory shredded beef or tender grilled chicken, and piled high with fresh toppings like crisp lettuce, juicy tomatoes, and tangy salsa. Each burrito is wrapped in a warm flour tortilla and served with a side of crispy tortilla chips, making for a satisfying and delicious meal.`,
     logo: "https://d1ralsognjng37.cloudfront.net/4d4db85e-a5d9-4ecd-9e92-dec6882cf7c4",
     background: "https://d1ralsognjng37.cloudfront.net/4d4db85e-a5d9-4ecd-9e92-dec6882cf7c4",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Mexican · Healthy · Drinks",
   },
   {
     name: "Luxe Blooms Flower Cafe",
@@ -78,8 +80,8 @@ const companies = [
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzM0YjNlYWM4ZTRhNWMyODYwNTk0ZDU3NDhjZDBkMjIvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
     background:
       "https://tb-static.uber.com/prod/image-proc/processed_images/334b3eac8e4a5c2860594d5748cd0d22/93b5fd796682c6d5302cd5bec164fe90.jpeg",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Bakery",
   },
   // Chinese Food Companies:
   {
@@ -88,8 +90,8 @@ const companies = [
     description: ``,
     logo: "https://d1ralsognjng37.cloudfront.net/66e6c7c6-dfaf-41a4-84ed-1ec3f20a6791.jpeg",
     background: "https://d1ralsognjng37.cloudfront.net/66e6c7c6-dfaf-41a4-84ed-1ec3f20a6791.jpeg",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Chinese",
   },
   {
     //15
@@ -98,8 +100,8 @@ const companies = [
     description: ``,
     logo: " https://d1ralsognjng37.cloudfront.net/7e62f3b9-cdd6-44a8-9bb4-143bf009b917.jpeg",
     background: " https://d1ralsognjng37.cloudfront.net/7e62f3b9-cdd6-44a8-9bb4-143bf009b917.jpeg",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Chinese",
   },
   // Japanese Restaurants
   {
@@ -110,8 +112,8 @@ const companies = [
     logo: "https://tb-static.uber.com/prod/image-proc/processed_images/ad3d620c368e20881077838515ec7c21/1d4135bf27b924efdd528452baa17174.webp",
     background:
       "https://tb-static.uber.com/prod/image-proc/processed_images/ad3d620c368e20881077838515ec7c21/1d4135bf27b924efdd528452baa17174.webp",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Sushi · Japanese",
   },
   {
     //16
@@ -120,8 +122,8 @@ const companies = [
     description: ``,
     logo: "https://d1ralsognjng37.cloudfront.net/e719559d-99c9-4e87-9876-5b2929c7a9cc.jpeg",
     background: "https://d1ralsognjng37.cloudfront.net/e719559d-99c9-4e87-9876-5b2929c7a9cc.jpeg",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Sushi · Japanese",
   },
   // Korean Restaurants CategoryId: 17, CompanyId: 12
   {
@@ -131,8 +133,8 @@ const companies = [
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zYWM5YTkyZS00NTRkLTQwNTAtYjMyNi1mODhjMzM5MGU4YzYuanBlZw==",
     background:
       "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zYWM5YTkyZS00NTRkLTQwNTAtYjMyNi1mODhjMzM5MGU4YzYuanBlZw==",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Korean",
   },
   // CategoryId: 17, CompanyId: 13
   {
@@ -142,8 +144,8 @@ const companies = [
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9jOGE0ODgxMS0yY2VlLTQ5OGUtYjVjOS1kNzg0YzYzMDcxNWE=",
     background:
       "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9jOGE0ODgxMS0yY2VlLTQ5OGUtYjVjOS1kNzg0YzYzMDcxNWE=",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Korean",
   },
   // Indian  My Roti Place food CategoryId: 10 , CompanyId: 14
   {
@@ -153,8 +155,8 @@ const companies = [
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3Jlc2l6ZWQvMTUyODEzNTgyNTk4OC13NTUwLTZjLmpwZw==",
     background:
       "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3Jlc2l6ZWQvMTUyODEzNTgyNTk4OC13NTUwLTZjLmpwZw==",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Indian",
   },
   // Indian  La SANI GRILL DUNDAS food CategoryId: 10 , CompanyId: 15
   {
@@ -164,17 +166,17 @@ const companies = [
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYWQ2OGEwODc4ODEyMzBmZDdmMmE5Zjg4NTdjNTNlMjYvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
     background:
       "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYWQ2OGEwODc4ODEyMzBmZDdmMmE5Zjg4NTdjNTNlMjYvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Indian",
   },
-  //The Grand Pizzeria & Bar | CompanyId: 16
+  //Nonna's Best Italian | CompanyId: 16
   {
     name: "Nonna's Best Italian",
     description: ``,
     logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
     background: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Italian · Pizza",
   },
   // The Grand Pizzeria & Bar | CompanyId: 17
   {
@@ -182,8 +184,8 @@ const companies = [
     description: ``,
     logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
     background: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
-
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Italian · Pizza",
   },
   {
     name: "Ichiban Bakery",
@@ -191,6 +193,7 @@ const companies = [
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC84NDZjMWNjMi0yYTAwLTRjNDgtYmEzNC01OWNhYmRkZGZiYzkuanBlZw==",
     background: "https://d1ralsognjng37.cloudfront.net/52636038-3c9a-4fe3-894f-92271524aaaa.jpeg",
     valoration: (Math.random() + 4).toFixed(1),
+    tags: "Bakery",
   },
 ];
 

@@ -44,6 +44,10 @@ class Company extends Model {
           allowNull: false,
           defaultValue: 0,
         },
+        tags: {
+          type: DataTypes.STRING,
+          allowNull: true,
+        },
       },
       {
         sequelize,

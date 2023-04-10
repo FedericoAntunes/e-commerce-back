@@ -78,8 +78,8 @@ const categories = [
       "https://tb-static.uber.com/prod/web-eats-v2/categories/icons/Thai_CuisineCarousel@2x.png",
   },
   {
-    name: "Alcohol",
-    slug: sluggy("Alcohol"),
+    name: "Drinks",
+    slug: sluggy("Drinks"),
     image:
       "https://tb-static.uber.com/prod/web-eats-v2/categories/icons/Alcohol_CuisineCarousel@2x.png",
   },
