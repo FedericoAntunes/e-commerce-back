@@ -105,7 +105,7 @@ async function update(req, res) {
   const productId = req.params.id;
 
   const filteredProducts = products.filter((product) => {
-    return product.id !== Number(productId);
+    return Number(product.id) !== Number(productId);
   });
 
   const form = formidable({

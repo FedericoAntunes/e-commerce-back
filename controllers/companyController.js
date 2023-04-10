@@ -62,7 +62,7 @@ async function update(req, res) {
   const companyId = req.params.id;
 
   const filteredCompanies = companies.filter((company) => {
-    return company.id !== Number(companyId);
+    return Number(company.id) !== Number(companyId);
   });
 
   const form = formidable({

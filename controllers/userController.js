@@ -69,7 +69,7 @@ async function update(req, res) {
   const userId = req.params.id;
 
   const filteredUsers = users.filter((user) => {
-    return user.id !== Number(userId);
+    return Number(user.id) !== Number(userId);
   });
 
   const form = formidable({
