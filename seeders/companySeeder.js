@@ -19,7 +19,7 @@ const companies = [
       "https://duyt4h9nfnj50.cloudfront.net/resized/c4cae0bc90b6dbb83abc9072a0ba389b-w1080-cc.jpg",
 
     valoration: (Math.random() + 4).toFixed(1),
-    tags: "Sushi · Asian · Korean",
+    tags: "Sushi • Asian • Korean",
   },
   {
     name: "Hokkaido Sushi",
@@ -29,7 +29,7 @@ const companies = [
     background: "https://d1ralsognjng37.cloudfront.net/3def8874-649e-4e5e-ad10-3946dc6c43fa.jpeg",
 
     valoration: (Math.random() + 4).toFixed(1),
-    tags: "Sushi · Asian · Japanese",
+    tags: "Sushi • Asian • Japanese",
   },
   {
     name: "Pi Co. Pizza Bar",
@@ -41,7 +41,7 @@ const companies = [
     logo: "https://images4.alphacoders.com/276/276908.jpg",
     background: "https://images4.alphacoders.com/276/276908.jpg",
     valoration: (Math.random() + 4).toFixed(1),
-    tags: "Pizza · Healthy · Drinks",
+    tags: "Pizza • Healthy • Drinks",
   },
   {
     name: "Pizza Nerds",
@@ -51,7 +51,7 @@ const companies = [
     logo: "https://images7.alphacoders.com/596/596343.jpg",
     background: "https://images7.alphacoders.com/596/596343.jpg",
     valoration: (Math.random() + 4).toFixed(1),
-    tags: "Pizza · Healthy · Drinks",
+    tags: "Pizza • Healthy • Drinks",
   },
   {
     name: "La Fiesta Latina",
@@ -71,12 +71,12 @@ const companies = [
     logo: "https://d1ralsognjng37.cloudfront.net/4d4db85e-a5d9-4ecd-9e92-dec6882cf7c4",
     background: "https://d1ralsognjng37.cloudfront.net/4d4db85e-a5d9-4ecd-9e92-dec6882cf7c4",
     valoration: (Math.random() + 4).toFixed(1),
-    tags: "Mexican · Healthy · Drinks",
+    tags: "Mexican • Healthy • Drinks",
   },
   {
     name: "Luxe Blooms Flower Cafe",
     slug: sluggy("Luxe Blooms Flower Cafe"),
-    description: `CAFÉ & FLOWER SHOP @luxe.blooms flowers shop • coffee • pastries • desserts • balloons NOW OPEN 254 Dalhousie Street · Calling all brides and bachelorettes!`,
+    description: `CAFÉ & FLOWER SHOP @luxe.blooms flowers shop • coffee • pastries • desserts • balloons NOW OPEN 254 Dalhousie Street • Calling all brides and bachelorettes!`,
     logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMzM0YjNlYWM4ZTRhNWMyODYwNTk0ZDU3NDhjZDBkMjIvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw==",
     background:
       "https://tb-static.uber.com/prod/image-proc/processed_images/334b3eac8e4a5c2860594d5748cd0d22/93b5fd796682c6d5302cd5bec164fe90.jpeg",
@@ -113,7 +113,7 @@ const companies = [
     background:
       "https://tb-static.uber.com/prod/image-proc/processed_images/ad3d620c368e20881077838515ec7c21/1d4135bf27b924efdd528452baa17174.webp",
     valoration: (Math.random() + 4).toFixed(1),
-    tags: "Sushi · Japanese",
+    tags: "Sushi • Japanese",
   },
   {
     //16
@@ -123,7 +123,7 @@ const companies = [
     logo: "https://d1ralsognjng37.cloudfront.net/e719559d-99c9-4e87-9876-5b2929c7a9cc.jpeg",
     background: "https://d1ralsognjng37.cloudfront.net/e719559d-99c9-4e87-9876-5b2929c7a9cc.jpeg",
     valoration: (Math.random() + 4).toFixed(1),
-    tags: "Sushi · Japanese",
+    tags: "Sushi • Japanese",
   },
   // Korean Restaurants CategoryId: 17, CompanyId: 12
   {
@@ -176,7 +176,7 @@ const companies = [
     logo: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
     background: "https://d1ralsognjng37.cloudfront.net/f4d5efec-1bea-4f66-b915-6ed4cb1152f2.jpeg",
     valoration: (Math.random() + 4).toFixed(1),
-    tags: "Italian · Pizza",
+    tags: "Italian • Pizza",
   },
   // The Grand Pizzeria & Bar | CompanyId: 17
   {
@@ -185,7 +185,7 @@ const companies = [
     logo: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
     background: "https://d1ralsognjng37.cloudfront.net/4ad9ddb6-49e5-4c09-96f1-b1eb507ed9d4.jpeg",
     valoration: (Math.random() + 4).toFixed(1),
-    tags: "Italian · Pizza",
+    tags: "Italian • Pizza",
   },
   {
     name: "Ichiban Bakery",
