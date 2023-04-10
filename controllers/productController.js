@@ -74,8 +74,8 @@ async function store(req, res) {
       if (unavailableProduct) {
         return res.json("Product already exist.");
       } else {
-        const image = files.image ? `/img/${files.image.newFilename}` : "/img/default.jpg";
-        const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default.jpg";
+        const image = files.image ? `/img/${files.image.newFilename}` : "/img/default-product.jpg";
+        const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default-product.jpg";
 
         await Product.create({
           title: fields.title,
