@@ -29,7 +29,7 @@ async function store(req, res) {
     if (
       fields.username === "" ||
       fields.email === "" ||
-      fields.password === "" ||
+      fields.lastname === "" ||
       fields.firstname === "" ||
       fields.password === ""
     ) {
@@ -81,6 +81,10 @@ async function update(req, res) {
   form.parse(req, async (err, fields, files) => {
     const unavailableUsername = filteredUsers.some((u) => u.username === fields.username);
     const unavailableUserEmail = filteredUsers.some((u) => u.email === fields.email);
+
+    if (fields.username === "" || fields.lastname === "" || fields.firstname === "") {
+      return res.json("Fill all the fields.");
+    }
 
     if (unavailableUsername) {
       return res.json("Unavailable username");

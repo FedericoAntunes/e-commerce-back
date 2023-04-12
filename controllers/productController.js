@@ -119,8 +119,17 @@ async function update(req, res) {
     const image = files.image && `/img/${files.image.newFilename}`;
     const logo = files.logo && `/img/${files.logo.newFilename}`;
 
-    if (unavailableProduct) {
-      res.json("Product name already in use.");
+    if (unavailableProduct) return res.json("Product name already in use.");
+
+    if (
+      fields.title === "" ||
+      fields.price === "" ||
+      fields.in_offer === "" ||
+      fields.companyId === "" ||
+      fields.categoryId === "" ||
+      fields.stock === ""
+    ) {
+      return res.json("Fill all the fields.");
     } else {
       const updatedProduct = {
         title: fields.title,

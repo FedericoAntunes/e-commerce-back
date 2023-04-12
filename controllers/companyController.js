@@ -81,6 +81,7 @@ async function update(req, res) {
 
   form.parse(req, async (err, fields, files) => {
     const unavailableComapanyName = filteredCompanies.some((u) => u.name === fields.name);
+    if (fields.name === "") return res.json("Company needs a name.");
 
     if (unavailableComapanyName) {
       return res.json("Unavailable comapany name");
