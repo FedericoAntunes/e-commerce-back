@@ -44,6 +44,7 @@ Order.prototype.toJSON = function () {
   const values = Object.assign({}, this.get());
 
   delete values.user.password;
+  delete values.user.address;
   delete values.payment_info;
 
   return values;
