@@ -38,16 +38,15 @@ class Order extends Model {
     );
     return Order;
   }
+  toJSON = function () {
+    const values = { ...this.get() };
+    const user = values.user;
+
+    delete user.password;
+    delete values.payment_info;
+
+    return values;
+  };
 }
-
-Order.prototype.toJSON = function () {
-  const values = Object.assign({}, this.get());
-  const user = values.user;
-
-  delete user.password;
-  delete values.payment_info;
-
-  return values;
-};
 
 module.exports = Order;

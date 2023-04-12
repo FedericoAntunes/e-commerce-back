@@ -83,14 +83,13 @@ class User extends Model {
   async isValidPassword(password) {
     return await bcrypt.compare(password, this.password);
   }
+  toJSON() {
+    const values = Object.assign({}, this.get());
+
+    delete values.password;
+
+    return values;
+  }
 }
-
-User.prototype.toJSON = function () {
-  const values = Object.assign({}, this.get());
-
-  delete values.password;
-
-  return values;
-};
 
 module.exports = User;
