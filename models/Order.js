@@ -40,4 +40,13 @@ class Order extends Model {
   }
 }
 
+Order.prototype.toJSON = function () {
+  const values = Object.assign({}, this.get());
+
+  delete values.user.password;
+  delete values.payment_info;
+
+  return values;
+};
+
 module.exports = Order;
