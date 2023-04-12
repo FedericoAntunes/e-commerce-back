@@ -1,4 +1,4 @@
-const { Order, OrderProduct, Product, User } = require("../models");
+const { Order, OrderProduct, Product } = require("../models");
 
 async function index(req, res) {
   const orders = await Order.findAll({ order: [["updatedAt", "DESC"]] });
@@ -36,6 +36,10 @@ async function store(req, res) {
     });
     const orderProducts = [];
     for (const product of products) {
+      await Product.update(
+        { stock: product.stock - product.quantity },
+        { where: { id: product.id } },
+      );
       const orderProduct = {
         qty: product.quantity,
         unit_price: product.price,
