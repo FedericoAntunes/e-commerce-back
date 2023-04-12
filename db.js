@@ -18,9 +18,9 @@ const sequelize = new Sequelize(
 );
 
 const dbSync = async () => {
-  await db.sequelize.sync({ alter: true });
+  await db.sequelize.sync({ force: true });
   console.log("[Database] ¡La estructura de tablas fue actualizada!");
 };
-dbSync();
+/* dbSync(); */
 
 module.exports = sequelize;

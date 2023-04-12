@@ -38,7 +38,7 @@ class Order extends Model {
     );
     return Order;
   }
-  toJSON = function () {
+  /*   toJSON = function () {
     const values = { ...this.get() };
     const user = values.user;
 
@@ -46,7 +46,7 @@ class Order extends Model {
     delete values.payment_info;
 
     return values;
-  };
+  }; */
 }
 
 module.exports = Order;
