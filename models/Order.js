@@ -42,9 +42,9 @@ class Order extends Model {
 
 Order.prototype.toJSON = function () {
   const values = Object.assign({}, this.get());
+  const user = values.user;
 
-  delete values.user.password;
-  delete values.user.address;
+  delete user.password;
   delete values.payment_info;
 
   return values;
