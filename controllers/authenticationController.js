@@ -77,7 +77,6 @@ async function googleAuth(req, res) {
       email,
       username: email,
       avatar,
-      password: "1234",
       reg_mode: "google",
     });
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET);

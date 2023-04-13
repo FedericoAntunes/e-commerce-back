@@ -33,7 +33,7 @@ class User extends Model {
         },
         password: {
           type: DataTypes.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         address: {
           type: DataTypes.JSON,

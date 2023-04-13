@@ -1,5 +1,11 @@
 const User = require("../models/User");
 const formidable = require("formidable");
+const fs = require("fs");
+const path = require("path");
+
+const { createClient } = require("@supabase/supabase-js");
+
+const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
 // Display a listing of the resource.
 async function index(req, res) {
@@ -38,18 +44,32 @@ async function store(req, res) {
       const unavailableUsername = users.some((u) => u.username === fields.username);
       const unavailableUserEmail = users.some((u) => u.email === fields.email);
 
+      console.log(files.avatar.filepath);
+      const ext = path.extname(files.avatar.filepath);
+      const newFileName = `image_${Date.now()}${ext}`;
+      const { data, error } = await supabase.storage
+        .from("no-hunger-bucket")
+        .upload(newFileName, fs.createReadStream(files.avatar.filepath), {
+          cacheControl: "3600",
+          upsert: false,
+          contentType: files.avatar.mimetype,
+          duplex: "half",
+        });
+
+      console.log(data);
+      console.log(error);
+
       if (unavailableUserEmail) return res.json("User email already exist.");
 
       if (unavailableUsername) return res.json("Username already exist.");
 
       if (!unavailableUserEmail && !unavailableUsername) {
-        const avatar = files.avatar ? `/img/${files.avatar.newFilename}` : "/img/default.jpg";
         await User.create({
           firstname: fields.firstname,
           lastname: fields.lastname,
           email: fields.email,
           username: fields.username,
-          avatar,
+          avatar: data.path,
           password: fields.password,
           reg_mode: "email",
         });
