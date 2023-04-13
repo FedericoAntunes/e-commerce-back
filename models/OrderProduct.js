@@ -22,6 +22,10 @@ class OrderProduct extends Model {
           type: DataTypes.STRING,
           allowNull: false,
         },
+        in_offer: {
+          type: DataTypes.BOOLEAN,
+          allowNull: false,
+        },
       },
       {
         sequelize,

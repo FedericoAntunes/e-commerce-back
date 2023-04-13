@@ -24,7 +24,9 @@ async function store(req, res) {
   const { products, address, payment_method, payment_info } = shippingData;
   let total = 0;
   for (const product of products) {
-    total += product.price * product.quantity;
+    product.in_offer
+      ? (total += product.price * 0.8 * product.quantity)
+      : (total += product.price * product.quantity);
   }
 
   if (
@@ -67,6 +69,7 @@ async function store(req, res) {
           orderId: order.id,
           productId: product.id,
           image: product.image,
+          in_offer: product.in_offer,
         };
         orderProducts.push(orderProduct);
         await OrderProduct.create(orderProduct);
