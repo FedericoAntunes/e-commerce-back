@@ -3,7 +3,7 @@ const { Order, OrderProduct, Product, User } = require("../models");
 async function index(req, res) {
   const orders = await Order.findAll({
     order: [["updatedAt", "DESC"]],
-    include: [User],
+    include: [{ model: User, attributes: ["firstname", "lastname", "avatar"] }],
   });
   return res.json(orders);
 }
