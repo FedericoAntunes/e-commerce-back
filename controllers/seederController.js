@@ -1,4 +1,4 @@
-/*const runAllSeeders = require("../seeders/runAllSeeders");
+const runAllSeeders = require("../seeders/runAllSeeders");
 
 function runSeeders(req, res) {
   runAllSeeders();
@@ -6,4 +6,4 @@ function runSeeders(req, res) {
 }
 module.exports = {
   runSeeders,
-};*/
+};
