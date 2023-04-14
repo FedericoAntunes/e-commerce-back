@@ -26,7 +26,6 @@ async function create(req, res) {}
 // Store a newly created resource in storage.
 async function store(req, res) {
   const form = formidable({
-    uploadDir: __dirname + "/../public/img",
     keepExtensions: true,
     multiples: true,
   });
