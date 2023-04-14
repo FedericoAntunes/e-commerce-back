@@ -41,6 +41,7 @@ class User extends Model {
         },
         avatar: {
           type: DataTypes.STRING,
+          defaultValue: "default.jpg",
         },
         reg_mode: {
           type: DataTypes.STRING,

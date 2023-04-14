@@ -10,7 +10,7 @@ module.exports = async () => {
       email: "user@hotmail.com",
       password: await bcrypt.hash("123", 8),
       address: { location: "Villa Dolores", tel: "9999999" },
-      avatar: "/img/default.jpg",
+      avatar: "default.jpg",
       reg_mode: "email",
     },
   ];

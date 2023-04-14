@@ -51,25 +51,31 @@ async function store(req, res) {
       const unavailableUsername = users.some((u) => u.username === fields.username);
       const unavailableUserEmail = users.some((u) => u.email === fields.email);
 
-      if (!files.avatar || !files.avatar.filepath) {
-        return res.json("No avatar file found.");
+      if (files.avatar) {
+        const ext = path.extname(files.avatar.filepath);
+        const newFileName = `image_${Date.now()}${ext}`;
+        const { data, error } = await supabase.storage
+          .from("no-hunger-bucket")
+          .upload(newFileName, fs.createReadStream(files.avatar.filepath), {
+            cacheControl: "3600",
+            upsert: false,
+            contentType: files.avatar.mimetype,
+            duplex: "half",
+          });
+
+        if (!unavailableUserEmail && !unavailableUsername) {
+          await User.create({
+            firstname: fields.firstname,
+            lastname: fields.lastname,
+            email: fields.email,
+            username: fields.username,
+            avatar: data.path,
+            password: fields.password,
+            reg_mode: "email",
+          });
+          return res.status(201).json("User stored");
+        }
       }
-
-      console.log(files.avatar.filepath);
-      const ext = path.extname(files.avatar.filepath);
-      const newFileName = `image_${Date.now()}${ext}`;
-      const { data, error } = await supabase.storage
-        .from("no-hunger-bucket")
-        .upload(newFileName, fs.createReadStream(files.avatar.filepath), {
-          cacheControl: "3600",
-          upsert: false,
-          contentType: files.avatar.mimetype,
-          duplex: "half",
-        });
-
-      console.log(data);
-      console.log(error);
-
       if (unavailableUserEmail) return res.json("User email already exists.");
 
       if (unavailableUsername) return res.json("Username already exists.");
@@ -80,7 +86,7 @@ async function store(req, res) {
           lastname: fields.lastname,
           email: fields.email,
           username: fields.username,
-          avatar: data.path,
+          avatar: "default.jpg",
           password: fields.password,
           reg_mode: "email",
         });
@@ -107,7 +113,6 @@ async function update(req, res) {
   });
 
   const form = formidable({
-    uploadDir: __dirname + "/../public/img",
     keepExtensions: true,
     multiples: true,
   });
@@ -125,18 +130,25 @@ async function update(req, res) {
     } else if (unavailableUserEmail) {
       return res.json("Unavailable user email");
     } else {
-      const avatar = files.avatar && `/img/${files.avatar.newFilename}`;
-
       const user = await User.findByPk(userId);
+
+      const ext = path.extname(files.avatar.filepath);
+      const newFileName = `image_${Date.now()}${ext}`;
+      const { data, error } = await supabase.storage
+        .from("no-hunger-bucket")
+        .upload(newFileName, fs.createReadStream(files.avatar.filepath), {
+          cacheControl: "3600",
+          upsert: false,
+          contentType: files.avatar.mimetype,
+          duplex: "half",
+        });
 
       const userUpdated = {
         firstname: fields.firstname,
         lastname: fields.lastname,
         username: fields.username,
-        avatar,
+        avatar: data.avatar || "default.jpg",
       };
-
-      if (!avatar) delete userUpdated.avatar;
 
       await user.update(userUpdated);
 
