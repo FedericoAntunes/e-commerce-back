@@ -1,6 +1,12 @@
 const { Company, Product, Category } = require("../models");
 const { Op } = require("sequelize");
 const formidable = require("formidable");
+const fs = require("fs");
+const path = require("path");
+
+const { createClient } = require("@supabase/supabase-js");
+
+const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
 async function index(req, res) {
   const query = [];
@@ -74,9 +80,31 @@ async function store(req, res) {
       if (unavailableProduct) {
         return res.json("Product already exist.");
       } else {
-        const image = files.image ? `/img/${files.image.newFilename}` : "/img/default-product.jpg";
-        const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default-product.jpg";
-
+        if (files.image) {
+          const ext = path.extname(files.image.filepath);
+          const newFileName = `image_${Date.now()}${ext}`;
+          const { data, error } = await supabase.storage
+            .from("no-hunger-bucket")
+            .upload(newFileName, fs.createReadStream(files.image.filepath), {
+              cacheControl: "3600",
+              upsert: false,
+              contentType: files.image.mimetype,
+              duplex: "half",
+            });
+          console.log(data);
+          await Product.create({
+            title: fields.title,
+            price: Number(fields.price),
+            description: fields.description,
+            in_offer: fields.in_offer,
+            slug: "",
+            stock: fields.stock,
+            companyId: fields.companyId,
+            categoryId: fields.categoryId,
+            image: data.path,
+          });
+          return res.status(201).json("Product stored.");
+        }
         await Product.create({
           title: fields.title,
           price: Number(fields.price),
@@ -86,8 +114,7 @@ async function store(req, res) {
           stock: fields.stock,
           companyId: fields.companyId,
           categoryId: fields.categoryId,
-          image,
-          logo,
+          image: "default-product.jpg",
         });
         return res.status(201).json("Product stored.");
       }
@@ -109,15 +136,12 @@ async function update(req, res) {
   });
 
   const form = formidable({
-    uploadDir: __dirname + "/../public/img",
     keepExtensions: true,
     multiples: true,
   });
 
   form.parse(req, async (err, fields, files) => {
     const unavailableProduct = filteredProducts.some((u) => u.title === fields.title);
-    const image = files.image && `/img/${files.image.newFilename}`;
-    const logo = files.logo && `/img/${files.logo.newFilename}`;
 
     if (unavailableProduct) return res.json("Product name already in use.");
 
@@ -131,6 +155,29 @@ async function update(req, res) {
     ) {
       return res.json("Fill all the fields.");
     } else {
+      if (files.image) {
+        const ext = path.extname(files.image.filepath);
+        const newFileName = `image_${Date.now()}${ext}`;
+        const { data, error } = await supabase.storage
+          .from("no-hunger-bucket")
+          .upload(newFileName, fs.createReadStream(files.image.filepath), {
+            cacheControl: "3600",
+            upsert: false,
+            contentType: files.image.mimetype,
+            duplex: "half",
+          });
+        console.log(data);
+        await Product.update({
+          title: fields.title,
+          price: Number(fields.price),
+          description: fields.description,
+          in_offer: fields.in_offer,
+          stock: fields.stock,
+          categoryId: fields.categoryId,
+          image: data.path,
+        });
+        return res.status(201).json("Product updated.");
+      }
       const updatedProduct = {
         title: fields.title,
         price: Number(fields.price),
@@ -138,11 +185,8 @@ async function update(req, res) {
         in_offer: fields.in_offer,
         stock: fields.stock,
         categoryId: fields.categoryId,
-        image,
-        logo,
+        image: "default-product.jpg",
       };
-      if (!image) delete updatedProduct.image;
-      if (!logo) delete updatedProduct.logo;
 
       const product = await Product.findByPk(productId);
 

@@ -10,7 +10,7 @@ module.exports = async () => {
       email: "admin@hotmail.com",
       password: await bcrypt.hash("123", 8),
       address: { location: null, tel: null },
-      avatar: "/img/default.jpg",
+      avatar: "default.jpg",
     },
   ];
   await Admin.bulkCreate(admins);

@@ -1,6 +1,12 @@
 const { Company, Product } = require("../models");
 const formidable = require("formidable");
 const { Op, Sequelize } = require("sequelize");
+const fs = require("fs");
+const path = require("path");
+
+const { createClient } = require("@supabase/supabase-js");
+
+const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
 async function index(req, res) {
   const { tag } = req.query;
@@ -26,7 +32,6 @@ async function create(req, res) {}
 // Store a newly created resource in storage.
 async function store(req, res) {
   const form = formidable({
-    uploadDir: __dirname + "/../public/img",
     keepExtensions: true,
     multiples: true,
   });
@@ -41,10 +46,46 @@ async function store(req, res) {
       if (unavailableCompany) {
         return res.json("Company name already exist.");
       } else {
-        const background = files.background
-          ? `/img/${files.background.newFilename}`
-          : "//img/default-company.jpg";
-        const logo = files.logo ? `/img/${files.logo.newFilename}` : "/img/default-company.jpg";
+        let logo = "";
+        let background = "";
+        if (files.logo) {
+          const extLogo = path.extname(files.logo.filepath);
+          const newLogoFileName = `logo_${Date.now()}${extLogo}`;
+          const { data, error } = await supabase.storage
+            .from("no-hunger-bucket")
+            .upload(newLogoFileName, fs.createReadStream(files.logo.filepath), {
+              cacheControl: "3600",
+              upsert: false,
+              contentType: files.logo.mimetype,
+              duplex: "half",
+            });
+          logo = data.path;
+        }
+        if (files.background) {
+          const extBg = path.extname(files.background.filepath);
+          const newBgFileName = `background_${Date.now()}${extBg}`;
+          const { data, error } = await supabase.storage
+            .from("no-hunger-bucket")
+            .upload(newBgFileName, fs.createReadStream(files.background.filepath), {
+              cacheControl: "3600",
+              upsert: false,
+              contentType: files.background.mimetype,
+              duplex: "half",
+            });
+          background = data.path;
+        }
+
+        if (background !== "" && logo !== "") {
+          await Company.create({
+            name: fields.name,
+            description: fields.description,
+            slug: "",
+            estimated_time: `20–35 min • $1.49 Delivery Fee • $ `,
+            background,
+            logo,
+          });
+          return res.status(201).json("Company updated.");
+        }
 
         await Company.create({
           name: fields.name,
