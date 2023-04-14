@@ -31,18 +31,30 @@ async function store(req, res) {
     multiples: true,
   });
   form.parse(req, async (err, fields, files) => {
-    const users = await User.findAll();
-    if (
-      fields.username === "" ||
-      fields.email === "" ||
-      fields.lastname === "" ||
-      fields.firstname === "" ||
-      fields.password === ""
-    ) {
-      return res.json("Fill all the fields.");
-    } else {
+    try {
+      if (err) {
+        console.error(err);
+        return res.json("An error occurred while processing the request.");
+      }
+
+      const users = await User.findAll();
+
+      if (
+        fields.username === "" ||
+        fields.email === "" ||
+        fields.lastname === "" ||
+        fields.firstname === "" ||
+        fields.password === ""
+      ) {
+        return res.json("Fill all the fields.");
+      }
+
       const unavailableUsername = users.some((u) => u.username === fields.username);
       const unavailableUserEmail = users.some((u) => u.email === fields.email);
+
+      if (!files.avatar || !files.avatar.filepath) {
+        return res.json("No avatar file found.");
+      }
 
       console.log(files.avatar.filepath);
       const ext = path.extname(files.avatar.filepath);
@@ -59,9 +71,9 @@ async function store(req, res) {
       console.log(data);
       console.log(error);
 
-      if (unavailableUserEmail) return res.json("User email already exist.");
+      if (unavailableUserEmail) return res.json("User email already exists.");
 
-      if (unavailableUsername) return res.json("Username already exist.");
+      if (unavailableUsername) return res.json("Username already exists.");
 
       if (!unavailableUserEmail && !unavailableUsername) {
         await User.create({
@@ -75,6 +87,9 @@ async function store(req, res) {
         });
         return res.status(201).json("User stored");
       }
+    } catch (error) {
+      console.error(error);
+      return res.json("An error occurred while processing the request.");
     }
   });
 }
