@@ -147,7 +147,7 @@ async function update(req, res) {
         firstname: fields.firstname,
         lastname: fields.lastname,
         username: fields.username,
-        avatar: data.avatar || "default.jpg",
+        avatar: data.avatar!==null ?data.avatar: "default.jpg",
       };
 
       await user.update(userUpdated);
