@@ -84,7 +84,7 @@ async function store(req, res) {
             background,
             logo,
           });
-          return res.status(201).json("Company updated.");
+          return res.status(201).json("Company stored.");
         }
 
         await Company.create({
@@ -92,8 +92,8 @@ async function store(req, res) {
           description: fields.description,
           slug: "",
           estimated_time: `20–35 min • $1.49 Delivery Fee • $ `,
-          background,
-          logo,
+          background:"default-company.jpg",
+          logo:"default-company.jpg",
         });
         return res.status(201).json("Company stored.");
       }
@@ -110,12 +110,13 @@ async function update(req, res) {
 
   const companyId = req.params.id;
 
-  const filteredCompanies = companies.filter((company) => {
-    return Number(company.id) !== Number(companyId);
+  const company= await Company.findByPk(companyId)
+
+  const filteredCompanies = companies.filter((item) => {
+    return Number(item.id) !== Number(companyId);
   });
 
   const form = formidable({
-    uploadDir: __dirname + "/../public/img",
     keepExtensions: true,
     multiples: true,
   });
@@ -127,26 +128,55 @@ async function update(req, res) {
     if (unavailableComapanyName) {
       return res.json("Unavailable comapany name");
     } else {
-      const background = files.background && `/img/${files.background.newFilename}`;
+        let logo = "";
+        let background = "";
+        if (files.logo) {
+          const extLogo = path.extname(files.logo.filepath);
+          const newLogoFileName = `logo_${Date.now()}${extLogo}`;
+          const { data, error } = await supabase.storage
+            .from("no-hunger-bucket")
+            .upload(newLogoFileName, fs.createReadStream(files.logo.filepath), {
+              cacheControl: "3600",
+              upsert: false,
+              contentType: files.logo.mimetype,
+              duplex: "half",
+            });
+          logo = data.path;
+        }
+        if (files.background) {
+          const extBg = path.extname(files.background.filepath);
+          const newBgFileName = `background_${Date.now()}${extBg}`;
+          const { data, error } = await supabase.storage
+            .from("no-hunger-bucket")
+            .upload(newBgFileName, fs.createReadStream(files.background.filepath), {
+              cacheControl: "3600",
+              upsert: false,
+              contentType: files.background.mimetype,
+              duplex: "half",
+            });
+          background = data.path;
+        }
 
-      const logo = files.logo && `/img/${files.logo.newFilename}`;
+        if (background !== "" && logo !== "") {
+          await company.update({
+            name: fields.name,
+            description: fields.description,
+            estimated_time: `20–35 min • $1.49 Delivery Fee • $ `,
+            background,
+            logo
+          });
+          return res.status(201).json("Company updated");
+        }
 
-      const company = await Company.findByPk(companyId);
-
-      const updatedCompany = {
-        name: fields.name,
-        description: fields.description,
-        estimated_time: `20–35 min • $1.49 Delivery Fee • $ `,
-        background,
-        logo,
-      };
-
-      if (!background) delete updatedCompany.background;
-      if (!logo) delete updatedCompany.logo;
-
-      await company.update(updatedCompany);
-      return res.status(201).json("Company updated");
-    }
+        await company.update({
+          name: fields.name,
+          description: fields.description,
+          estimated_time: `20–35 min • $1.49 Delivery Fee • $ `,
+          background: company.background||"default-company.jpg",
+          logo:company.logo||"default-company.jpg",
+        });
+        return res.status(201).json("Company updated");
+      }
   });
 }
 

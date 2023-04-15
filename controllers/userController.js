@@ -130,8 +130,10 @@ async function update(req, res) {
     } else if (unavailableUserEmail) {
       return res.json("Unavailable user email");
     } else {
+
       const user = await User.findByPk(userId);
 
+if (files.avatar) {
       const ext = path.extname(files.avatar.filepath);
       const newFileName = `image_${Date.now()}${ext}`;
       const { data, error } = await supabase.storage
@@ -142,17 +144,28 @@ async function update(req, res) {
           contentType: files.avatar.mimetype,
           duplex: "half",
         });
+        const userUpdated = {
+          firstname: fields.firstname,
+          lastname: fields.lastname,
+          username: fields.username,
+          avatar: data.path 
+        };
+  
+        await user.update(userUpdated);
+  
+        return res.status(201).json("User updated");
+} else{
 
       const userUpdated = {
         firstname: fields.firstname,
         lastname: fields.lastname,
         username: fields.username,
-        avatar: data.avatar || "default.jpg",
+        avatar: user.avatar || "default.jpg"
       };
 
       await user.update(userUpdated);
 
-      return res.status(201).json("User updated");
+      return res.status(201).json("User updated");}
     }
   });
 }
