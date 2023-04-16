@@ -962,8 +962,8 @@ const products = [
     description: "123",
     in_offer: true,
     image:
-      " https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8wMzBkMjQ0Yy05NzI0LTRiYjQtOTQ1Yi1hMDk3ZmEwN2RjZTguanBlZw==",
-    logo: " https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8wMzBkMjQ0Yy05NzI0LTRiYjQtOTQ1Yi1hMDk3ZmEwN2RjZTguanBlZw==",
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8wMzBkMjQ0Yy05NzI0LTRiYjQtOTQ1Yi1hMDk3ZmEwN2RjZTguanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=100/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8wMzBkMjQ0Yy05NzI0LTRiYjQtOTQ1Yi1hMDk3ZmEwN2RjZTguanBlZw==",
     companyId: 8,
     categoryId: 5,
   },
@@ -2172,8 +2172,8 @@ const products = [
     description: "Vegan dish, cauliflower, and potatoes cooked with spices, onions, and tomatoes.",
     in_offer: false,
     image:
-      "	https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMjc3NzM2NC01ODQ3LTQ1MzItOGNhNy02NTQ3ZjkzZGFjMTAuanBlZw==",
-    logo: "	https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMjc3NzM2NC01ODQ3LTQ1MzItOGNhNy02NTQ3ZjkzZGFjMTAuanBlZw==",
+      "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMjc3NzM2NC01ODQ3LTQ1MzItOGNhNy02NTQ3ZjkzZGFjMTAuanBlZw==",
+    logo: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zMjc3NzM2NC01ODQ3LTQ1MzItOGNhNy02NTQ3ZjkzZGFjMTAuanBlZw==",
     companyId: 19,
     categoryId: 20,
   },
