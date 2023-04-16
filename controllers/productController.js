@@ -91,7 +91,7 @@ async function store(req, res) {
               contentType: files.image.mimetype,
               duplex: "half",
             });
-          console.log(data);
+
           await Product.create({
             title: fields.title,
             price: Number(fields.price),
@@ -105,6 +105,7 @@ async function store(req, res) {
           });
           return res.status(201).json("Product stored.");
         }
+
         await Product.create({
           title: fields.title,
           price: Number(fields.price),
@@ -131,6 +132,8 @@ async function update(req, res) {
 
   const productId = req.params.id;
 
+  const product = await Product.findByPk(productId);
+
   const filteredProducts = products.filter((product) => {
     return Number(product.id) !== Number(productId);
   });
@@ -155,6 +158,7 @@ async function update(req, res) {
     ) {
       return res.json("Fill all the fields.");
     } else {
+      let image = "";
       if (files.image) {
         const ext = path.extname(files.image.filepath);
         const newFileName = `image_${Date.now()}${ext}`;
@@ -166,32 +170,19 @@ async function update(req, res) {
             contentType: files.image.mimetype,
             duplex: "half",
           });
-        console.log(data);
-        await Product.update({
-          title: fields.title,
-          price: Number(fields.price),
-          description: fields.description,
-          in_offer: fields.in_offer,
-          stock: fields.stock,
-          categoryId: fields.categoryId,
-          image: data.path,
-        });
-        return res.status(201).json("Product updated.");
+        image = data.path;
       }
-      const updatedProduct = {
+
+      await product.update({
         title: fields.title,
         price: Number(fields.price),
         description: fields.description,
         in_offer: fields.in_offer,
         stock: fields.stock,
         categoryId: fields.categoryId,
-        image: "default-product.jpg",
-      };
-
-      const product = await Product.findByPk(productId);
-
-      await product.update(updatedProduct);
-      return res.status(201).json("Product updated");
+        image: image === "" ? product.image : image,
+      });
+      return res.status(201).json("Product updated.");
     }
   });
 }
