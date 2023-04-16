@@ -108,6 +108,8 @@ async function update(req, res) {
 
   const userId = req.params.id;
 
+  if (Number(userId) === 1) return res.json("You can not edit the testing user.");
+
   const filteredUsers = users.filter((user) => {
     return Number(user.id) !== Number(userId);
   });
@@ -130,42 +132,41 @@ async function update(req, res) {
     } else if (unavailableUserEmail) {
       return res.json("Unavailable user email");
     } else {
-
       const user = await User.findByPk(userId);
 
-if (files.avatar) {
-      const ext = path.extname(files.avatar.filepath);
-      const newFileName = `image_${Date.now()}${ext}`;
-      const { data, error } = await supabase.storage
-        .from("no-hunger-bucket")
-        .upload(newFileName, fs.createReadStream(files.avatar.filepath), {
-          cacheControl: "3600",
-          upsert: false,
-          contentType: files.avatar.mimetype,
-          duplex: "half",
-        });
+      if (files.avatar) {
+        const ext = path.extname(files.avatar.filepath);
+        const newFileName = `image_${Date.now()}${ext}`;
+        const { data, error } = await supabase.storage
+          .from("no-hunger-bucket")
+          .upload(newFileName, fs.createReadStream(files.avatar.filepath), {
+            cacheControl: "3600",
+            upsert: false,
+            contentType: files.avatar.mimetype,
+            duplex: "half",
+          });
         const userUpdated = {
           firstname: fields.firstname,
           lastname: fields.lastname,
           username: fields.username,
-          avatar: data.path 
+          avatar: data.path,
         };
-  
+
         await user.update(userUpdated);
-  
+
         return res.status(201).json("User updated");
-} else{
+      } else {
+        const userUpdated = {
+          firstname: fields.firstname,
+          lastname: fields.lastname,
+          username: fields.username,
+          avatar: user.avatar || "default.jpg",
+        };
 
-      const userUpdated = {
-        firstname: fields.firstname,
-        lastname: fields.lastname,
-        username: fields.username,
-        avatar: user.avatar || "default.jpg"
-      };
+        await user.update(userUpdated);
 
-      await user.update(userUpdated);
-
-      return res.status(201).json("User updated");}
+        return res.status(201).json("User updated");
+      }
     }
   });
 }
@@ -173,6 +174,9 @@ if (files.avatar) {
 // Remove the specified resource from storage.
 async function destroy(req, res) {
   const userId = req.params.id;
+
+  if (Number(userId) === 1) return res.json("You can not delete the testing user.");
+
   await User.destroy({
     where: {
       id: userId,
